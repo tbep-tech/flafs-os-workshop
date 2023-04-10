@@ -2,28 +2,28 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Tampa Bay Open Science Workshop",
+    "title": "Florida AFS 2023 Open Science Workshop",
     "section": "",
     "text": "Course synopsis\nWelcome to the 2023 Florida AFS open science workshop. Open science (OS) has been advocated as an effective approach to create reproducible, transparent, and actionable research products. However, widespread adoption among the research and management community has not occurred despite its perceived benefits. In the face of major challenges like global warming and sea level rise, the collaborative framework provided by OS is needed now more than ever. This workshop will cover material introducing participants to core concepts of OS. The target audience includes anyone interested in applying OS in their own workflows as part of a larger research and resource management team.\nBy the end of this workshop, you should have a good understanding of fundamental concepts in open science and how they can be applied to help bridge the research-management divide. You will also have the skills to understand how collaborative open science tools can be used to increase efficiency and transparency, understand fundamental best practices for working with data to facilitate openness, and be able to apply these lessons within your own teams by effectively addressing barriers to adoption.\nMuch of the content on this web page was adopted from the TBEP Data Management SOP."
   },
   {
     "objectID": "index.html#prepare",
     "href": "index.html#prepare",
-    "title": "Tampa Bay Open Science Workshop",
+    "title": "Florida AFS 2023 Open Science Workshop",
     "section": "Prepare",
     "text": "Prepare\nPlease attend the workshop with a personal laptop and power supply. Make sure your laptop can access publicly available WiFi. You will also need to install software prior to the workshop, visit the setup page for more info. We will have limited capacity to help with installation issues the day of the workshop, so please come prepared. The setup instructions will guide you through the following.\n\nGitHub create account: link\nInstall Git: link\nInstall R: link\nInstall RStudio: link\nInstall Quarto: link\n\nWe also assume some knowledge about R. Please visit this page for a crash course if you need to brush up on your R skills."
   },
   {
     "objectID": "index.html#agenda",
     "href": "index.html#agenda",
-    "title": "Tampa Bay Open Science Workshop",
+    "title": "Florida AFS 2023 Open Science Workshop",
     "section": "Agenda",
     "text": "Agenda\n\nThe basics of open science: 12:30 - 1:00\nOpen science for collaboration: 1:00 - 2:00\nOpen science for impactful products: 2:15pm - 3:30pm\n\nEach module uses a set of common icons to orient you to specific tasks or experiences during this workshop. These include the following:\n\n Exercise and discussion\n\n\n Watch and learn\n\n\n Description of a collaborative tool\n\n\n Pros of a collaborative tool or solution to an open science challenge\n\n\n Cons of a collaborative tool\n\n\n Challenge to overcome for open science"
   },
   {
     "objectID": "index.html#instructor",
     "href": "index.html#instructor",
-    "title": "Tampa Bay Open Science Workshop",
+    "title": "Florida AFS 2023 Open Science Workshop",
     "section": "Instructor",
     "text": "Instructor\nDr. Marcus Beck is the Program Scientist for the Tampa Bay Estuary Program and is developing data analysis and visualization methods for Bay health indicators. He received his PhD in Conservation Biology from the University of Minnesota in 2013. Marcus has experience researching environmental indicators and developing open science products to support environmental decision-making. Marcus is also an open source software and dashboard developer to facilitate science application. CV, Google Scholar, GitHub\n\n  This website is licensed under a Creative Commons Attribution 4.0 International License.\n This version of the website was built automatically with GitHub Actions on 2023-04-10."
   },
@@ -201,6 +201,69 @@
     "title": "Resources for continued learning",
     "section": "Git/Github",
     "text": "Git/Github\n\nJenny Bryan’s Happy Git and Github for the useR\nGit and GitHub for the Casual User\nCoding Club Intro to Github"
+  },
+  {
+    "objectID": "setup.html#install-r-and-rstudio",
+    "href": "setup.html#install-r-and-rstudio",
+    "title": "Setup for the Workshop",
+    "section": "Install R and RStudio",
+    "text": "Install R and RStudio\nR and RStudio are separate downloads and installations. R is the underlying statistical computing software. RStudio is a graphical integrated development environment (IDE) that makes using R much easier and more interactive. You need to install R before you install RStudio.\n\nWindows: Download and install R\nGo to CRAN and download the R installer for Windows. Make sure to choose the latest stable version (v4.2.3 as of April 2023).\nOnce the installer downloads, Right-click on it and select “Run as administrator”.\nType in your credentials and click yes (or if you don’t have administrator access have your IT rep install with Admin privileges).\n\nYou can click next through the standard dialogs and accept most defaults. But at the destination screen, please verify that it is installing it to C:\\Program Files\\R\n\nAt the “Select Components” screen, you can accept the default and install both 32-bit and 64-bit versions.\n\nAt this screen, uncheck ‘Create a desktop icon’ because non-admin users in Windows will be unable to delete it.\n\n\n\nWindows: Download and install RStudio\nDownload RStudio from here.\nAfter download, double-click the installer. It will ask for your administrator credentials to install (you might need to have your IT rep install again).\nAccept all the default options for the RStudio install.\n\n\n\nmacOS: Download and install R\n\nDownload and install R from the CRAN website for Mac here.\nSelect the .pkg file for the latest R version\nDouble click on the downloaded file to install R\nIt is also a good idea to install XQuartz (needed by some packages)\n\n\n\nmacOS: Download and install RStudio\n\nGo to the RStudio download page\nUnder Installers select RStudio x.yy.zzz - Mac OS X 10.6+ (64-bit) (where x, y, and z represent version numbers)\nDouble click the file to install RStudio"
+  },
+  {
+    "objectID": "setup.html#check-install",
+    "href": "setup.html#check-install",
+    "title": "Setup for the Workshop",
+    "section": "Check Install",
+    "text": "Check Install\n\nOpen RStudio\nOnce installed, RStudio should be accessible from the start menu. Start up RStudio. Once running it should look something like this:"
+  },
+  {
+    "objectID": "setup.html#posit-cloud-optional",
+    "href": "setup.html#posit-cloud-optional",
+    "title": "Setup for the Workshop",
+    "section": "Posit Cloud (optional)",
+    "text": "Posit Cloud (optional)\nIf you can’t install R or RStudio prior to the workshop, you can use use RStudio in the cloud on the Posit website. This is only a backup option and we strongly encourage you to troubleshoot the installation when able.\nTo use RStudio in the cloud, copy this link and paste it in a web browser: https://posit.cloud/project/4426781\nIf you do not have a Posit Cloud account, you will see this screen when you first visit the URL:\n\n\nYou can setup an account for free using a login you create or through a third-party (Google or GitHub).\nAfter your account is setup, you should a screen that looks something like this:\n\n\nYou’ll see that this is a TEMPORARY COPY under your account. Make it permanent by clicking the button on top. This will save any changes you make to this project under your account.\nThis project includes an installation of MassWateR that you can use for the workshop."
+  },
+  {
+    "objectID": "rintro.html#rstudio",
+    "href": "rintro.html#rstudio",
+    "title": "Introduction to R",
+    "section": "RStudio",
+    "text": "RStudio\nRStudio is the go-to Interactive Development Environment (IDE) for R. Rstudio includes many features to improve the user’s experience.\nLet’s get familiar with RStudio.\n\nOpen R and RStudio\nFind the RStudio shortcut on your computer and fire it up. You should see something like this:\n\n\n\n\n\nThere are four panes in RStudio:\n\nSource: Your primary window for writing code to send to the console, this is where you write and save R “scripts”\nConsole: This is where code is executed in R\nEnvironment, History, etc.: A tabbed window showing your working environment, code execution history, and other useful things\nFiles, plots, etc.: A tabbed window showing a file explorer, a plot window, list of installed packages, help files, and viewer\n\n\n\nScripting\nIn most cases, you will not enter and execute code directly in the console. Code can be written in a script and then sent directly to the console.\nOpen a new script from the File menu…\n\n\n\n\n\n\n\nExecuting code in RStudio\nAfter you write code in an R script, it can be sent to the Console to run the code. There are two ways to do this. First, you can hit the Run button at the top right of the scripting window. Second, you can use ctrl+enter (cmd+enter on a Mac). Either option will run the line(s) of script that are selected."
+  },
+  {
+    "objectID": "rintro.html#r-language-fundamentals",
+    "href": "rintro.html#r-language-fundamentals",
+    "title": "Introduction to R",
+    "section": "R language fundamentals",
+    "text": "R language fundamentals\nR is built around functions. The basic syntax of a function follows the form: function_name(arg1, arg2, ...).\nWith the base install, you will gain access to many functions (2354, to be exact). Some examples:\n\n\n[1] \"hello world!\"\n\n\n [1]  1  2  3  4  5  6  7  8  9 10\n\n\n  [1] 11.152089  9.537314  7.864950 11.321390  8.426562  8.651401 10.575482\n  [8] 12.185664  8.729322 12.404059  9.565212 10.973784  6.430437  7.582060\n [15] 11.304857 10.639469 13.417244 11.283345  9.138562 10.889064  9.476027\n [22]  7.870995 12.051390  8.991234 12.542156  6.594668  9.433508 13.665570\n [29] 14.469676  9.957621 11.754002 12.464428 14.593016  8.645991 10.075714\n [36] 13.492006 11.910057 12.165426 10.560079  7.998172  8.187364  7.590592\n [43] 10.111018  9.240167 12.886046  7.324999  7.569479  9.521924 10.331246\n [50]  5.685796  9.554554 10.389502  8.150474  8.634597 11.400026 10.919328\n [57]  9.576867 13.100723  9.160049 12.452612 10.730995  9.034385 10.118159\n [64] 10.058162  8.790805  8.310532  7.324519  8.762521  7.629975  9.973275\n [71] 10.707046 10.150127  9.107380 10.405254 12.078321  5.544330  9.740035\n [78]  8.825538  9.604015 11.053987  7.516312  8.949448 12.186396  9.486352\n [85]  8.399520 12.502586 12.283063  8.936826  9.393148 13.590966 10.232693\n [92]  8.165088 10.040136 10.038937  8.819788 12.954120 13.855250  9.805173\n [99]  7.185567  9.268190\n\n\n[1] 0.2112259\n\n\n[1] 6.844793\n\n\nVery often you will see functions used like this:\n\n\n\nThe first part of the line is the name of an object that you make up. The second bit, <-, is the assignment operator. This tells R to take the result of sum(rnorm(100)) and store it in an object named, my_random_sum. It is stored in the environment and can be used by just executing it’s name in the console.\n\n\n[1] -6.511026\n\n\n\nWhat is the environment?\nThere are two outcomes when you run code. First, the code will simply print output directly in the console. Second, there is no output because you have stored it as a variable using <-. Output that is stored is saved in the environment. The environment is the collection of named objects that are stored in memory for your current R session."
+  },
+  {
+    "objectID": "rintro.html#packages",
+    "href": "rintro.html#packages",
+    "title": "Introduction to R",
+    "section": "Packages",
+    "text": "Packages\nThe base installation of R is quite powerful. Packages allow you to include new methods for use in R.\n\nCRAN\nMany packages are available on CRAN, The Comprehensive R Archive Network. This is where you download R and also where most will gain access to packages. As of 2023-04-10, there are 19303 packages on CRAN!\n\n\nInstalling packages\nWhen a package gets installed, that means the source code is downloaded and put into your library. A default library location is set for you.\nWe use the install.packages() function to download and install a package. Here, we install the readxl package, used below, which is used to upload data from and Excel file.\n\n\n\nYou should see some text in the R console showing progress of the installation and a prompt after installation is done.\nAfter installation, you can load a package using the library() function. This makes all functions in a package available for you to use.\n\n\n\nAn important aspect of packages is that you only need to download them once, but every time you start RStudio you need to load them with the library() function."
+  },
+  {
+    "objectID": "rintro.html#data-structures-in-r",
+    "href": "rintro.html#data-structures-in-r",
+    "title": "Introduction to R",
+    "section": "Data structures in R",
+    "text": "Data structures in R\nNow we can talk about R data structures. Simply put, a data structure is a way for programming languages to handle information storage.\n\nVectors (one-dimensional data)\nThe basic data format in R is a vector - a one-dimensional grouping of elements that have the same type. These are all vectors and they are created with the c (concatenate) function:\n\n\n\nThe four types of vectors are double (or numeric), integer, logical, and character. The following functions can return useful information about the vectors:\n\n\n[1] \"numeric\"\n\n\n[1] 4\n\n\n\n\nData frames (two-dimensional data)\nA collection of vectors represented as one data object are often described as two-dimensional data, like a spreadsheet, or in R speak, a data frame. Here’s a simple example:\n\n\n  ltrs nums  logs\n1    a    1  TRUE\n2    b    2 FALSE\n3    c    3  TRUE\n\n\nThe only constraints required to make a data frame are:\n\nEach column (vector) contains the same type of data\nThe number of observations in each column is equal."
+  },
+  {
+    "objectID": "rintro.html#getting-your-data-into-r",
+    "href": "rintro.html#getting-your-data-into-r",
+    "title": "Introduction to R",
+    "section": "Getting your data into R",
+    "text": "Getting your data into R\nIt is the rare case when you manually enter your data in R. Most data analysis workflows typically begin with importing a dataset from an external source. We’ll be using read_excel() function from the readxl package.\nWe can import the ExampleSites.xlsx dataset as follows. Note the use of a relative file path. You can see what R is using as your “working directory” using the getwd() function.\n\n\n\nLet’s explore the dataset a bit.\n\n\n[1] 11  5\n\n\n[1] \"Monitoring Location ID\"        \"Monitoring Location Name\"     \n[3] \"Monitoring Location Latitude\"  \"Monitoring Location Longitude\"\n[5] \"Location Group\"               \n\n\n# A tibble: 6 × 5\n  `Monitoring Location ID` `Monitoring Location Name` Monitoring Location Lati…¹\n  <chr>                    <chr>                                           <dbl>\n1 ABT-026                  Rte 2, Concord                                   42.5\n2 ABT-062                  Rte 62, Acton                                    42.4\n3 ABT-077                  Rte 27/USGS, Maynard                             42.4\n4 ABT-144                  Rte 62, Stow                                     42.4\n5 ABT-237                  Robin Hill Rd, Marlboro                          42.3\n6 ABT-301                  Rte 9, Westboro                                  42.3\n# ℹ abbreviated name: ¹​`Monitoring Location Latitude`\n# ℹ 2 more variables: `Monitoring Location Longitude` <dbl>,\n#   `Location Group` <chr>\n\n\ntibble [11 × 5] (S3: tbl_df/tbl/data.frame)\n $ Monitoring Location ID       : chr [1:11] \"ABT-026\" \"ABT-062\" \"ABT-077\" \"ABT-144\" ...\n $ Monitoring Location Name     : chr [1:11] \"Rte 2, Concord\" \"Rte 62, Acton\" \"Rte 27/USGS, Maynard\" \"Rte 62, Stow\" ...\n $ Monitoring Location Latitude : num [1:11] 42.5 42.4 42.4 42.4 42.3 ...\n $ Monitoring Location Longitude: num [1:11] -71.4 -71.4 -71.4 -71.5 -71.6 ...\n $ Location Group               : chr [1:11] \"Assabet\" \"Assabet\" \"Assabet\" \"Assabet\" ...\n\n\nYou can also view a dataset in a spreadsheet style using the View() function:"
+  },
+  {
+    "objectID": "rintro.html#summary",
+    "href": "rintro.html#summary",
+    "title": "Introduction to R",
+    "section": "Summary",
+    "text": "Summary\nIn this intro we learned about R and Rstudio, some of the basic syntax and data structures in R, and how to import files."
   },
   {
     "objectID": "references.html",

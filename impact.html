@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.475">
+<meta name="generator" content="quarto-1.2.335">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Tampa Bay Open Science Workshop - 3&nbsp; Open science for impactful products</title>
+<title>Florida AFS 2023 Open Science Workshop - 3&nbsp; Open science for impactful products</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -166,10 +166,10 @@ div.csl-indent {
   <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">Tampa Bay Open Science Workshop</a> 
+      <a href="./">Florida AFS 2023 Open Science Workshop</a> 
         <div class="sidebar-tools-main tools-wide">
-    <a href="https://github.com/tbep-tech/tbep-os-workshop" title="Source Code" class="sidebar-tool px-1"><i class="bi bi-github"></i></a>
-    <a href="./Tampa-Bay-Open-Science-Workshop.pdf" title="Download PDF" class="sidebar-tool px-1"><i class="bi bi-file-pdf"></i></a>
+    <a href="https://github.com/tbep-tech/flafs-os-workshop" title="Source Code" class="sidebar-tool px-1"><i class="bi bi-github"></i></a>
+    <a href="./Florida-AFS-2023-Open-Science-Workshop.pdf" title="Download PDF" class="sidebar-tool px-1"><i class="bi bi-file-pdf"></i></a>
   <a href="" class="quarto-reader-toggle sidebar-tool" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
   <div class="quarto-reader-toggle-btn">
   <i class="bi"></i>
@@ -217,6 +217,16 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./setup.html" class="sidebar-item-text sidebar-link">Setup for the Workshop</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./rintro.html" class="sidebar-item-text sidebar-link">Introduction to R</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./references.html" class="sidebar-item-text sidebar-link">References</a>
   </div>
 </li>
@@ -248,7 +258,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title"><span id="impact" class="quarto-section-identifier d-none d-lg-block"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Open science for impactful products</span></span></h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button" data-quarto-source-url="https://github.com/tbep-tech/tbep-os-workshop/blob/main/impact.qmd">View Source</a></li></ul></div></div>
+<div class="quarto-title-block"><div><h1 class="title"><span id="impact" class="quarto-section-identifier d-none d-lg-block"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Open science for impactful products</span></span></h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button" data-quarto-source-url="https://github.com/tbep-tech/flafs-os-workshop/blob/main/impact.qmd">View Source</a></li></ul></div></div>
 </div>
 
 
@@ -281,7 +291,7 @@ div.csl-indent {
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="img/datameme.jpg" class="img-fluid figure-img"></p>
+<p><img src="img/datameme.jpg" class="img-fluid figure-img" width="600"></p>
 </figure>
 </div>
 </div>
@@ -343,7 +353,7 @@ div.csl-indent {
 <p>Graphically, these rules are shown below <span class="citation" data-cites="Wickham17">(from <a href="references.html#ref-Wickham17" role="doc-biblioref">Wickham and Grolemund 2017</a>)</span>:</p>
 <div class="cell">
 <div class="cell-output-display">
-<p><img src="img/tidy-1.png" class="img-fluid"></p>
+<p><img src="img/tidy-1.png" class="img-fluid" width="960"></p>
 </div>
 </div>
 <p>Using these principles may seem unnatural at first because of a difference between what’s easy for entering data versus what makes sense for downstream analyses. For example, dates are often spread across multiple columns, such as having one column for each year of data where the header indicates the year that applies to data in the column.</p>
@@ -403,7 +413,7 @@ div.csl-indent {
 <p>Using a tidy format also allows you to more easily join data between tables. This is a common task when you have information spread between different tables because: 1) it might not make sense to keep the data in the same table, and 2) the analysis depends on information from both tables. Tidy data shared between tables can be linked using a “key” as a common identifier.</p>
 <div class="cell">
 <div class="cell-output-display">
-<p><img src="img/joins.png" class="img-fluid"></p>
+<p><img src="img/joins.png" class="img-fluid" width="938"></p>
 </div>
 </div>
 <h3 class="anchored">
@@ -514,7 +524,7 @@ div.csl-indent {
 <p>Here’s an example of a bare bones metadata file. One could easily type this up in a text file or spreadsheet.</p>
 <div class="cell">
 <div class="cell-output-display">
-<p><img src="img/desotometa.PNG" class="img-fluid"></p>
+<p><img src="img/desotometa.PNG" class="img-fluid" width="926"></p>
 </div>
 </div>
 <h3 class="anchored">
@@ -773,7 +783,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-    <div class="nav-footer-left">Website created by Marcus Beck and Chris Anastasiou, with attribution to external content</div>   
+    <div class="nav-footer-left">Website created by Marcus Beck, with attribution to external content</div>   
     <div class="nav-footer-right">This book was built with <a href="https://quarto.org/" target="_blank">Quarto</a></div>
   </div>
 </footer>
