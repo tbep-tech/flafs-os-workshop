@@ -1,0 +1,39 @@
+project:
+  type: book
+  output-dir: _book
+
+book:
+  title: "Tampa Bay Open Science Workshop"
+  repo-url: https://github.com/tbep-tech/tbep-os-workshop
+  date: last-modified
+  reader-mode: true
+  downloads: pdf
+  page-footer:
+    left: |
+      Website created by Marcus Beck and Chris Anastasiou, with attribution to external content
+    right: |
+      This book was built with <a href="https://quarto.org/" target="_blank">Quarto</a>
+  chapters:
+    - index.qmd
+    - basics.qmd
+    - collaborate.qmd
+    - impact.qmd
+    - implement.qmd
+    - resources.qmd
+    - references.qmd
+    - codeofconduct.qmd
+
+bibliography: refs.bib
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    code-tools: 
+      source: repo
+  pdf:
+    documentclass: scrreprt
+
+execute: 
+  echo: false
+  warning: false
