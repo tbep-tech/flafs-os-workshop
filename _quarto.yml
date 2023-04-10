@@ -3,14 +3,14 @@ project:
   output-dir: _book
 
 book:
-  title: "Tampa Bay Open Science Workshop"
-  repo-url: https://github.com/tbep-tech/tbep-os-workshop
+  title: "Florida AFS 2023 Open Science Workshop"
+  repo-url: https://github.com/tbep-tech/flafs-os-workshop
   date: last-modified
   reader-mode: true
   downloads: pdf
   page-footer:
     left: |
-      Website created by Marcus Beck and Chris Anastasiou, with attribution to external content
+      Website created by Marcus Beck, with attribution to external content
     right: |
       This book was built with <a href="https://quarto.org/" target="_blank">Quarto</a>
   chapters:
@@ -19,6 +19,8 @@ book:
     - collaborate.qmd
     - impact.qmd
     - implement.qmd
+    - setup.qmd
+    - rintro.qmd
     - resources.qmd
     - references.qmd
     - codeofconduct.qmd
