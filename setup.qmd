@@ -9,6 +9,7 @@ Thanks for your interest in the open science workshop. You will need to do the f
 1. Install Git and configure with RStudio (optional): [link](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git){target="_blank"}
 
 Most of these steps will require administrative privileges on a computer.  Please work with your IT staff to complete the setup if you do not have these privileges. 
+Please reach out if you have any issues with installation: [mbeck@tbep.org](mailto:mbeck@tbep.org)
 
 ## Install R and RStudio
 
@@ -69,13 +70,13 @@ Once installed, RStudio should be accessible from the start menu. Start up RStud
 
 ## Install Quarto
 
-A limited version of Quarto is installed with RStudio.  However, you'll need to install Quarto CLI to make full use of its features.  
+A visual editor for Quarto is installed with RStudio.  However, you'll need to install Quarto CLI to make full use of its features.  
 
 Navigate to [https://quarto.org/docs/get-started/](https://quarto.org/docs/get-started/){target="_blank"}.  You'll see a screen that looks like this:
 
 ![](img/quartoinstall.PNG)
 
-Select the download appropriate for your operating system (Windows is the big blue button).  After the executable file is downloaded, navigate on your computer to folder containing the file, double-click to install, and accept the default settings at the prompts.    
+Select the download appropriate for your operating system (Windows is the big blue button).  After the executable file is downloaded, navigate on your computer to the folder containing the file, double-click to install, and accept the default settings at the prompts.    
 
 After installation is done, open RStudio and select the Terminal tab (usually bottom-left pane, next to the Console tab).  Type `quarto check` and press enter at the prompt.  You should see something like this if installation was successful. 
 
@@ -101,6 +102,7 @@ The next step can be a bit tricky, but is essential if you want to push files fr
 
 ```{r}
 #| eval: false
+#| echo: true
 install.packages("usethis")
 ```
 
@@ -108,6 +110,7 @@ You must let Git know who you are and that you have permission to write to a Git
 
 ```{r}
 #| eval: false
+#| echo: true
 usethis::use_git_config(user.name="Jane Doe", user.email="jane@example.org")
 ```
 
@@ -115,6 +118,7 @@ Next, you need to setup a personal access token (PAT) that defines the permissio
 
 ```{r}
 #| eval: false
+#| echo: true
 usethis::create_github_token()
 ```
 
@@ -124,7 +128,7 @@ Then follow the remaining prompts to complete the PAT creation.  A more thorough
 
 If you have trouble installing any of the software prior to the workshop, you can use use RStudio in the cloud on the Posit website. This is only a backup option and we strongly encourage you to troubleshoot the installation when able.
 
-To use RStudio in the cloud, copy this link and paste it in a web browser: <https://posit.cloud/project/4426781>
+To use RStudio in the cloud, copy this link and paste it in a web browser: <https://posit.cloud/content/5775087>
 
 If you do not have a Posit Cloud account, you will see this screen when you first visit the URL:
 
