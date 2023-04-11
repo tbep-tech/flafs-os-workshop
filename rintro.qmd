@@ -7,7 +7,7 @@ execute:
   echo: true
 ---
 
-# Introduction to R {.unnumbered}
+# Introduction to R {#rintro}
 
 ```{r}
 #| echo: false

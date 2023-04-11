@@ -4,7 +4,7 @@ execute:
   warning: false
 ---
 
-# Lowering barriers to inclusion and addressing key critiques {#implement .unnumbered}
+# Lowering barriers to inclusion and addressing key critiques {#implement}
 
 ```{r}
 library(fontawesome)
@@ -12,7 +12,7 @@ library(fontawesome)
 
 ## Goals and motivation
 
-We finish our workshop with a discussion of what it means to use open science in the real world. It's great to talk about the value of open science and the tools you can use, but it's a completely different ball game when it comes to putting these ideas into practice.  Our goal is that you leave this workshop an advocate and early adopter for the ideas we discussed today - spread these ideas to your peers and colleagues!  To realistically achieve this goal, we will talk about some of the challenges you will face so you can develop a realistic expectation of what's to come.
+What does it mean to use open science in the real world? It's great to talk about the value of open science and the tools you can use, but it's a completely different ball game when it comes to putting these ideas into practice.  Our goal is that you leave this workshop an advocate and early adopter for the ideas we discussed today - spread these ideas to your peers and colleagues!  To realistically achieve this goal, we will talk about some of the challenges you will face so you can develop a realistic expectation of what's to come.
 
 * __Goal__: Understand common hurdles in adopting open science and how to overcome them  
 * __Motivation__: Become the "open science" expert at your institution!

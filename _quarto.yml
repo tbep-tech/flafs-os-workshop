@@ -15,15 +15,19 @@ book:
       This book was built with <a href="https://quarto.org/" target="_blank">Quarto</a>
   chapters:
     - index.qmd
-    - basics.qmd
-    - collaborate.qmd
-    - impact.qmd
-    - implement.qmd
-    - setup.qmd
-    - rintro.qmd
-    - resources.qmd
-    - references.qmd
-    - codeofconduct.qmd
+    - part: "Modules"
+      chapters:
+        - basics.qmd
+        - collaborate.qmd
+        - impact.qmd
+    - part: "Additional content"
+      chapters:
+        - implement.qmd
+        - setup.qmd
+        - rintro.qmd
+        - resources.qmd
+        - references.qmd
+        - codeofconduct.qmd
 
 bibliography: refs.bib
 

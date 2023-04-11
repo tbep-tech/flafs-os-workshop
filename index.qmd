@@ -20,15 +20,15 @@ Much of the content on this web page was adopted from the [TBEP Data Management 
 
 ## Prepare
 
-Please attend the workshop with a personal laptop and power supply. Make sure your laptop can access publicly available WiFi. __You will also need to install software prior to the workshop, visit the setup page for more info__.  We will have limited capacity to help with installation issues the day of the workshop, so please come prepared.  The setup instructions will guide you through the following.
+Please attend the workshop with a personal laptop and power supply. Make sure your laptop can access publicly available WiFi. *You will also need to install software prior to the workshop, visit the [setup](#setup) page for full instructions*.  We will have limited capacity to help with installation issues the day of the workshop, so please come prepared.  The [setup](#setup) instructions will guide you through the following.
 
-1. GitHub create account: [link](https://github.com){target="_blank"}
-1. Install Git: [link](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git){target="_blank"}
 1. Install R: [link](https://cran.r-project.org/bin/windows/base/){target="_blank"}
 1. Install RStudio: [link](https://posit.co/download/rstudio-desktop/){target="_blank"}
 1. Install Quarto: [link](https://quarto.org/docs/get-started/){target="_blank"}
+1. GitHub create account: [link](https://github.com){target="_blank"}
+1. Install Git: [link](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git){target="_blank"}
 
-We also assume some knowledge about R.  Please visit this page for a crash course if you need to brush up on your R skills. 
+We also assume some knowledge about R.  Please visit [this page](#rintro) for a crash course if you need to brush up on your R skills. 
 
 ## Agenda
 
@@ -52,7 +52,7 @@ Each module uses a set of common icons to orient you to specific tasks or experi
 
 ## Instructor
 
-[Dr. Marcus Beck](mailto:mbeck@tbep.org) is the Program Scientist for the Tampa Bay Estuary Program and is developing data analysis and visualization methods for Bay health indicators. He received his PhD in Conservation Biology from the University of Minnesota in 2013. Marcus has experience researching environmental indicators and developing open science products to support environmental decision-making. Marcus is also an open source software and dashboard developer to facilitate science application. [CV](https://github.com/fawda123/CV/raw/master/Beck_CV.pdf){target="_blank"}, [Google Scholar](https://scholar.google.com/citations?hl=en&authuser=2&user=9ZDDQ_8AAAAJ){target="_blank"}, [GitHub](https://gitub.com/fawda123){target="_blank"}
+[Dr. Marcus Beck](mailto:mbeck@tbep.org) is the Program Scientist for the Tampa Bay Estuary Program and is developing data analysis and visualization methods for Bay health indicators. He received his PhD in Conservation Biology from the University of Minnesota in 2013. Marcus has experience researching environmental indicators and developing open science products to support environmental decision-making. Marcus is also an open source software and dashboard developer to facilitate science application. [CV](https://github.com/fawda123/CV/raw/master/Beck_CV.pdf){target="_blank"}, [Google Scholar](https://scholar.google.com/citations?hl=en&authuser=2&user=9ZDDQ_8AAAAJ){target="_blank"}, [GitHub](https://github.com/fawda123){target="_blank"}
 
 ------------------------------------------------------------------------
 

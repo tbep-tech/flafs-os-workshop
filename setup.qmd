@@ -1,16 +1,24 @@
-# Setup for the Workshop {.unnumbered}
+# Setup for the Workshop {#setup}
 
-Thanks for your interest in the open science workshop. We recommend [RStudio](https://www.rstudio.com/) as the interface to R. In order to use the package, you will need to make sure you have R and RStudio installed on your computer.
+Thanks for your interest in the open science workshop. You will need to do the following, outlined below, before the workshop.  The last item is optional, but strongly encouraged. 
 
-Thanks to the [USGS-R Training group](https://owi.usgs.gov/R/training.html) and [Data Carpentry](https://datacarpentry.org/R-ecology-lesson/index.html) for making their installation materials available. The following instructions come directly from their materials, with a few minor edits to help you get set up.
+1. Install R: [link](https://cran.r-project.org/bin/windows/base/){target="_blank"}
+1. Install RStudio: [link](https://posit.co/download/rstudio-desktop/){target="_blank"}
+1. Install Quarto: [link](https://quarto.org/docs/get-started/){target="_blank"}
+1. GitHub create account: [link](https://github.com){target="_blank"}
+1. Install Git and configure with RStudio (optional): [link](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git){target="_blank"}
+
+Most of these steps will require administrative privileges on a computer.  Please work with your IT staff to complete the setup if you do not have these privileges. 
 
 ## Install R and RStudio
 
 **R** and **RStudio** are separate downloads and installations. R is the underlying statistical computing software. RStudio is a graphical integrated development environment (IDE) that makes using R much easier and more interactive. *You need to install R before you install RStudio*.
 
+Thanks to the [USGS-R Training group](https://owi.usgs.gov/R/training.html) and [Data Carpentry](https://datacarpentry.org/R-ecology-lesson/index.html) for making their installation materials available. The following instructions come directly from their materials, with a few minor edits to help you get set up.
+
 ### *Windows*: Download and install R
 
-Go to [CRAN and download](https://cran.rstudio.com/bin/windows/base/) the R installer for Windows. Make sure to choose the latest stable version (v4.2.3 as of April 2023).
+Go to [CRAN and download](https://cran.rstudio.com/bin/windows/base/){target="_blank"} the R installer for Windows. Make sure to choose the latest stable version (v4.2.3 as of April 2023).
 
 Once the installer downloads, Right-click on it and select "Run as administrator".
 
@@ -32,7 +40,7 @@ At this screen, uncheck 'Create a desktop icon' because non-admin users in Windo
 
 ### *Windows*: Download and install RStudio
 
-Download RStudio from [here](https://www.rstudio.com/products/rstudio/download/#download).
+Download RStudio from [here](https://www.rstudio.com/products/rstudio/download/#download){target="_blank"}.
 
 After download, double-click the installer. It will ask for your administrator credentials to install (you might need to have your IT rep install again).
 
@@ -42,28 +50,79 @@ Accept all the default options for the RStudio install.
 
 ### *macOS*: Download and install R
 
--   Download and install R from the CRAN website for Mac [here](https://cran.r-project.org/bin/macosx/).
+-   Download and install R from the CRAN website for Mac [here](https://cran.r-project.org/bin/macosx/){target="_blank"}.
 -   Select the `.pkg` file for the latest R version
 -   Double click on the downloaded file to install R
--   It is also a good idea to install [XQuartz](https://www.xquartz.org/) (needed by some packages)
+-   It is also a good idea to install [XQuartz](https://www.xquartz.org/){target="_blank"} (needed by some packages)
 
 ### *macOS*: Download and install RStudio
 
--   Go to the [RStudio](https://www.rstudio.com/products/rstudio/download/#download) download page
+-   Go to the [RStudio](https://www.rstudio.com/products/rstudio/download/#download){target="_blank"} download page
 -   Under Installers select **RStudio x.yy.zzz - Mac OS X 10.6+ (64-bit)** (where x, y, and z represent version numbers)
 -   Double click the file to install RStudio
 
-## Check Install
-
-### Open RStudio
+### Check Install
 
 Once installed, RStudio should be accessible from the start menu. Start up RStudio. Once running it should look something like this:
 
 ![](img/rstudio.png)
 
-## Posit Cloud (optional)
+## Install Quarto
 
-If you can't install R or RStudio prior to the workshop, you can use use RStudio in the cloud on the Posit website. This is only a backup option and we strongly encourage you to troubleshoot the installation when able.
+A limited version of Quarto is installed with RStudio.  However, you'll need to install Quarto CLI to make full use of its features.  
+
+Navigate to [https://quarto.org/docs/get-started/](https://quarto.org/docs/get-started/){target="_blank"}.  You'll see a screen that looks like this:
+
+![](img/quartoinstall.PNG)
+
+Select the download appropriate for your operating system (Windows is the big blue button).  After the executable file is downloaded, navigate on your computer to folder containing the file, double-click to install, and accept the default settings at the prompts.    
+
+After installation is done, open RStudio and select the Terminal tab (usually bottom-left pane, next to the Console tab).  Type `quarto check` and press enter at the prompt.  You should see something like this if installation was successful. 
+
+![](img/quartocheck.PNG)
+
+## Create GitHub account
+
+Open a web browser and open the url <https://github.com>.  On the top-right, you should see a button to sign up. Click the button and register an account by choosing an email, username, and password. 
+
+![](img/githubsignup.PNG)
+
+## Install Git (optional)
+
+After you've registered a new GitHub account, you also need to install the Git software on your computer. Open the url <https://git-scm.com/book/en/v2/Getting-Started-Installing-Git> and follow the instructions for your operating system. 
+
+After Git is installed, open RStudio to verify the installation.  You should see a new "Git" tab usually located in the top-right pane of RStudio. 
+
+![](img/gitpane.PNG)
+
+### Make sure RStudio can talk to GitHub via Git (optional) 
+
+The next step can be a bit tricky, but is essential if you want to push files from your computer to GitHub using Git.  First, install the `usethis` R package. 
+
+```{r}
+#| eval: false
+install.packages("usethis")
+```
+
+You must let Git know who you are and that you have permission to write to a GitHub repository.  First, let Git know who you are, where you enter your user name and email associated with the account from the previous step. 
+
+```{r}
+#| eval: false
+usethis::use_git_config(user.name="Jane Doe", user.email="jane@example.org")
+```
+
+Next, you need to setup a personal access token (PAT) that defines the permissions to write to a repository.  This can be done as follows:
+
+```{r}
+#| eval: false
+usethis::create_github_token()
+```
+
+Then follow the remaining prompts to complete the PAT creation.  A more thorough explanation can be found [here](https://happygitwithr.com/https-pat.html#https-pat){target="_blank"}.
+
+## This is hard!
+
+If you have trouble installing any of the software prior to the workshop, you can use use RStudio in the cloud on the Posit website. This is only a backup option and we strongly encourage you to troubleshoot the installation when able.
 
 To use RStudio in the cloud, copy this link and paste it in a web browser: <https://posit.cloud/project/4426781>
 
@@ -83,4 +142,3 @@ After your account is setup, you should a screen that looks something like this:
 
 You'll see that this is a <b>[TEMPORARY COPY]{style="color:red"}</b> under your account. Make it permanent by clicking the button on top. This will save any changes you make to this project under your account.
 
-This project includes an installation of MassWateR that you can use for the workshop.
