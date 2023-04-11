@@ -22,7 +22,9 @@ book:
         - impact.qmd
     - part: "Additional content"
       chapters:
+        - tidy.qmd
         - implement.qmd
+        - tools.qmd
         - setup.qmd
         - rintro.qmd
         - resources.qmd

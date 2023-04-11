@@ -25,10 +25,6 @@ Let's start with revisiting the scientific process. I'm sure this looks familiar
 
 Our basic scientific approach to discovery is motivated by a question or research goal, developing a hypothesis for the question, collecting data based on the hypothesis, developing a tool that can be used for decision-making, and summarizing the results in a conventional format.
 
-In a little more detail, your workflow may look something like this.
-
-![](img/appscipro.png)
-
 Many scientists, especially early career researchers (my past self included), may assume that this is sufficient to affect change. We write the report, send it out into the world, and move on to the next project. This is a common mentality:
 
 > "This 500-page report will answer all of their questions!"
@@ -60,14 +56,6 @@ So how do we make changes to our workflows to ensure we can achieve truly applie
 ## Learning and speaking the language of open science
 
 The tools and broader philosophy behind open science can help us bridge the research-management divide. It involves a fundamental shift in how we approach the scientific process, both for your own internal workflows and how you can engage others in the process. By others, we mean not just researchers, but specifically those that need the information to make informed decisions. This also includes your *future self*.
-
-Before we present a formal definition, let's describe a modification of the conventional workflow that includes an open process to discovery and implementation [@Beck20; modified from @Hampton15].
-
-![](img/open.png)
-
-This workflow is similar to the original scientific method, but the technical components are open to managers and stakeholders, we're treating data differently by using metadata and archiving, we're creating summary documents that include source code with text, and we're producing decision-support tools to meet the needs outside of the research community. Importantly, the process is also *iterative* and dynamic.
-
-Throughout this workshop, we'll learn about some open science tools that can be used in this generalized workflow to achieve better science in less time [@Lowndes17].
 
 Now let's settle on a definition for open science (from Open Knowledge International, [http://opendefinition.org/](http://opendefinition.org/){target="_blank"}, [https://creativecommons.org/](https://creativecommons.org/){target="_blank"}):
 
@@ -101,18 +89,7 @@ We can can breakdown these definitions into key principles.
 
 You'll notice that web-based tools and open science are often discussed at the same time. Science existed before the internet. Open science often focuses on how the two can leverage and support one another despite the latter being a relatively new addition to society. We often describe web-based tools as synonymous with open science.
 
-## The FAIR principles {#fair}
-
-Advocates of open science also use the FAIR principles [@Wilkinson16] as a vehicle for achieving the former. It's important to understand what they mean so that you can be fluent in both. The FAIR acronym is described as follows:
-
--   **F**indable: The data have a globally unique and persistent identifier, including use of "rich" metadata.
--   **A**ccessible: Once found, the data can be retrieved using standardized communications protocols that are open, free, and universally implementable.
--   **I**nteroperable: The ability of data or tools from non-cooperating resources to integrate or work together with minimal effort.
--   **R**eusable: If the above are achieved, the data and metadata are described in a way that they can be replicated and/or combined in different settings.
-
-Simply, what this means is: 1) each dataset has a name that doesn't change and can be found with minimal effort using that name, 2) once it's found, you can actually get your hands on it (e.g., not behind a paywall), 3) once you have it, you can use readily available tools to work with the data (e.g., not using proprietary software), and 4) you can actually apply the data for your own needs because it has sufficient context, including its reproduction, given that the first three principles are met.
-
-For our purposes, think of these ideas as general guidelines you can ask yourself when doing science. If you find that your work is not FAIR, then you're probably not being as open as you could be. We'll of course provide some tools to help you be FAIR and open.
+Advocates of open science also use the FAIR principles [@Wilkinson16] as guidelines. The FAIR acronym stands for Findable, Accessible, Interoperable, and Reusable.  Anybody should be able to find your science, access it once it's found, use it in different environments, and reproduce it for additional analysis.
 
 ## Schools of thought {#schools}
 
@@ -123,11 +100,3 @@ A useful paradigm is provided by @Fecher14 to describe open science as five dist
 ![](img/fiveschools.PNG)
 
 These are of course only conceptual boxes and there's considerable overlap across all schools when open science is used in practice. For our purposes, we'll mostly be talking about ideas and tools from the pragmatic, infrastructure, and democratic schools of thought. The end goal is to provide you with the means to create more efficient and impactful science that can more readily be used by others in a collaborative setting.
-
-<h3>`r fa('hat-wizard')` Exercise and discussion</h3>
-
-Take a few minutes to jot down your individual answers to the following questions. When you're done, share amongst your peers at your table.
-
-1.  How do you currently define open science, if at all?
-2.  What tools do you use in your job that facilitate collaboration or openness?
-3.  Has any of the above changed your understanding of what open science means for research and/or resource management?
