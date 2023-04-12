@@ -173,12 +173,12 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">References</span></a>
+  <a href="./references.html" class="sidebar-item-text sidebar-link">References</a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./codeofconduct.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Contributor Covenant Code of Conduct</span></a>
+  <a href="./codeofconduct.html" class="sidebar-item-text sidebar-link">Contributor Covenant Code of Conduct</a>
   </div>
 </li>
       </ul>
@@ -238,19 +238,47 @@ ul.task-list li input[type="checkbox"] {
 <section id="quarto" class="level2" data-number="3.2">
 <h2 data-number="3.2" class="anchored" data-anchor-id="quarto"><span class="header-section-number">3.2</span> Quarto</h2>
 <p>Quarto is a relatively new document preparation system that lets you create reproducible and dynamic content that is easily shared with others. Quarto is integrated with RStudio and allows you to combine plain text language with analysis code in the same document.</p>
+<p>Quarto belongs to a class of reporting tools called dynamic documents or literate programming. It is not the first of its kind, but it builds substantially on its predecessors by bridging multiple programming langues.</p>
+<p>Advantages of creating analyses using Quarto include:</p>
+<ol type="1">
+<li>Clear demonstration of a workflow using plain text and code</li>
+<li>Reproducible materials allows others to use your work</li>
+<li>Easily shared content (e.g., on GitHub)</li>
+<li></li>
+</ol>
 <p>This next section will run through the very basics of creating a Quarto document, some of the options for formatting, and how to generate shared content. You’ll follow along in this module.</p>
 <ol type="1">
 <li><p>Create a new project in RStudio, first open RStudio and then select “New project” from the File menu at the top.</p>
-<p>Then select “New Directory”. Create a directory in a location that’s easy to find.</p></li>
-<li><p>Open a new Quarto file from the File menu under “Quarto Document”.</p></li>
-</ol>
-<p>Let’s get familiar with the components of a Quarto document.</p>
-<p>The top is YAML, this defines things like the title, date, format, and other options</p>
-<p>The parts in ticks are R code.</p>
-<p>Everything else is Markdown. This where we add text describing anything we want, using markdown syntax to minimally alter appearance of the text.</p>
-<p>The source file is a .qmd document. We need to render the document to create the output format. The following happens when you hit the render button.</p>
+<p><img src="img/newproj.PNG" class="img-fluid"></p>
+<p>Then select “New Directory”. Create a directory in a location that’s easy to find.</p>
+<p><img src="img/newdir.PNG" class="img-fluid"></p></li>
+<li><p>Open a new Quarto file from the File menu under “Quarto Document”.</p>
+<p><img src="img/newquarto.PNG" class="img-fluid"></p>
+<p>Enter a title for the document (e.g., “Quarto practice”) and your name as the author. Use the defaults for the other options and hit “Create”.</p>
+<p><img src="img/tempquarto.PNG" class="img-fluid"></p>
+<p>Save the file in the project root directory (give it any name you want).</p></li>
+<li><p>Let’s get familiar with the components of a Quarto document.</p>
+<p>The file is completely empty except for the title, name, and source at the top. The content at the top is called <a href="https://quarto.org/docs/get-started/hello/rstudio.html#yaml-header" target="_blank">YAML</a>, which defines global options for the document.</p>
+<p><img src="img/yamlex.PNG" class="img-fluid"></p>
+<p>You’ll also notice that there’s a button on the top-left that lets you toggle between “source” or “visual” editor mode. The source editor simply lets you add text to the document, whereas the visual editor lets you add content that is partially rendered. First time Quarto users may prefer the visual editor.</p>
+<p><img src="img/editor.PNG" class="img-fluid"></p>
+<p>Using the visual editor, we can insert a code chunk (or code cell). This can be done by selecting the appropriate option from the Insert menu. Note the variety of programming langues that can be used with the code chunk.</p>
+<p><img src="img/insertchunk.PNG" class="img-fluid"></p>
+<p>We can enter any code we want in the code chunks.</p>
+<p><img src="img/prerendercode.PNG" class="img-fluid"></p>
+<p>When the file is rendered, the code is run and results displayed in the output. There are many options to change how code chunks are executed, which we’ll discuss below.</p>
+<p><img src="img/rendercode.PNG" class="img-fluid"></p>
+<p>We can also run the code chunks separately without rendering the file. This can be useful for evaluating your code as you include it in the file.</p>
+<p>Descriptive text can be entered anywhere else in the file. This is where we can describe in plain language what our analysis does. Text can be entered as-is or using simple markdown text for formatting appearance of the text output. If you’re using the visual editor, you can use some of the items in the file menu to modify the text appearance. It will look somethign like this in the source editor.</p>
+<p><img src="img/rawmarkdown.PNG" class="img-fluid"></p>
+<p>When the file is rendered, the markdown text will be formatted.</p>
+<p><img src="img/rendermarkdown.PNG" class="img-fluid"></p></li>
+<li><p>Render the .qmd file to the output format.</p>
+<p>The source file is a .qmd document. We need to render the document to create the output format - HTML, PDF, or Word. The following happens when you hit the render button at the top.</p>
 <p><img src="img/rstudio-qmd-how-it-works.png" class="img-fluid"></p>
-<p>Visual vs source editor.</p>
+<p>Here’s what your RStudio session should look like. The rendered HTML file (the defaul format) will appear in th Viewer pane.</p>
+<p><img src="img/completequarto.PNG" class="img-fluid"></p></li>
+</ol>
 <section id="code-chunk-options" class="level3" data-number="3.2.1">
 <h3 data-number="3.2.1" class="anchored" data-anchor-id="code-chunk-options"><span class="header-section-number">3.2.1</span> Code chunk options</h3>
 <p>echo, eval, warning, messages</p>
