@@ -1,0 +1,17 @@
+---
+title: "Quarto practice"
+author: "Marcus Beck"
+editor: visual
+---
+
+```{r}
+print('hello world!')
+```
+
+I can write anything I want right here. Here's some **bold text**.
+
+I can also make lists.
+
+-   Item 1
+
+-   Item 2

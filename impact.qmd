@@ -21,27 +21,76 @@ This is the third module in our workshop on open science. Now we focus on how Qu
 
 Quarto is a relatively new document preparation system that lets you create reproducible and dynamic content that is easily shared with others.  Quarto is integrated with RStudio and allows you to combine plain text language with analysis code in the same document.  
 
+Quarto belongs to a class of reporting tools called dynamic documents or literate programming.  It is not the first of its kind, but it builds substantially on its predecessors by bridging multiple programming langues. 
+
+Advantages of creating analyses using Quarto include:
+
+1. Clear demonstration of a workflow using plain text and code
+1. Reproducible materials allows others to use your work
+1. Easily shared content (e.g., on GitHub)
+1. 
+
 This next section will run through the very basics of creating a Quarto document, some of the options for formatting, and how to generate shared content.  You'll follow along in this module. 
 
 1. Create a new project in RStudio, first open RStudio and then select "New project" from the File menu at the top.
 
+    ![](img/newproj.PNG)
+
     Then select "New Directory".  Create a directory in a location that's easy to find. 
+    
+    ![](img/newdir.PNG)
 
 1. Open a new Quarto file from the File menu under "Quarto Document".
 
-Let's get familiar with the components of a Quarto document. 
+    ![](img/newquarto.PNG)
+    
+    Enter a title for the document (e.g., "Quarto practice") and your name as the author. Use the defaults for the other options and hit "Create". 
+    
+    ![](img/tempquarto.PNG)
+    
+    Save the file in the project root directory (give it any name you want).
 
-The top is YAML, this defines things like the title, date, format, and other options
+1. Let's get familiar with the components of a Quarto document.
 
-The parts in ticks are R code. 
+    The file is completely empty except for the title, name, and source at the top.  The content at the top is called [YAML](https://quarto.org/docs/get-started/hello/rstudio.html#yaml-header){target="_blank"}, which defines global options for the document.
+    
+    ![](img/yamlex.PNG)
+    
+    You'll also notice that there's a button on the top-left that lets you toggle between "source" or "visual" editor mode.  The source editor simply lets you add text to the document, whereas the visual editor lets you add content that is partially rendered.  First time Quarto users may prefer the visual editor. 
+    
+    ![](img/editor.PNG)
+    
+    Using the visual editor, we can insert a code chunk (or code cell). This can be done by selecting the appropriate option from the Insert menu.  Note the variety of programming langues that can be used with the code chunk. 
+    
+    ![](img/insertchunk.PNG)
+    
+    We can enter any code we want in the code chunks.  
+    
+    ![](img/prerendercode.PNG)
+    
+    When the file is rendered, the code is run and results displayed in the output.  There are many options to change how code chunks are executed, which we'll discuss below. 
+    
+    ![](img/rendercode.PNG)
+    
+    We can also run the code chunks separately without rendering the file.  This can be useful for evaluating your code as you include it in the file. 
+    
+    Descriptive text can be entered anywhere else in the file.  This is where we can describe in plain language what our analysis does.  Text can be entered as-is or using simple markdown text for formatting appearance of the text output. If you're using the visual editor, you can use some of the items in the file menu to modify the text appearance.  It will look somethign like this in the source editor.
+    
+    ![](img/rawmarkdown.PNG)
+    
+    When the file is rendered, the markdown text will be formatted. 
+    
+    ![](img/rendermarkdown.PNG)
 
-Everything else is Markdown.  This where we add text describing anything we want, using markdown syntax to minimally alter appearance of the text. 
+1. Render the .qmd file to the output format. 
 
-The source file is a .qmd document.  We need to render the document to create the output format.  The following happens when you hit the render button. 
+    The source file is a .qmd document.  We need to render the document to create the output format - HTML, PDF, or Word.  The following happens when you hit the render button at the top.
 
-![](img/rstudio-qmd-how-it-works.png)
+    ![](img/rstudio-qmd-how-it-works.png)
 
-Visual vs source editor.
+     Here's what your RStudio session should look like. The rendered HTML file (the defaul format) will appear in th Viewer pane. 
+     
+     ![](img/completequarto.PNG)
 
 ### Code chunk options
 
