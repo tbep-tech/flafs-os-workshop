@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Florida AFS 2023 Open Science Workshop - 4&nbsp; Lowering barriers to inclusion and addressing key critiques</title>
+<title>Florida AFS 2023 Open Science Workshop - 5&nbsp; Lowering barriers to inclusion and addressing key critiques</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -49,8 +49,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./setup.html" rel="next">
-<link href="./impact.html" rel="prev">
+<link href="./tools.html" rel="next">
+<link href="./tidy.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -90,7 +90,7 @@ div.csl-indent {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Lowering barriers to inclusion and addressing key critiques</span></h1>
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Lowering barriers to inclusion and addressing key critiques</span></h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -162,32 +162,42 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./implement.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Lowering barriers to inclusion and addressing key critiques</span></a>
+  <a href="./tidy.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Principles of tidy data</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./setup.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Setup for the Workshop</span></a>
+  <a href="./implement.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Lowering barriers to inclusion and addressing key critiques</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./rintro.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Introduction to R</span></a>
+  <a href="./tools.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Additional tools for collaboration</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Resources for continued learning</span></a>
+  <a href="./setup.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Setup for the Workshop</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">References</span></a>
+  <a href="./rintro.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Introduction to R</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./codeofconduct.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Contributor Covenant Code of Conduct</span></a>
+  <a href="./resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Resources for continued learning</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">References</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./codeofconduct.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Contributor Covenant Code of Conduct</span></a>
   </div>
 </li>
       </ul>
@@ -201,11 +211,11 @@ div.csl-indent {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#goals-and-motivation" id="toc-goals-and-motivation" class="nav-link active" data-scroll-target="#goals-and-motivation"><span class="toc-section-number">4.1</span>  Goals and motivation</a></li>
-  <li><a href="#learning-curves" id="toc-learning-curves" class="nav-link" data-scroll-target="#learning-curves"><span class="toc-section-number">4.2</span>  Learning curves</a></li>
-  <li><a href="#fear-of-exposure" id="toc-fear-of-exposure" class="nav-link" data-scroll-target="#fear-of-exposure"><span class="toc-section-number">4.3</span>  Fear of exposure</a></li>
-  <li><a href="#what-does-it-mean-to-be-open" id="toc-what-does-it-mean-to-be-open" class="nav-link" data-scroll-target="#what-does-it-mean-to-be-open"><span class="toc-section-number">4.4</span>  What does it mean to be open?</a></li>
-  <li><a href="#something-is-better-than-nothing" id="toc-something-is-better-than-nothing" class="nav-link" data-scroll-target="#something-is-better-than-nothing"><span class="toc-section-number">4.5</span>  Something is better than nothing</a></li>
+  <li><a href="#goals-and-motivation" id="toc-goals-and-motivation" class="nav-link active" data-scroll-target="#goals-and-motivation"><span class="toc-section-number">5.1</span>  Goals and motivation</a></li>
+  <li><a href="#learning-curves" id="toc-learning-curves" class="nav-link" data-scroll-target="#learning-curves"><span class="toc-section-number">5.2</span>  Learning curves</a></li>
+  <li><a href="#fear-of-exposure" id="toc-fear-of-exposure" class="nav-link" data-scroll-target="#fear-of-exposure"><span class="toc-section-number">5.3</span>  Fear of exposure</a></li>
+  <li><a href="#what-does-it-mean-to-be-open" id="toc-what-does-it-mean-to-be-open" class="nav-link" data-scroll-target="#what-does-it-mean-to-be-open"><span class="toc-section-number">5.4</span>  What does it mean to be open?</a></li>
+  <li><a href="#something-is-better-than-nothing" id="toc-something-is-better-than-nothing" class="nav-link" data-scroll-target="#something-is-better-than-nothing"><span class="toc-section-number">5.5</span>  Something is better than nothing</a></li>
   </ul>
 </nav>
     </div>
@@ -214,7 +224,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title"><span id="implement" class="quarto-section-identifier d-none d-lg-block"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Lowering barriers to inclusion and addressing key critiques</span></span></h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source" data-quarto-source-url="https://github.com/tbep-tech/flafs-os-workshop/blob/main/implement.qmd"><i class="bi"></i> Code</button></div></div>
+<div class="quarto-title-block"><div><h1 class="title"><span id="implement" class="quarto-section-identifier d-none d-lg-block"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Lowering barriers to inclusion and addressing key critiques</span></span></h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source" data-quarto-source-url="https://github.com/tbep-tech/flafs-os-workshop/blob/main/implement.qmd"><i class="bi"></i> Code</button></div></div>
 </div>
 
 
@@ -232,8 +242,8 @@ div.csl-indent {
 <div class="cell">
 
 </div>
-<section id="goals-and-motivation" class="level2" data-number="4.1">
-<h2 data-number="4.1" class="anchored" data-anchor-id="goals-and-motivation"><span class="header-section-number">4.1</span> Goals and motivation</h2>
+<section id="goals-and-motivation" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="goals-and-motivation"><span class="header-section-number">5.1</span> Goals and motivation</h2>
 <p>What does it mean to use open science in the real world? It’s great to talk about the value of open science and the tools you can use, but it’s a completely different ball game when it comes to putting these ideas into practice. Our goal is that you leave this workshop an advocate and early adopter for the ideas we discussed today - spread these ideas to your peers and colleagues! To realistically achieve this goal, we will talk about some of the challenges you will face so you can develop a realistic expectation of what’s to come.</p>
 <ul>
 <li><strong>Goal</strong>: Understand common hurdles in adopting open science and how to overcome them<br>
@@ -241,8 +251,8 @@ div.csl-indent {
 <li><strong>Motivation</strong>: Become the “open science” expert at your institution!</li>
 </ul>
 </section>
-<section id="learning-curves" class="level2" data-number="4.2">
-<h2 data-number="4.2" class="anchored" data-anchor-id="learning-curves"><span class="header-section-number">4.2</span> Learning curves</h2>
+<section id="learning-curves" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="learning-curves"><span class="header-section-number">5.2</span> Learning curves</h2>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
@@ -261,7 +271,7 @@ div.csl-indent {
 </h4>
 <p><em>It’s an investment, look to the community!</em></p>
 <p>You’ve probably seen a graphic like this if you’ve ever taken a course in R or Python. The hope is that you’re able to quickly reach the land of sunshine and bunnies, but the path is treacherous and even insurmountable for some.</p>
-<p>A huge obstacle in using open science is that the toolsets can have steep learning curves. More popular platforms, such as Excel, are used by many because they’re simple and intuitive. However, <a href="impact.html#tidy">as noted earlier</a>, FAIR workflows and tools are sacrificed for ease of use.</p>
+<p>A huge obstacle in using open science is that the toolsets can have steep learning curves. More popular platforms, such as Excel, are used by many because they’re simple and intuitive. However, <a href="tidy.html">as noted earlier</a>, FAIR workflows and tools are sacrificed for ease of use.</p>
 <p>Although it’s true that adopting new tools will slow forward progress, this is only temporary. Consider your path towards learning new platforms an investment in your future. The immediate benefit may not be apparent, but you’ll soon wonder how you ever got by before.</p>
 <p>It’s also helpful to think about the broader community that can support you along this journey. Learning alone can be discouraging and we strongly recommend that you tap into the diverse community of educators, mentors, bloggers, and friends that can help. Even you can create a community of practice!</p>
 <div class="cell" data-layout-align="center">
@@ -278,8 +288,8 @@ div.csl-indent {
 </h3>
 <p>How can you engage your peers to develop a shared workspace to learn new tools? What tools will you learn?</p>
 </section>
-<section id="fear-of-exposure" class="level2" data-number="4.3">
-<h2 data-number="4.3" class="anchored" data-anchor-id="fear-of-exposure"><span class="header-section-number">4.3</span> Fear of exposure</h2>
+<section id="fear-of-exposure" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="fear-of-exposure"><span class="header-section-number">5.3</span> Fear of exposure</h2>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
@@ -299,7 +309,7 @@ div.csl-indent {
 <p><em>Being open helps you collaborate, increases competitiveness, and creates a better scientific product!</em></p>
 <p>Practicing open science can feel like science in a fish bowl. Although this is kind of the goal, many view this transparency as a liability. Many fear having their ideas “scooped” or losing credibility because of greater exposure of mistakes. These are real concerns that require consideration when working towards more open workflows.</p>
 <p>In conventional academic settings, competition for resources (e.g., via grant funding) is a real issue and being open can be seen as a risk to the competitive edge. We cannot dismiss this fact, but rather we can think about a lack of openness as a hindrance to forward progress and stifled creativity.</p>
-<p>Think about being open as a means to finding your next collaborator. Creating <a href="basics.html#fair">FAIR</a> data opens the door for others to engage with your science. In fact, being open can increase the competitiveness of research proposals by building a stronger team that collaborates and shares data through better workflows.</p>
+<p>Think about being open as a means to finding your next collaborator. Creating <a href="#fair">FAIR</a> data opens the door for others to engage with your science. In fact, being open can increase the competitiveness of research proposals by building a stronger team that collaborates and shares data through better workflows.</p>
 <p>First time practitioners of open science also worry about the risk of “airing their dirty laundry”. By exposing the process and potential mistakes, many worry that their integrity as scientists may be questioned.</p>
 <p>These fears are unfounded as the scientific process by definition is iterative. Hypotheses are supported or refuted through trial and error - if you’re getting your answer after one pass, you’re probably not doing it right. Making the process more transparent can help build trust as your collaborators can better appreciate how decisions and conclusions were made.</p>
 <p>Mistakes in research are also very common, much more so than many people realize. By being open, it is true that mistakes are more visible, but this also provides a mechanism for fixing. Being open can lead to a better product by simply having more eyes on the process. It also helps normalize mistakes as part of the process - perfection is an unrealistic expectation.</p>
@@ -308,8 +318,8 @@ div.csl-indent {
 </h3>
 <p>What are your personal concerns about adopting open science?</p>
 </section>
-<section id="what-does-it-mean-to-be-open" class="level2" data-number="4.4">
-<h2 data-number="4.4" class="anchored" data-anchor-id="what-does-it-mean-to-be-open"><span class="header-section-number">4.4</span> What does it mean to be open?</h2>
+<section id="what-does-it-mean-to-be-open" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="what-does-it-mean-to-be-open"><span class="header-section-number">5.4</span> What does it mean to be open?</h2>
 <h4 class="anchored">
 <svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zm0-384c13.3 0 24 10.7 24 24V264c0 13.3-10.7 24-24 24s-24-10.7-24-24V152c0-13.3 10.7-24 24-24zm32 224c0 17.7-14.3 32-32 32s-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32z"></path></svg> Challenge
 </h4>
@@ -328,8 +338,8 @@ div.csl-indent {
 </h3>
 <p>What does being open mean to you? What do you think being open means to your employer?</p>
 </section>
-<section id="something-is-better-than-nothing" class="level2" data-number="4.5">
-<h2 data-number="4.5" class="anchored" data-anchor-id="something-is-better-than-nothing"><span class="header-section-number">4.5</span> Something is better than nothing</h2>
+<section id="something-is-better-than-nothing" class="level2" data-number="5.5">
+<h2 data-number="5.5" class="anchored" data-anchor-id="something-is-better-than-nothing"><span class="header-section-number">5.5</span> Something is better than nothing</h2>
 <h4 class="anchored">
 <svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zm0-384c13.3 0 24 10.7 24 24V264c0 13.3-10.7 24-24 24s-24-10.7-24-24V152c0-13.3 10.7-24 24-24zm32 224c0 17.7-14.3 32-32 32s-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32z"></path></svg> Challenge
 </h4>
@@ -546,13 +556,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./impact.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Open science for impactful products</span></span>
+      <a href="./tidy.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Principles of tidy data</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./setup.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Setup for the Workshop</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./tools.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Additional tools for collaboration</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
