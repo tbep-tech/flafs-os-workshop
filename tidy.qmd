@@ -1,4 +1,14 @@
+---
+execute:
+  echo: false
+  warning: false
+---
+
 # Principles of tidy data {#tidy}
+
+```{r}
+library(fontawesome)
+```
 
 ```{r}
 #| fig-align: "center"
