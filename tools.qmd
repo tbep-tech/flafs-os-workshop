@@ -1,4 +1,14 @@
+---
+execute:
+  echo: false
+  warning: false
+---
+
 # Additional tools for collaboration {#tools}
+
+```{r}
+library(fontawesome)
+```
 
 Below we introduce some web-based tools that you can use to improve collaboration and openness. We present them as a suite of options to consider based on the pros and cons associated with each tool. This is by no means a comprehensive list, but it should get you started towards better collaboration in an open environment.
 
