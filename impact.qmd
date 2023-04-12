@@ -28,7 +28,6 @@ Advantages of creating analyses using Quarto include:
 1. Clear demonstration of a workflow using plain text and code
 1. Reproducible materials allows others to use your work
 1. Easily shared content (e.g., on GitHub)
-1. 
 
 This next section will run through the very basics of creating a Quarto document, some of the options for formatting, and how to generate shared content.  You'll follow along in this module. 
 
@@ -52,9 +51,21 @@ This next section will run through the very basics of creating a Quarto document
 
 1. Let's get familiar with the components of a Quarto document.
 
+    The three types of information included in a Quarto document are:
+    
+    1. YAML
+    1. Code chunks
+    1. Plain or Markdown text
+
     The file is completely empty except for the title, name, and source at the top.  The content at the top is called [YAML](https://quarto.org/docs/get-started/hello/rstudio.html#yaml-header){target="_blank"}, which defines global options for the document.
     
-    ![](img/yamlex.PNG)
+    ```yaml
+    ---
+    title: "Quarto practice"
+    author: "Marcus Beck"
+    editor: visual
+    ---
+    ```
     
     You'll also notice that there's a button on the top-left that lets you toggle between "source" or "visual" editor mode.  The source editor simply lets you add text to the document, whereas the visual editor lets you add content that is partially rendered.  First time Quarto users may prefer the visual editor. 
     
@@ -72,7 +83,7 @@ This next section will run through the very basics of creating a Quarto document
     
     ![](img/rendercode.PNG)
     
-    We can also run the code chunks separately without rendering the file.  This can be useful for evaluating your code as you include it in the file. 
+    We can also run the code chunks separately without rendering the file using the arrow buttons on the top right in the source document.  This can be useful for evaluating your code as you include it in the file. 
     
     Descriptive text can be entered anywhere else in the file.  This is where we can describe in plain language what our analysis does.  Text can be entered as-is or using simple markdown text for formatting appearance of the text output. If you're using the visual editor, you can use some of the items in the file menu to modify the text appearance.  It will look somethign like this in the source editor.
     
@@ -84,15 +95,47 @@ This next section will run through the very basics of creating a Quarto document
 
 1. Render the .qmd file to the output format. 
 
-    The source file is a .qmd document.  We need to render the document to create the output format - HTML, PDF, or Word.  The following happens when you hit the render button at the top.
+    The source file is a .qmd document.  We need to render the document to create the output format - HTML (default), PDF, or Word.  The following happens when you hit the render button at the top.
 
     ![](img/rstudio-qmd-how-it-works.png)
 
-     Here's what your RStudio session should look like. The rendered HTML file (the defaul format) will appear in th Viewer pane. 
+     Here's what your RStudio session should look like (note three parts of the source .qmd document - YAML, code chunk, and Markdown text). The rendered HTML file will appear in the Viewer pane on the right. 
      
      ![](img/completequarto.PNG)
 
+     You'll have an HTML file in your working directory that you can share with others.
+     
 ### Code chunk options
+
+The behavior of the code chunks can be changed using the [many options](https://quarto.org/docs/computations/execution-options.html){target="_blank"} available in Quarto.  This can be useful for a few reasons. 
+
+1. Only displaying the output of a code chunk
+1. Only displaying the code and not running the chunk
+1. Suppressing warnings and messages
+1. Defining table or figure options (e.g., height, width, captions, etc.)
+
+Code chunk options can be applied globally to all chunks in the document or separately for each chunk.
+
+To apply them globally, they'll look something like this in the YAML. 
+
+```yaml
+---
+title: "My Document"
+
+execute: 
+  echo: false
+  warning: false
+---
+```
+
+To apply to individual code chunks, use the `#|` (hashpipe) notation at the top of the code chunk. This will override any global options if you've included them in the YAML. 
+
+```{{r}}
+#| echo: true
+plot(1:10)
+```
+
+Here's a short list of other useful execution options:
 
 echo, eval, warning, messages
 
