@@ -81,13 +81,29 @@ This next section will run through the very basics of creating a Quarto document
     
     When the file is rendered, the code is run and results displayed in the output.  There are many options to change how code chunks are executed, which we'll discuss below. 
     
-    ![](img/rendercode.PNG)
+    ```{r}
+    #| echo: true
+    print('Hello Quarto!')
+    ```
     
     We can also run the code chunks separately without rendering the file using the arrow buttons on the top right in the source document.  This can be useful for evaluating your code as you include it in the file. 
     
     Descriptive text can be entered anywhere else in the file.  This is where we can describe in plain language what our analysis does.  Text can be entered as-is or using simple markdown text for formatting appearance of the text output. If you're using the visual editor, you can use some of the items in the file menu to modify the text appearance.  It will look somethign like this in the source editor.
     
-    ![](img/rawmarkdown.PNG)
+    ```{=html}
+    <div class="sourceCode">
+    <pre class="sourceCode markdown">
+    <code class="sourceCode markdown">
+    I  can write anything I want right here. Here's some **bold text**.
+    
+    I can also make lists
+    
+    1. Item 1
+    1. Item 2
+    </code>
+    </pre>
+    </div>
+    ```
     
     When the file is rendered, the markdown text will be formatted. 
     
@@ -144,6 +160,8 @@ figures and tables
 ### Output options
 
 html, pdf, word
+
+Full list: <https://quarto.org/docs/output-formats/all-formats.html>
 
 ### Markdown syntax
 
