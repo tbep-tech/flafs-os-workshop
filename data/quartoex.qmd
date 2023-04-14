@@ -12,6 +12,6 @@ I can write anything I want right here. Here's some **bold text**.
 
 I can also make lists.
 
--   Item 1
+1. Item 1
 
--   Item 2
+1. Item 2

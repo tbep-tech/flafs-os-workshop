@@ -31,7 +31,7 @@ Advantages of creating analyses using Quarto include:
 
 This next section will run through the very basics of creating a Quarto document, some of the options for formatting, and how to generate shared content.  You'll follow along in this module. 
 
-1. Create a new project in RStudio, first open RStudio and then select "New project" from the File menu at the top.
+(@) Create a new project in RStudio, first open RStudio and then select "New project" from the File menu at the top.
 
     ![](img/newproj.PNG)
 
@@ -39,7 +39,7 @@ This next section will run through the very basics of creating a Quarto document
     
     ![](img/newdir.PNG)
 
-1. Open a new Quarto file from the File menu under "Quarto Document".
+(@) Open a new Quarto file from the File menu under New file > Quarto Document.
 
     ![](img/newquarto.PNG)
     
@@ -49,15 +49,17 @@ This next section will run through the very basics of creating a Quarto document
     
     Save the file in the project root directory (give it any name you want).
 
-1. Let's get familiar with the components of a Quarto document.
+(@) Let's get familiar with the components of a Quarto document.
 
+    ::: {.callout-tip}
     The three types of information included in a Quarto document are:
     
-    1. YAML
-    1. Code chunks
-    1. Plain or Markdown text
-
-    The file is completely empty except for the title, name, and source at the top.  The content at the top is called [YAML](https://quarto.org/docs/get-started/hello/rstudio.html#yaml-header){target="_blank"}, which defines global options for the document.
+    * YAML
+    * Code chunks
+    * Plain or Markdown text
+    :::
+    
+    The new file is completely empty except for the title, name, and editor type at the top.  The content at the top is called [YAML](https://quarto.org/docs/get-started/hello/rstudio.html#yaml-header){target="_blank"}, which defines global options for the document.
     
     ```yaml
     ---
@@ -75,9 +77,12 @@ This next section will run through the very basics of creating a Quarto document
     
     ![](img/insertchunk.PNG)
     
-    We can enter any code we want in the code chunks.  
+    We can enter any code we want in the code chunks, including options for how the code chunk is evaluated.  Options are specified using the hashpipe notation, `#|`.  
     
-    ![](img/prerendercode.PNG)
+    ```r
+    #| echo: true
+    print('Hello Quarto!')
+    ```
     
     When the file is rendered, the code is run and results displayed in the output.  There are many options to change how code chunks are executed, which we'll discuss below. 
     
@@ -86,9 +91,13 @@ This next section will run through the very basics of creating a Quarto document
     print('Hello Quarto!')
     ```
     
-    We can also run the code chunks separately without rendering the file using the arrow buttons on the top right in the source document.  This can be useful for evaluating your code as you include it in the file. 
+    We can also run the code chunks separately without rendering the file using the arrow buttons on the top right in the source document.  This can be useful for quickly evaluating your code as you include it in the file. 
     
-    Descriptive text can be entered anywhere else in the file.  This is where we can describe in plain language what our analysis does.  Text can be entered as-is or using simple markdown text for formatting appearance of the text output. If you're using the visual editor, you can use some of the items in the file menu to modify the text appearance.  It will look somethign like this in the source editor.
+    ::: {.callout-tip}
+    Code chunks are executed in the order they appear in the document when a .qmd file is rendered.
+    :::
+    
+    Descriptive text can be entered anywhere else in the file.  This is where we can describe in plain language what our analysis does or any other relevant information.  Text can be entered as-is or using simple [markdown](https://quarto.org/docs/authoring/markdown-basics.html){target="_blank"} text that can format the appearance of the output. If you're using the visual editor, you can use some of the items in the file menu to modify the text appearance.  In the source editor, you can manually enter markdown text:
     
     ```{=html}
     <div class="sourceCode">
@@ -105,21 +114,28 @@ This next section will run through the very basics of creating a Quarto document
     </div>
     ```
     
-    When the file is rendered, the markdown text will be formatted. 
+    When the file is rendered, the markdown text will be formatted.  The text will be formatted already using the visual editor: 
     
-    ![](img/rendermarkdown.PNG)
+    I  can write anything I want right here. Here's some **bold text**.
+    
+    I can also make lists
+    
+    1. Item 1
+    1. Item 2
 
-1. Render the .qmd file to the output format. 
+(@) Render the .qmd file to the output format. 
 
     The source file is a .qmd document.  We need to render the document to create the output format - HTML (default), PDF, or Word.  The following happens when you hit the render button at the top.
 
     ![](img/rstudio-qmd-how-it-works.png)
 
-     Here's what your RStudio session should look like (note three parts of the source .qmd document - YAML, code chunk, and Markdown text). The rendered HTML file will appear in the Viewer pane on the right. 
+    Here's what your RStudio session should look like (note the three parts of the source .qmd document - YAML, code chunk, and Markdown text). The rendered HTML file will appear in the Viewer pane on the right. 
      
-     ![](img/completequarto.PNG)
+    ![](img/completequarto.PNG){.border}
 
-     You'll have an HTML file in your working directory that you can share with others.
+    ::: {.callout-tip}
+    A rendered Quarto document is stand-alone and can be shared with anybody!
+    :::
      
 ### Code chunk options
 
