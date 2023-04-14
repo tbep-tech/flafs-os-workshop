@@ -309,24 +309,36 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>Easily shared content (e.g., on GitHub)</li>
 </ol>
 <p>This next section will run through the very basics of creating a Quarto document, some of the options for formatting, and how to generate shared content. You’ll follow along in this module.</p>
-<ol type="1">
+<ol class="example" type="1">
 <li><p>Create a new project in RStudio, first open RStudio and then select “New project” from the File menu at the top.</p>
 <p><img src="img/newproj.PNG" class="img-fluid"></p>
 <p>Then select “New Directory”. Create a directory in a location that’s easy to find.</p>
 <p><img src="img/newdir.PNG" class="img-fluid"></p></li>
-<li><p>Open a new Quarto file from the File menu under “Quarto Document”.</p>
+<li><p>Open a new Quarto file from the File menu under New file &gt; Quarto Document.</p>
 <p><img src="img/newquarto.PNG" class="img-fluid"></p>
 <p>Enter a title for the document (e.g., “Quarto practice”) and your name as the author. Use the defaults for the other options and hit “Create”.</p>
 <p><img src="img/tempquarto.PNG" class="img-fluid"></p>
 <p>Save the file in the project root directory (give it any name you want).</p></li>
 <li><p>Let’s get familiar with the components of a Quarto document.</p>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>The three types of information included in a Quarto document are:</p>
-<ol type="1">
+<ul>
 <li>YAML</li>
 <li>Code chunks</li>
 <li>Plain or Markdown text</li>
-</ol>
-<p>The file is completely empty except for the title, name, and source at the top. The content at the top is called <a href="https://quarto.org/docs/get-started/hello/rstudio.html#yaml-header" target="_blank">YAML</a>, which defines global options for the document.</p>
+</ul>
+</div>
+</div>
+<p>The new file is completely empty except for the title, name, and editor type at the top. The content at the top is called <a href="https://quarto.org/docs/get-started/hello/rstudio.html#yaml-header" target="_blank">YAML</a>, which defines global options for the document.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Quarto practice"</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">author</span><span class="kw">:</span><span class="at"> </span><span class="st">"Marcus Beck"</span></span>
@@ -336,14 +348,31 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p><img src="img/editor.PNG" class="img-fluid"></p>
 <p>Using the visual editor, we can insert a code chunk (or code cell). This can be done by selecting the appropriate option from the Insert menu. Note the variety of programming langues that can be used with the code chunk.</p>
 <p><img src="img/insertchunk.PNG" class="img-fluid"></p>
-<p>We can enter any code we want in the code chunks.</p>
-<p><img src="img/prerendercode.PNG" class="img-fluid"></p>
+<p>We can enter any code we want in the code chunks, including options for how the code chunk is evaluated. Options are specified using the hashpipe notation, <code>#|</code>.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="st">'Hello Quarto!'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>When the file is rendered, the code is run and results displayed in the output. There are many options to change how code chunks are executed, which we’ll discuss below.</p>
-<p>::: {.cell}</p>
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="st">'Hello Quarto!'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>::: {.cell-output .cell-output-stdout} <code>[1] "Hello Quarto!"</code> ::: :::</p>
-<p>We can also run the code chunks separately without rendering the file using the arrow buttons on the top right in the source document. This can be useful for evaluating your code as you include it in the file.</p>
-<p>Descriptive text can be entered anywhere else in the file. This is where we can describe in plain language what our analysis does. Text can be entered as-is or using simple markdown text for formatting appearance of the text output. If you’re using the visual editor, you can use some of the items in the file menu to modify the text appearance. It will look somethign like this in the source editor.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="st">'Hello Quarto!'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "Hello Quarto!"</code></pre>
+</div>
+</div>
+<p>We can also run the code chunks separately without rendering the file using the arrow buttons on the top right in the source document. This can be useful for quickly evaluating your code as you include it in the file.</p>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Code chunks are executed in the order they appear in the document when a .qmd file is rendered.</p>
+</div>
+</div>
+<p>Descriptive text can be entered anywhere else in the file. This is where we can describe in plain language what our analysis does or any other relevant information. Text can be entered as-is or using simple <a href="https://quarto.org/docs/authoring/markdown-basics.html" target="_blank">markdown</a> text that can format the appearance of the output. If you’re using the visual editor, you can use some of the items in the file menu to modify the text appearance. In the source editor, you can manually enter markdown text:</p>
 <div class="sourceCode">
 <pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown">
 I  can write anything I want right here. Here's some **bold text**.
@@ -355,14 +384,31 @@ I can also make lists
 </code>
 <button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre>
 </div>
-<p>When the file is rendered, the markdown text will be formatted.</p>
-<p><img src="img/rendermarkdown.PNG" class="img-fluid"></p></li>
+<p>When the file is rendered, the markdown text will be formatted. The text will be formatted already using the visual editor:</p>
+<p>I can write anything I want right here. Here’s some <strong>bold text</strong>.</p>
+<p>I can also make lists</p>
+<ol type="1">
+<li>Item 1</li>
+<li>Item 2</li>
+</ol></li>
 <li><p>Render the .qmd file to the output format.</p>
 <p>The source file is a .qmd document. We need to render the document to create the output format - HTML (default), PDF, or Word. The following happens when you hit the render button at the top.</p>
 <p><img src="img/rstudio-qmd-how-it-works.png" class="img-fluid"></p>
-<p>Here’s what your RStudio session should look like (note three parts of the source .qmd document - YAML, code chunk, and Markdown text). The rendered HTML file will appear in the Viewer pane on the right.</p>
-<p><img src="img/completequarto.PNG" class="img-fluid"></p>
-<p>You’ll have an HTML file in your working directory that you can share with others.</p></li>
+<p>Here’s what your RStudio session should look like (note the three parts of the source .qmd document - YAML, code chunk, and Markdown text). The rendered HTML file will appear in the Viewer pane on the right.</p>
+<p><img src="img/completequarto.PNG" class="border img-fluid"></p>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A rendered Quarto document is stand-alone and can be shared with anybody!</p>
+</div>
+</div></li>
 </ol>
 <section id="code-chunk-options" class="level3" data-number="3.2.1">
 <h3 data-number="3.2.1" class="anchored" data-anchor-id="code-chunk-options"><span class="header-section-number">3.2.1</span> Code chunk options</h3>
@@ -375,18 +421,18 @@ I can also make lists
 </ol>
 <p>Code chunk options can be applied globally to all chunks in the document or separately for each chunk.</p>
 <p>To apply them globally, they’ll look something like this in the YAML.</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"My Document"</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="fu">execute</span><span class="kw">:</span><span class="at"> </span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">echo</span><span class="kw">:</span><span class="at"> </span><span class="ch">false</span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">warning</span><span class="kw">:</span><span class="at"> </span><span class="ch">false</span></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"My Document"</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="fu">execute</span><span class="kw">:</span><span class="at"> </span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">echo</span><span class="kw">:</span><span class="at"> </span><span class="ch">false</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">warning</span><span class="kw">:</span><span class="at"> </span><span class="ch">false</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>To apply to individual code chunks, use the <code>#|</code> (hashpipe) notation at the top of the code chunk. This will override any global options if you’ve included them in the YAML.</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>)</span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>)</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Here’s a short list of other useful execution options:</p>
 <p>echo, eval, warning, messages</p>
 <p>figures and tables</p>
