@@ -259,8 +259,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <li><a href="#quarto" id="toc-quarto" class="nav-link" data-scroll-target="#quarto"><span class="toc-section-number">3.2</span>  Quarto</a>
   <ul class="collapse">
   <li><a href="#code-chunk-options" id="toc-code-chunk-options" class="nav-link" data-scroll-target="#code-chunk-options"><span class="toc-section-number">3.2.1</span>  Code chunk options</a></li>
-  <li><a href="#output-options" id="toc-output-options" class="nav-link" data-scroll-target="#output-options"><span class="toc-section-number">3.2.2</span>  Output options</a></li>
-  <li><a href="#markdown-syntax" id="toc-markdown-syntax" class="nav-link" data-scroll-target="#markdown-syntax"><span class="toc-section-number">3.2.3</span>  Markdown syntax</a></li>
+  <li><a href="#figures-and-tables" id="toc-figures-and-tables" class="nav-link" data-scroll-target="#figures-and-tables"><span class="toc-section-number">3.2.2</span>  Figures and tables</a></li>
+  <li><a href="#output-options" id="toc-output-options" class="nav-link" data-scroll-target="#output-options"><span class="toc-section-number">3.2.3</span>  Output options</a></li>
   <li><a href="#authoring" id="toc-authoring" class="nav-link" data-scroll-target="#authoring"><span class="toc-section-number">3.2.4</span>  Authoring</a></li>
   <li><a href="#publishing" id="toc-publishing" class="nav-link" data-scroll-target="#publishing"><span class="toc-section-number">3.2.5</span>  Publishing</a></li>
   </ul></li>
@@ -349,8 +349,10 @@ Tip
 <p>Using the visual editor, we can insert a code chunk (or code cell). This can be done by selecting the appropriate option from the Insert menu. Note the variety of programming langues that can be used with the code chunk.</p>
 <p><img src="img/insertchunk.PNG" class="img-fluid"></p>
 <p>We can enter any code we want in the code chunks, including options for how the code chunk is evaluated. Options are specified using the hashpipe notation, <code>#|</code>.</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="st">'Hello Quarto!'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="st">'Hello Quarto!'</span>)</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>When the file is rendered, the code is run and results displayed in the output. There are many options to change how code chunks are executed, which we’ll discuss below.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="st">'Hello Quarto!'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -406,21 +408,22 @@ Tip
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>A rendered Quarto document is stand-alone and can be shared with anybody!</p>
+<p>A rendered Quarto document as an HTML, PDF, Word, or other file format is stand-alone and can be shared with anybody!</p>
 </div>
 </div></li>
 </ol>
 <section id="code-chunk-options" class="level3" data-number="3.2.1">
 <h3 data-number="3.2.1" class="anchored" data-anchor-id="code-chunk-options"><span class="header-section-number">3.2.1</span> Code chunk options</h3>
-<p>The behavior of the code chunks can be changed using the <a href="https://quarto.org/docs/computations/execution-options.html" target="_blank">many options</a> available in Quarto. This can be useful for a few reasons.</p>
+<p>The behavior of the code chunks can be changed using the <a href="https://quarto.org/docs/reference/cells/cells-knitr.html" target="_blank">many options</a> available in Quarto. This can be useful for a few reasons.</p>
 <ol type="1">
 <li>Only displaying the output of a code chunk</li>
 <li>Only displaying the code and not running the chunk</li>
+<li>Running the code without displaying output for use</li>
 <li>Suppressing warnings and messages</li>
 <li>Defining table or figure options (e.g., height, width, captions, etc.)</li>
 </ol>
 <p>Code chunk options can be applied globally to all chunks in the document or separately for each chunk.</p>
-<p>To apply them globally, they’ll look something like this in the YAML.</p>
+<p>To apply them globally, they’ll look something like this in the YAML, where options are added after <code>execute:</code></p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"My Document"</span></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -428,23 +431,239 @@ Tip
 <span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">echo</span><span class="kw">:</span><span class="at"> </span><span class="ch">false</span></span>
 <span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">warning</span><span class="kw">:</span><span class="at"> </span><span class="ch">false</span></span>
 <span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>To apply to individual code chunks, use the <code>#|</code> (hashpipe) notation at the top of the code chunk. This will override any global options if you’ve included them in the YAML.</p>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Be careful with indentation in the YAML, the document won’t render if the indentation is incorrect.</p>
+</div>
+</div>
+<p>To apply to individual code chunks, use the <code>#|</code> (hashpipe) notation at the top of the code chunk. This will override any global options if you’ve included them in the YAML. Below, <code>echo: true</code> indicates that the code will be displayed in the output.</p>
 <div class="sourceCode" id="cb6"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>)</span>
 <span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Here’s a short list of other useful execution options:</p>
-<p>echo, eval, warning, messages</p>
-<p>figures and tables</p>
+<table class="table">
+<colgroup>
+<col style="width: 5%">
+<col style="width: 94%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>eval</code></td>
+<td>Evaluate the code chunk (if <code>false</code>, just echos the code into the output).</td>
+</tr>
+<tr class="even">
+<td><code>echo</code></td>
+<td>Include the source code in output</td>
+</tr>
+<tr class="odd">
+<td><code>output</code></td>
+<td>Include the results of executing the code in the output (<code>true</code>, <code>false</code>, or <code>asis</code> to indicate that the output is raw markdown and should not have any of Quarto’s standard enclosing markdown).</td>
+</tr>
+<tr class="even">
+<td><code>warning</code></td>
+<td>Include warnings in the output.</td>
+</tr>
+<tr class="odd">
+<td><code>error</code></td>
+<td>Include errors in the output (note that this implies that errors executing code will not halt processing of the document).</td>
+</tr>
+<tr class="even">
+<td><code>include</code></td>
+<td>Catch all for preventing any output (code or results) from being included (e.g.&nbsp;<code>include: false</code> suppresses all output from the code block).</td>
+</tr>
+<tr class="odd">
+<td><code>message</code></td>
+<td>Include messages in rendered output</td>
+</tr>
+</tbody>
+</table>
 </section>
-<section id="output-options" class="level3" data-number="3.2.2">
-<h3 data-number="3.2.2" class="anchored" data-anchor-id="output-options"><span class="header-section-number">3.2.2</span> Output options</h3>
+<section id="figures-and-tables" class="level3" data-number="3.2.2">
+<h3 data-number="3.2.2" class="anchored" data-anchor-id="figures-and-tables"><span class="header-section-number">3.2.2</span> Figures and tables</h3>
+<p>Figures and tables are easily added in Quarto, using either R code or importing from an external source.</p>
+<p>Any figures created in code chunks will be included in the rendered output. Relevant code chunk options for figures include <code>fig-height</code>, <code>fig-width</code>, <code>fig-cap</code>, <code>label</code> (for cross-referencing) and <code>fig-align</code>.</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-myhist</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-height: 4</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-width: 6</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "Here's my awesome histogram."</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-align: "center"</span></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>vals <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">100</span>)</span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(vals)</span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div id="fig-myhist" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="impact_files/figure-html/fig-myhist-1.png" class="img-fluid figure-img" width="576"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;3.1: Here’s my awesome histogram.</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Figures can be cross-referenced in the text using the <code>@</code> notation with the figure label.</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>Here's a cross-reference to @fig-myhist.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>When the file is rendered, the appropriate figure number will be displayed with a link to the figure:</p>
+<p>Here’s a cross-reference to <a href="#fig-myhist">Figure&nbsp;<span>3.1</span></a>.</p>
+<p>Similarly, tabular output can be created inside code chunks.</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: tbl-mytable</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="co">#| tbl-cap: "Here's my awesome table."</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>totab <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">Species =</span> <span class="fu">c</span>(<span class="st">'Bluegill'</span>, <span class="st">'Largemouth bass'</span>, <span class="st">'Crappie'</span>),</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">Count =</span> <span class="fu">c</span>(<span class="dv">12</span>, <span class="dv">5</span>, <span class="dv">4</span>)</span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(totab)</span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell">
+<div class="cell-output-display">
+<div id="tbl-mytable" class="anchored">
+<table class="table table-sm table-striped">
+<caption>Table&nbsp;3.1: Here’s my awesome table.</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Species</th>
+<th style="text-align: right;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Bluegill</td>
+<td style="text-align: right;">12</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Largemouth bass</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Crappie</td>
+<td style="text-align: right;">4</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<p>And a cross-reference:</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>Here's a cross-reference to @tbl-mytable.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Here’s a cross-reference to <a href="#tbl-mytable">Table&nbsp;<span>3.1</span></a>.</p>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Label tags for tables and figures should include the <code>tbl-</code> or <code>fig-</code> prefix for proper cross-referencing.</p>
+</div>
+</div>
+<p>Figures can also be imported from an external source (e.g., from your computer or the web) using this notation:</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="al">![](img/blackcrappie.jpg)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><img src="img/blackcrappie.jpg" class="img-fluid"></p>
+<p>Adding captions and labels to external figures looks something like this:</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="al">![Here's a beautiful crappie](img/blackcrappie.jpg)</span>{#fig-crappie}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="fig-crappie" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="img/blackcrappie.jpg" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;3.2: Here’s a beautiful crappie</figcaption><p></p>
+</figure>
+</div>
+<p>The cross-reference is done the same.</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>Here<span class="st">'s a cross-reference to @fig-crappie</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Here’s a cross-reference to <a href="#fig-crappie">Figure&nbsp;<span>3.2</span></a>.</p>
+<p>Likewise, tables can be imported from an external source (e.g., Excel). You’ll want to do this in a code chunk and add the appropriate options (e.g., to cross-reference <a href="#tbl-habitats">Table&nbsp;<span>3.2</span></a>).</p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: tbl-habitats</span></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="co">#| tbl-cap: "The first six rows of our tidy data"</span></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>mytab <span class="ot">&lt;-</span> readxl<span class="sc">::</span><span class="fu">read_excel</span>(<span class="st">'data/tidy.xlsx'</span>)[<span class="dv">1</span><span class="sc">:</span><span class="dv">6</span>, ]</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(mytab)</span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell">
+<div class="cell-output-display">
+<div id="tbl-habitats" class="anchored">
+<table class="table table-sm table-striped">
+<caption>Table&nbsp;3.2: The first six rows of our tidy data</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Location</th>
+<th style="text-align: left;">Habitat</th>
+<th style="text-align: right;">Year</th>
+<th style="text-align: right;">Acres</th>
+<th style="text-align: left;">Category</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Clear Bay</td>
+<td style="text-align: left;">Seagrass</td>
+<td style="text-align: right;">2019</td>
+<td style="text-align: right;">519</td>
+<td style="text-align: left;">B</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Clear Bay</td>
+<td style="text-align: left;">Oysters</td>
+<td style="text-align: right;">2019</td>
+<td style="text-align: right;">390</td>
+<td style="text-align: left;">B</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Clear Bay</td>
+<td style="text-align: left;">Sand</td>
+<td style="text-align: right;">2019</td>
+<td style="text-align: right;">742</td>
+<td style="text-align: left;">C</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Fish Bay</td>
+<td style="text-align: left;">Seagrass</td>
+<td style="text-align: right;">2019</td>
+<td style="text-align: right;">930</td>
+<td style="text-align: left;">B</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Fish Bay</td>
+<td style="text-align: left;">Oysters</td>
+<td style="text-align: right;">2019</td>
+<td style="text-align: right;">680</td>
+<td style="text-align: left;">A</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Fish Bay</td>
+<td style="text-align: left;">Sand</td>
+<td style="text-align: right;">2019</td>
+<td style="text-align: right;">611</td>
+<td style="text-align: left;">A</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<p>Visit these links for full details on <a href="https://quarto.org/docs/authoring/figures.html" target="_blank">figures</a> and <a href="https://quarto.org/docs/authoring/tables.html" target="_blank">tables</a> in Quarto. R also has a rich <a href="https://towardsdatascience.com/top-7-packages-for-making-beautiful-tables-in-r-7683d054e541" target="_blank">library of packages</a> for producing tables, most of which play nice with Quarto.</p>
+</section>
+<section id="output-options" class="level3" data-number="3.2.3">
+<h3 data-number="3.2.3" class="anchored" data-anchor-id="output-options"><span class="header-section-number">3.2.3</span> Output options</h3>
 <p>html, pdf, word</p>
 <p>Full list: <a href="https://quarto.org/docs/output-formats/all-formats.html" class="uri">https://quarto.org/docs/output-formats/all-formats.html</a></p>
-</section>
-<section id="markdown-syntax" class="level3" data-number="3.2.3">
-<h3 data-number="3.2.3" class="anchored" data-anchor-id="markdown-syntax"><span class="header-section-number">3.2.3</span> Markdown syntax</h3>
-<p>Basics and inline code</p>
 </section>
 <section id="authoring" class="level3" data-number="3.2.4">
 <h3 data-number="3.2.4" class="anchored" data-anchor-id="authoring"><span class="header-section-number">3.2.4</span> Authoring</h3>
