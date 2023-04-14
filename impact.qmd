@@ -79,7 +79,7 @@ This next section will run through the very basics of creating a Quarto document
     
     We can enter any code we want in the code chunks, including options for how the code chunk is evaluated.  Options are specified using the hashpipe notation, `#|`.  
     
-    ```r
+    ```{{r}}
     #| echo: true
     print('Hello Quarto!')
     ```
@@ -134,21 +134,22 @@ This next section will run through the very basics of creating a Quarto document
     ![](img/completequarto.PNG){.border}
 
     ::: {.callout-tip}
-    A rendered Quarto document is stand-alone and can be shared with anybody!
+    A rendered Quarto document as an HTML, PDF, Word, or other file format is stand-alone and can be shared with anybody!
     :::
      
 ### Code chunk options
 
-The behavior of the code chunks can be changed using the [many options](https://quarto.org/docs/computations/execution-options.html){target="_blank"} available in Quarto.  This can be useful for a few reasons. 
+The behavior of the code chunks can be changed using the [many options](https://quarto.org/docs/reference/cells/cells-knitr.html){target="_blank"} available in Quarto.  This can be useful for a few reasons. 
 
 1. Only displaying the output of a code chunk
 1. Only displaying the code and not running the chunk
+1. Running the code without displaying output for use 
 1. Suppressing warnings and messages
 1. Defining table or figure options (e.g., height, width, captions, etc.)
 
 Code chunk options can be applied globally to all chunks in the document or separately for each chunk.
 
-To apply them globally, they'll look something like this in the YAML. 
+To apply them globally, they'll look something like this in the YAML, where options are added after `execute:` 
 
 ```yaml
 ---
@@ -160,7 +161,11 @@ execute:
 ---
 ```
 
-To apply to individual code chunks, use the `#|` (hashpipe) notation at the top of the code chunk. This will override any global options if you've included them in the YAML. 
+::: {.callout-tip}
+Be careful with indentation in the YAML, the document won't render if the indentation is incorrect.
+:::
+
+To apply to individual code chunks, use the `#|` (hashpipe) notation at the top of the code chunk. This will override any global options if you've included them in the YAML. Below, `echo: true` indicates that the code will be displayed in the output. 
 
 ```{{r}}
 #| echo: true
@@ -169,19 +174,134 @@ plot(1:10)
 
 Here's a short list of other useful execution options:
 
-echo, eval, warning, messages
++-----------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Option    | Description                                                                                                                                                                                       |
++===========+===================================================================================================================================================================================================+
+| `eval`    | Evaluate the code chunk (if `false`, just echos the code into the output).                                                                                                                        |
++-----------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `echo`    | Include the source code in output                                                                                                                                                                 |
++-----------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `output`  | Include the results of executing the code in the output (`true`, `false`, or `asis` to indicate that the output is raw markdown and should not have any of Quarto's standard enclosing markdown). |
++-----------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `warning` | Include warnings in the output.                                                                                                                                                                   |
++-----------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `error`   | Include errors in the output (note that this implies that errors executing code will not halt processing of the document).                                                                        |
++-----------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `include` | Catch all for preventing any output (code or results) from being included (e.g. `include: false` suppresses all output from the code block).                                                      |
++-----------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `message` | Include messages in rendered output
++-----------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-figures and tables
+### Figures and tables
+
+Figures and tables are easily added in Quarto, using either R code or importing from an external source. 
+
+Any figures created in code chunks will be included in the rendered output. Relevant code chunk options for figures include `fig-height`, `fig-width`, `fig-cap`, `label` (for cross-referencing) and `fig-align`.
+
+```{{r}}
+#| label: fig-myhist
+#| fig-height: 4
+#| fig-width: 6
+#| fig-cap: "Here's my awesome histogram."
+#| fig-align: "center"
+vals <- rnorm(100)
+hist(vals)
+```
+```{r}
+#| label: fig-myhist
+#| fig-height: 4
+#| fig-width: 6
+#| fig-cap: "Here's my awesome histogram."
+#| fig-align: "center"
+vals <- rnorm(100)
+hist(vals)
+```
+
+Figures can be cross-referenced in the text using the `@` notation with the figure label.  
+
+```markdown
+Here's a cross-reference to @fig-myhist.
+```
+
+When the file is rendered, the appropriate figure number will be displayed with a link to the figure:
+
+Here's a cross-reference to @fig-myhist.
+
+Similarly, tabular output can be created inside code chunks. 
+
+```{{r}}
+#| label: tbl-mytable
+#| tbl-cap: "Here's my awesome table."
+totab <- data.frame(
+  Species = c('Bluegill', 'Largemouth bass', 'Crappie'),
+  Count = c(12, 5, 4)
+)
+knitr::kable(totab)
+```
+```{r}
+#| label: tbl-mytable
+#| tbl-cap: "Here's my awesome table."
+totab <- data.frame(
+  Species = c('Bluegill', 'Largemouth bass', 'Crappie'),
+  Count = c(12, 5, 4)
+)
+knitr::kable(totab)
+```
+
+And a cross-reference: 
+
+```markdown
+Here's a cross-reference to @tbl-mytable.
+```
+
+Here's a cross-reference to @tbl-mytable.
+
+::: {.callout-tip}
+Label tags for tables and figures should include the `tbl-` or `fig-` prefix for proper cross-referencing.
+:::
+
+Figures can also be imported from an external source (e.g., from your computer or the web) using this notation: 
+
+```markdown
+![](img/blackcrappie.jpg)
+```
+![](img/blackcrappie.jpg)
+
+Adding captions and labels to external figures looks something like this: 
+
+```markdown
+![Here's a beautiful crappie](img/blackcrappie.jpg){#fig-crappie}
+```
+![Here's a beautiful crappie](img/blackcrappie.jpg){#fig-crappie}
+
+The cross-reference is done the same.
+```r
+Here's a cross-reference to @fig-crappie
+```
+Here's a cross-reference to @fig-crappie.
+
+Likewise, tables can be imported from an external source (e.g., Excel). You'll want to do this in a code chunk and add the appropriate options (e.g., to cross-reference @tbl-habitats). 
+
+```{{r}}
+#| label: tbl-habitats
+#| tbl-cap: "The first six rows of our tidy data"
+mytab <- readxl::read_excel('data/tidy.xlsx')[1:6, ]
+knitr::kable(mytab)
+```
+```{r}
+#| label: tbl-habitats
+#| tbl-cap: "The first six rows of our tidy data"
+mytab <- readxl::read_excel('data/tidy.xlsx')[1:6, ]
+knitr::kable(mytab)
+```
+
+Visit these links for full details on [figures](https://quarto.org/docs/authoring/figures.html){target="_blank"} and [tables](https://quarto.org/docs/authoring/tables.html){target="_blank"} in Quarto. R also has a rich [library of packages](https://towardsdatascience.com/top-7-packages-for-making-beautiful-tables-in-r-7683d054e541){target="_blank"} for producing tables, most of which play nice with Quarto.  
 
 ### Output options
 
 html, pdf, word
 
 Full list: <https://quarto.org/docs/output-formats/all-formats.html>
-
-### Markdown syntax
-
-Basics and inline code 
 
 ### Authoring
 

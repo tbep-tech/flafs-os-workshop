@@ -94,14 +94,12 @@ h2,h3,h4,h5 {
 .chart-title {
   font-family: 'Roboto';
   font-weight: 300;
-  font-style: italic;
   color: #958984;
 }
 
 .nav-tabs {
   font-family: 'Roboto';
   font-weight: 300;
-  font-style: italic;
   color: #958984;
 }
 
@@ -180,7 +178,6 @@ h2,h3,h4,h5 {
   font-family: 'Roboto';
   font-weight: 300;
   color: #958984;
-  font-style: italic;
 }
 
 /* reactable fixed columns*/
