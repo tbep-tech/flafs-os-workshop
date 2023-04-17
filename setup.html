@@ -267,7 +267,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <li><a href="#create-github-account" id="toc-create-github-account" class="nav-link" data-scroll-target="#create-github-account"><span class="toc-section-number">7.3</span>  Create GitHub account</a></li>
   <li><a href="#install-git-optional" id="toc-install-git-optional" class="nav-link" data-scroll-target="#install-git-optional"><span class="toc-section-number">7.4</span>  Install Git (optional)</a>
   <ul class="collapse">
-  <li><a href="#make-sure-rstudio-can-talk-to-github-via-git-optional" id="toc-make-sure-rstudio-can-talk-to-github-via-git-optional" class="nav-link" data-scroll-target="#make-sure-rstudio-can-talk-to-github-via-git-optional"><span class="toc-section-number">7.4.1</span>  Make sure RStudio can talk to GitHub via Git (optional)</a></li>
+  <li><a href="#make-sure-rstudio-can-talk-to-github-via-git" id="toc-make-sure-rstudio-can-talk-to-github-via-git" class="nav-link" data-scroll-target="#make-sure-rstudio-can-talk-to-github-via-git"><span class="toc-section-number">7.4.1</span>  Make sure RStudio can talk to GitHub via Git</a></li>
   </ul></li>
   <li><a href="#this-is-hard" id="toc-this-is-hard" class="nav-link" data-scroll-target="#this-is-hard"><span class="toc-section-number">7.5</span>  This is hard!</a></li>
   </ul>
@@ -305,7 +305,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <section id="install-r-and-rstudio" class="level2" data-number="7.1">
 <h2 data-number="7.1" class="anchored" data-anchor-id="install-r-and-rstudio"><span class="header-section-number">7.1</span> Install R and RStudio</h2>
 <p><strong>R</strong> and <strong>RStudio</strong> are separate downloads and installations. R is the underlying statistical computing software. RStudio is a graphical integrated development environment (IDE) that makes using R much easier and more interactive. <em>You need to install R before you install RStudio</em>.</p>
-<p>Thanks to the <a href="https://owi.usgs.gov/R/training.html">USGS-R Training group</a> and <a href="https://datacarpentry.org/R-ecology-lesson/index.html">Data Carpentry</a> for making their installation materials available. The following instructions come directly from their materials, with a few minor edits to help you get set up.</p>
+<p>Thanks to the <a href="https://owi.usgs.gov/R/training.html" target="_blank">USGS-R Training group</a> and <a href="https://datacarpentry.org/R-ecology-lesson/index.html" target="_blank">Data Carpentry</a> for making their installation materials available. The following instructions come directly from their materials, with a few minor edits to help you get set up.</p>
 <section id="windows-download-and-install-r" class="level3" data-number="7.1.1">
 <h3 data-number="7.1.1" class="anchored" data-anchor-id="windows-download-and-install-r"><span class="header-section-number">7.1.1</span> Windows: Download and install R</h3>
 <p>Go to <a href="https://cran.rstudio.com/bin/windows/base/" target="_blank">CRAN and download</a> the R installer for Windows. Make sure to choose the latest stable version (v4.2.3 as of April 2023).</p>
@@ -339,7 +339,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h3 data-number="7.1.4" class="anchored" data-anchor-id="macos-download-and-install-rstudio"><span class="header-section-number">7.1.4</span> macOS: Download and install RStudio</h3>
 <ul>
 <li>Go to the <a href="https://www.rstudio.com/products/rstudio/download/#download" target="_blank">RStudio</a> download page</li>
-<li>Under Installers select <strong>RStudio x.yy.zzz - Mac OS X 10.6+ (64-bit)</strong> (where x, y, and z represent version numbers)</li>
+<li>Under Installers select the appropriate RStudio download file for macOS</li>
 <li>Double click the file to install RStudio</li>
 </ul>
 </section>
@@ -354,23 +354,23 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>A visual editor for Quarto is installed with RStudio. However, you’ll need to install Quarto CLI to make full use of its features.</p>
 <p>Navigate to <a href="https://quarto.org/docs/get-started/" target="_blank">https://quarto.org/docs/get-started/</a>. You’ll see a screen that looks like this:</p>
 <p><img src="img/quartoinstall.PNG" class="img-fluid"></p>
-<p>Select the download appropriate for your operating system (Windows is the big blue button). After the executable file is downloaded, navigate on your computer to the folder containing the file, double-click to install, and accept the default settings at the prompts.</p>
-<p>After installation is done, open RStudio and select the Terminal tab (usually bottom-left pane, next to the Console tab). Type <code>quarto check</code> and press enter at the prompt. You should see something like this if installation was successful.</p>
+<p>Select the download appropriate for your operating system (Windows is the big blue button). After the file is downloaded, navigate to the folder containing the file, double-click to install, and accept the default settings at the prompts.</p>
+<p>After installation is done, open RStudio (or close and open again) and select the Terminal tab. This tab is located on the bottom-left pane, next to the Console tab. Type <code>quarto check</code> at the prompt and press enter. You should see something like this if installation was successful.</p>
 <p><img src="img/quartocheck.PNG" class="img-fluid"></p>
 </section>
 <section id="create-github-account" class="level2" data-number="7.3">
 <h2 data-number="7.3" class="anchored" data-anchor-id="create-github-account"><span class="header-section-number">7.3</span> Create GitHub account</h2>
-<p>Open a web browser and open the url <a href="https://github.com" class="uri">https://github.com</a>. On the top-right, you should see a button to sign up. Click the button and register an account by choosing an email, username, and password.</p>
+<p>Open a web browser and enter the url <a href="https://github.com" target="_blank">https://github.com</a>. On the top-right, you should see a button to sign up. Click the button and register an account by choosing an email, username, and password.</p>
 <p><img src="img/githubsignup.PNG" class="img-fluid"></p>
 </section>
 <section id="install-git-optional" class="level2" data-number="7.4">
 <h2 data-number="7.4" class="anchored" data-anchor-id="install-git-optional"><span class="header-section-number">7.4</span> Install Git (optional)</h2>
-<p>After you’ve registered a new GitHub account, you also need to install the Git software on your computer. Open the url <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git" class="uri">https://git-scm.com/book/en/v2/Getting-Started-Installing-Git</a> and follow the instructions for your operating system.</p>
-<p>After Git is installed, open RStudio to verify the installation. You should see a new “Git” tab usually located in the top-right pane of RStudio.</p>
+<p>After you’ve registered a new GitHub account, you can install the Git software on your computer. Git is version control software used by RStudio that allows you to access GitHub. Open the url <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git" target="_blank">https://git-scm.com/book/en/v2/Getting-Started-Installing-Git</a> and follow the instructions for your operating system.</p>
+<p>After Git is installed, open RStudio (or close and open again) to verify the installation. You should see a new “Git” tab located in the top-right pane of RStudio.</p>
 <p><img src="img/gitpane.PNG" class="img-fluid"></p>
-<section id="make-sure-rstudio-can-talk-to-github-via-git-optional" class="level3" data-number="7.4.1">
-<h3 data-number="7.4.1" class="anchored" data-anchor-id="make-sure-rstudio-can-talk-to-github-via-git-optional"><span class="header-section-number">7.4.1</span> Make sure RStudio can talk to GitHub via Git (optional)</h3>
-<p>The next step can be a bit tricky, but is essential if you want to push files from your computer to GitHub using Git. First, install the <code>usethis</code> R package.</p>
+<section id="make-sure-rstudio-can-talk-to-github-via-git" class="level3" data-number="7.4.1">
+<h3 data-number="7.4.1" class="anchored" data-anchor-id="make-sure-rstudio-can-talk-to-github-via-git"><span class="header-section-number">7.4.1</span> Make sure RStudio can talk to GitHub via Git</h3>
+<p>The next step can be a bit tricky, but is essential if you want to access your GitHub using using RStudio and Git. First, install the <code>usethis</code> R package in RStudio.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"usethis"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
@@ -388,12 +388,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <section id="this-is-hard" class="level2" data-number="7.5">
 <h2 data-number="7.5" class="anchored" data-anchor-id="this-is-hard"><span class="header-section-number">7.5</span> This is hard!</h2>
 <p>If you have trouble installing any of the software prior to the workshop, you can use use RStudio in the cloud on the Posit website. This is only a backup option and we strongly encourage you to troubleshoot the installation when able.</p>
-<p>To use RStudio in the cloud, copy this link and paste it in a web browser: <a href="https://posit.cloud/content/5775087" class="uri">https://posit.cloud/content/5775087</a></p>
+<p>To use RStudio in the cloud, copy this link and paste it in a web browser: <a href="https://posit.cloud/content/5775087" target="_blank">https://posit.cloud/content/5775087</a></p>
 <p>If you do not have a Posit Cloud account, you will see this screen when you first visit the URL:</p>
 <p><img src="img/cloudsignup.PNG" class="img-fluid"></p>
 <p><br><br></p>
-<p>You can <a href="https://login.rstudio.cloud/register?redirect=https%3A%2F%2Fclient.login.rstudio.cloud%2Foauth%2Flogin%3Fshow_auth%3D0%26show_login%3D1%26show_setup%3D1">setup an account</a> for free using a login you create or through a third-party (Google or GitHub).</p>
-<p>After your account is setup, you should a screen that looks something like this:</p>
+<p>You can <a href="https://login.rstudio.cloud/register?redirect=https%3A%2F%2Fclient.login.rstudio.cloud%2Foauth%2Flogin%3Fshow_auth%3D0%26show_login%3D1%26show_setup%3D1" target="_blank">setup an account</a> for free using a login you create or through a third-party (Google or GitHub).</p>
+<p>After your account is setup, you should a screen that looks like this:</p>
 <p><img src="img/tempproj.PNG" class="img-fluid"></p>
 <p><br><br></p>
 <p>You’ll see that this is a <b><span style="color:red">TEMPORARY COPY</span></b> under your account. Make it permanent by clicking the button on top. This will save any changes you make to this project under your account.</p>
