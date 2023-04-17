@@ -20,13 +20,13 @@ Much of the content on this web page was adopted from the [TBEP Data Management 
 
 ## Prepare
 
-Please attend the workshop with a personal laptop and power supply. Make sure your laptop can access publicly available WiFi. *You will also need to install software prior to the workshop, visit the [setup](#setup) page for full instructions*.  We will have limited capacity to help with installation issues the day of the workshop, so please come prepared.  The [setup](#setup) instructions will guide you through the following.
+Please attend the workshop with a personal laptop and power supply. Make sure your laptop can access publicly available WiFi. **You need to install software prior to the workshop, visit the [setup](#setup) page for full instructions**.  We will have limited capacity to help with installation issues the day of the workshop, so please come prepared.  The [setup](#setup) instructions will guide you through the following.
 
 1. Install R: [link](https://cran.r-project.org/bin/windows/base/){target="_blank"}
 1. Install RStudio: [link](https://posit.co/download/rstudio-desktop/){target="_blank"}
 1. Install Quarto: [link](https://quarto.org/docs/get-started/){target="_blank"}
 1. GitHub create account: [link](https://github.com){target="_blank"}
-1. Install Git: [link](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git){target="_blank"}
+1. Install Git (optional): [link](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git){target="_blank"}
 
 We also assume some knowledge about R.  Please visit [this page](#rintro) for a crash course if you need to brush up on your R skills. 
 

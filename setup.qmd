@@ -6,9 +6,9 @@ Thanks for your interest in the open science workshop. You will need to do the f
 1. Install RStudio: [link](https://posit.co/download/rstudio-desktop/){target="_blank"}
 1. Install Quarto: [link](https://quarto.org/docs/get-started/){target="_blank"}
 1. GitHub create account: [link](https://github.com){target="_blank"}
-1. Install Git and configure with RStudio (optional): [link](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git){target="_blank"}
+1. Install Git (optional): [link](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git){target="_blank"}
 
-Most of these steps will require administrative privileges on a computer.  Please work with your IT staff to complete the setup if you do not have these privileges. 
+Most of these steps will require administrative privileges on a computer.  Work with your IT staff to complete the setup if you do not have these privileges. 
 Please reach out if you have any issues with installation: [mbeck@tbep.org](mailto:mbeck@tbep.org)
 
 ## Install R and RStudio
@@ -17,7 +17,7 @@ Please reach out if you have any issues with installation: [mbeck@tbep.org](mail
 
 Thanks to the [USGS-R Training group](https://owi.usgs.gov/R/training.html) and [Data Carpentry](https://datacarpentry.org/R-ecology-lesson/index.html) for making their installation materials available. The following instructions come directly from their materials, with a few minor edits to help you get set up.
 
-### *Windows*: Download and install R
+### Windows: Download and install R
 
 Go to [CRAN and download](https://cran.rstudio.com/bin/windows/base/){target="_blank"} the R installer for Windows. Make sure to choose the latest stable version (v4.2.3 as of April 2023).
 
@@ -39,7 +39,7 @@ At this screen, uncheck 'Create a desktop icon' because non-admin users in Windo
 
 ![](img/install_tasks.png)
 
-### *Windows*: Download and install RStudio
+### Windows: Download and install RStudio
 
 Download RStudio from [here](https://www.rstudio.com/products/rstudio/download/#download){target="_blank"}.
 
@@ -49,14 +49,14 @@ Accept all the default options for the RStudio install.
 
 ![](img/install_rstudio.png)
 
-### *macOS*: Download and install R
+### macOS: Download and install R
 
 -   Download and install R from the CRAN website for Mac [here](https://cran.r-project.org/bin/macosx/){target="_blank"}.
 -   Select the `.pkg` file for the latest R version
 -   Double click on the downloaded file to install R
 -   It is also a good idea to install [XQuartz](https://www.xquartz.org/){target="_blank"} (needed by some packages)
 
-### *macOS*: Download and install RStudio
+### macOS: Download and install RStudio
 
 -   Go to the [RStudio](https://www.rstudio.com/products/rstudio/download/#download){target="_blank"} download page
 -   Under Installers select **RStudio x.yy.zzz - Mac OS X 10.6+ (64-bit)** (where x, y, and z represent version numbers)
