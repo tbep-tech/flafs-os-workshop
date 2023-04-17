@@ -1,4 +1,4 @@
-# Setup for the Workshop {#setup}
+# Setup for the workshop {#setup}
 
 Thanks for your interest in the open science workshop. You will need to do the following, outlined below, before the workshop.  The last item is optional, but strongly encouraged. 
 
