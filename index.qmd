@@ -28,7 +28,7 @@ Please attend the workshop with a personal laptop and power supply. Make sure yo
 1. GitHub create account: [link](https://github.com){target="_blank"}
 1. Install Git (optional): [link](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git){target="_blank"}
 
-We also assume some knowledge about R.  Please visit [this page](#rintro) for a crash course if you need to brush up on your R skills. 
+**We also assume some knowledge about R**.  Please visit [this page](#rintro) for a crash course if you need to brush up on your R skills. 
 
 ## Agenda
 

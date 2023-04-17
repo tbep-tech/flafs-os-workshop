@@ -15,7 +15,7 @@ Please reach out if you have any issues with installation: [mbeck@tbep.org](mail
 
 **R** and **RStudio** are separate downloads and installations. R is the underlying statistical computing software. RStudio is a graphical integrated development environment (IDE) that makes using R much easier and more interactive. *You need to install R before you install RStudio*.
 
-Thanks to the [USGS-R Training group](https://owi.usgs.gov/R/training.html) and [Data Carpentry](https://datacarpentry.org/R-ecology-lesson/index.html) for making their installation materials available. The following instructions come directly from their materials, with a few minor edits to help you get set up.
+Thanks to the [USGS-R Training group](https://owi.usgs.gov/R/training.html){target="_blank"} and [Data Carpentry](https://datacarpentry.org/R-ecology-lesson/index.html){target="_blank"} for making their installation materials available. The following instructions come directly from their materials, with a few minor edits to help you get set up.
 
 ### Windows: Download and install R
 
@@ -59,7 +59,7 @@ Accept all the default options for the RStudio install.
 ### macOS: Download and install RStudio
 
 -   Go to the [RStudio](https://www.rstudio.com/products/rstudio/download/#download){target="_blank"} download page
--   Under Installers select **RStudio x.yy.zzz - Mac OS X 10.6+ (64-bit)** (where x, y, and z represent version numbers)
+-   Under Installers select the appropriate RStudio download file for macOS
 -   Double click the file to install RStudio
 
 ### Check Install
@@ -76,29 +76,29 @@ Navigate to [https://quarto.org/docs/get-started/](https://quarto.org/docs/get-s
 
 ![](img/quartoinstall.PNG)
 
-Select the download appropriate for your operating system (Windows is the big blue button).  After the executable file is downloaded, navigate on your computer to the folder containing the file, double-click to install, and accept the default settings at the prompts.    
+Select the download appropriate for your operating system (Windows is the big blue button).  After the file is downloaded, navigate to the folder containing the file, double-click to install, and accept the default settings at the prompts.    
 
-After installation is done, open RStudio and select the Terminal tab (usually bottom-left pane, next to the Console tab).  Type `quarto check` and press enter at the prompt.  You should see something like this if installation was successful. 
+After installation is done, open RStudio (or close and open again) and select the Terminal tab.  This tab is located on the bottom-left pane, next to the Console tab.  Type `quarto check` at the prompt and press enter.  You should see something like this if installation was successful. 
 
 ![](img/quartocheck.PNG)
 
 ## Create GitHub account
 
-Open a web browser and open the url <https://github.com>.  On the top-right, you should see a button to sign up. Click the button and register an account by choosing an email, username, and password. 
+Open a web browser and enter the url [https://github.com](https://github.com){target="_blank"}.  On the top-right, you should see a button to sign up. Click the button and register an account by choosing an email, username, and password. 
 
 ![](img/githubsignup.PNG)
 
 ## Install Git (optional)
 
-After you've registered a new GitHub account, you also need to install the Git software on your computer. Open the url <https://git-scm.com/book/en/v2/Getting-Started-Installing-Git> and follow the instructions for your operating system. 
+After you've registered a new GitHub account, you can install the Git software on your computer. Git is version control software used by RStudio that allows you to access GitHub.  Open the url [https://git-scm.com/book/en/v2/Getting-Started-Installing-Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git){target="_blank"} and follow the instructions for your operating system. 
 
-After Git is installed, open RStudio to verify the installation.  You should see a new "Git" tab usually located in the top-right pane of RStudio. 
+After Git is installed, open RStudio (or close and open again) to verify the installation.  You should see a new "Git" tab located in the top-right pane of RStudio. 
 
 ![](img/gitpane.PNG)
 
-### Make sure RStudio can talk to GitHub via Git (optional) 
+### Make sure RStudio can talk to GitHub via Git
 
-The next step can be a bit tricky, but is essential if you want to push files from your computer to GitHub using Git.  First, install the `usethis` R package. 
+The next step can be a bit tricky, but is essential if you want to access your GitHub using using RStudio and Git.  First, install the `usethis` R package in RStudio. 
 
 ```{r}
 #| eval: false
@@ -128,7 +128,7 @@ Then follow the remaining prompts to complete the PAT creation.  A more thorough
 
 If you have trouble installing any of the software prior to the workshop, you can use use RStudio in the cloud on the Posit website. This is only a backup option and we strongly encourage you to troubleshoot the installation when able.
 
-To use RStudio in the cloud, copy this link and paste it in a web browser: <https://posit.cloud/content/5775087>
+To use RStudio in the cloud, copy this link and paste it in a web browser: [https://posit.cloud/content/5775087](https://posit.cloud/content/5775087){target="_blank"}
 
 If you do not have a Posit Cloud account, you will see this screen when you first visit the URL:
 
@@ -136,9 +136,9 @@ If you do not have a Posit Cloud account, you will see this screen when you firs
 
 <br></br>
 
-You can [setup an account](https://login.rstudio.cloud/register?redirect=https%3A%2F%2Fclient.login.rstudio.cloud%2Foauth%2Flogin%3Fshow_auth%3D0%26show_login%3D1%26show_setup%3D1) for free using a login you create or through a third-party (Google or GitHub).
+You can [setup an account](https://login.rstudio.cloud/register?redirect=https%3A%2F%2Fclient.login.rstudio.cloud%2Foauth%2Flogin%3Fshow_auth%3D0%26show_login%3D1%26show_setup%3D1){target="_blank"} for free using a login you create or through a third-party (Google or GitHub).
 
-After your account is setup, you should a screen that looks something like this:
+After your account is setup, you should a screen that looks like this:
 
 ![](img/tempproj.PNG)
 

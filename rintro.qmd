@@ -183,4 +183,4 @@ View(sitdat)
 
 ## Summary
 
-In this intro we learned about R and Rstudio, some of the basic syntax and data structures in R, and how to import files.
+In this intro we learned about R and Rstudio, some of the basic syntax and data structures in R, and how to import files.  You'll be able to follow the rest of the workshop with this knowledge.  View the [Resources](https://tbep-tech.github.io/flafs-os-workshop/resources.html) page for additional training materials. 
