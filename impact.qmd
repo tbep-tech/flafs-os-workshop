@@ -272,6 +272,7 @@ You can also add a figure from a URL using the same notation.
 ![](https://www.bigcatchflorida.com/media/1174/blackcrappie.jpg)
 ```
 ![](img/blackcrappie.jpg)
+
 Adding captions and labels to external figures looks something like this: 
 
 ```markdown
