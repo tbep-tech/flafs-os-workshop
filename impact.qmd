@@ -269,9 +269,9 @@ Figures can also be imported from an external source (e.g., from your computer o
 You can also add a figure from a URL using the same notation.
 
 ```markdown
-![](https://www.ncwildlife.org/Portals/0/Learning/images/Species/Fish/Black-Crappie-Duane-Raver.jpg)
-```
 ![](https://www.bigcatchflorida.com/media/1174/blackcrappie.jpg)
+```
+![](img/blackcrappie.jpg)
 Adding captions and labels to external figures looks something like this: 
 
 ```markdown
