@@ -139,7 +139,7 @@ This next section will run through the very basics of creating a Quarto document
      
 ### Code chunk options
 
-The behavior of the code chunks can be changed using the [many options](https://quarto.org/docs/reference/cells/cells-knitr.html){target="_blank"} available in Quarto.  This can be useful for a few reasons. 
+The behavior of the code chunks when the file is rendered can be changed using the [many options](https://quarto.org/docs/reference/cells/cells-knitr.html){target="_blank"} available in Quarto.  This can be useful for a few reasons. 
 
 1. Only displaying the output of a code chunk
 1. Only displaying the code and not running the chunk
@@ -260,13 +260,18 @@ Here's a cross-reference to @tbl-mytable.
 Label tags for tables and figures should include the `tbl-` or `fig-` prefix for proper cross-referencing.
 :::
 
-Figures can also be imported from an external source (e.g., from your computer or the web) using this notation: 
+Figures can also be imported from an external source (e.g., from your computer or the web) using this notation, where the image is in the `img` folder in my working directory.   
 
 ```markdown
 ![](img/blackcrappie.jpg)
 ```
 ![](img/blackcrappie.jpg)
+You can also add a figure from a URL using the same notation.
 
+```markdown
+![](https://www.ncwildlife.org/Portals/0/Learning/images/Species/Fish/Black-Crappie-Duane-Raver.jpg)
+```
+![](https://www.bigcatchflorida.com/media/1174/blackcrappie.jpg)
 Adding captions and labels to external figures looks something like this: 
 
 ```markdown
@@ -299,12 +304,114 @@ Visit these links for full details on [figures](https://quarto.org/docs/authorin
 
 ### Output options
 
-html, pdf, word
+Rendering a Quarto file to an HTML, PDF, or Word document is as simple as adding the appropriate option to the YAML.  You can select the format when you create a new Quarto file just by selecting the appropriate option: 
 
-Full list: <https://quarto.org/docs/output-formats/all-formats.html>
+![](img/tempquarto.PNG)
+
+The output format can also be added in the YAML of the document.  
+
+```yaml
+---
+title: "Quarto practice"
+author: "Marcus Beck"
+editor: visual
+format: html
+---
+```
+
+::: {.callout-tip}
+The default output format is HTML and it does not need to be added explicitly to the YAML.
+:::
+
+Alternative formats are specified the same way. 
+
+```yaml
+---
+title: "Quarto practice"
+author: "Marcus Beck"
+editor: visual
+format: docx
+---
+```
+
+```yaml
+---
+title: "Quarto practice"
+author: "Marcus Beck"
+editor: visual
+format: pdf
+---
+```
+
+You can also specify multiple formats (note the indentation).  The `default` setting just indicates that we want to use all default options for each format.  
+
+```yaml
+---
+title: "Quarto practice"
+author: "Marcus Beck"
+editor: visual
+format: 
+  html: default
+  docx: default
+  pdf: default
+---
+```
+
+You can use the dropdown menu to render each file format one at a time.
+
+![](img/renderoption.PNG)
+
+You can also render all formats at once using the `quarto` package or from the terminal tab.  The path to your file will differ depending on where it is in your working directory. 
+
+```r
+quarto::quarto_render('data/quartoex.qmd')
+```
+
+In the terminal (bottom left pane of RStudio), execute the following to render all formats.  This requires the separate installation of Quarto described in the [setup](https://tbep-tech.github.io/flafs-os-workshop/setup.html#install-quarto).
+
+```{.bash filename="Terminal"}
+quarto render data/quartoex.qmd
+```
+
+Rendering a file to PDF uses LaTeX and you'll need to install tinytex before you can use this option.  
+
+```{.bash filename="Terminal"}
+quarto install tool tinytex
+```
+
+There are also several options you can include in the YAML to control the formatting of the output.  Some of the options can apply to all format types, whereas others are specific to each.  Here's an example building out these options further.  
+
+```yaml
+---
+title: "Quarto practice"
+author: "Marcus Beck"
+editor: visual
+toc: true 
+number-sections: true
+format: 
+  html: 
+    code-fold: true
+  docx: default
+  pdf: 
+    geometry: 
+      - top=30mm
+      - left=0mm
+---
+```
+
+In the above example, there are two new options that apply globally to the HTML, Word, and PDF outputs.  Specifically, we've indicated that we'd like a table of contents (`toc: true`) and that the sections should be numbered (`number-sections: true`).
+
+We'ave also added some specific options to the HTML and PDF output.  For the HTML output, we've indicated that we want the code chunks to be folded (i.e., toggle between seen and not seen).  For the PDFoutput, we've slightly changed the geometry of the margins. 
+
+Here's what the HTML output would look like: 
+
+![](img/formatoptions.PNG){.border}
+
+There are many other options aviable, as well as other format types.  View the full list here: [https://quarto.org/docs/output-formats/all-formats.html](https://quarto.org/docs/output-formats/all-formats.html){target="_blank"}
 
 ### Authoring
 
+It's entirely possible to create reports and manuscripts with Quarto, not to mention much easier since your analysis, data, and writing can all be done in the same place.  
 cross-references, citations
 
 ### Publishing

@@ -98,7 +98,7 @@ After Git is installed, open RStudio (or close and open again) to verify the ins
 
 ### Make sure RStudio can talk to GitHub via Git
 
-The next step can be a bit tricky, but is essential if you want to access your GitHub using using RStudio and Git.  First, install the `usethis` R package in RStudio. 
+The next step can be a bit tricky, but is essential if you want to access your GitHub using RStudio and Git.  First, install the `usethis` R package in RStudio. 
 
 ```{r}
 #| eval: false

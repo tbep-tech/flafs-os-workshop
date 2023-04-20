@@ -2,7 +2,19 @@
 title: "Quarto practice"
 author: "Marcus Beck"
 editor: visual
+toc: true 
+number-sections: true
+format: 
+  html: 
+    code-fold: true
+  docx: default
+  pdf: 
+    geometry: 
+      - top=30mm
+      - left=0mm
 ---
+
+# This is the first section
 
 ```{r}
 print('hello world!')
@@ -15,3 +27,17 @@ I can also make lists.
 1. Item 1
 
 1. Item 2
+
+# This is the second section
+
+## This is a subsection
+
+There's a histogram in @fig-hist.
+
+```{r}
+#| label: fig-hist
+#| echo: false
+#| fig-cap: "A really boring plot."
+hist(rnorm(100))
+```
+
