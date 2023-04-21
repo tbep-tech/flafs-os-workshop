@@ -83,6 +83,25 @@ code span.st { color: #4070a0; } /* String */
 code span.va { color: #19177c; } /* Variable */
 code span.vs { color: #4070a0; } /* VerbatimString */
 code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
 </style>
 
 
@@ -261,7 +280,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <li><a href="#code-chunk-options" id="toc-code-chunk-options" class="nav-link" data-scroll-target="#code-chunk-options"><span class="toc-section-number">3.2.1</span>  Code chunk options</a></li>
   <li><a href="#figures-and-tables" id="toc-figures-and-tables" class="nav-link" data-scroll-target="#figures-and-tables"><span class="toc-section-number">3.2.2</span>  Figures and tables</a></li>
   <li><a href="#output-options" id="toc-output-options" class="nav-link" data-scroll-target="#output-options"><span class="toc-section-number">3.2.3</span>  Output options</a></li>
-  <li><a href="#authoring" id="toc-authoring" class="nav-link" data-scroll-target="#authoring"><span class="toc-section-number">3.2.4</span>  Authoring</a></li>
+  <li><a href="#citations-and-references" id="toc-citations-and-references" class="nav-link" data-scroll-target="#citations-and-references"><span class="toc-section-number">3.2.4</span>  Citations and References</a></li>
   <li><a href="#publishing" id="toc-publishing" class="nav-link" data-scroll-target="#publishing"><span class="toc-section-number">3.2.5</span>  Publishing</a></li>
   </ul></li>
   </ul>
@@ -307,6 +326,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>Clear demonstration of a workflow using plain text and code</li>
 <li>Reproducible materials allows others to use your work</li>
 <li>Easily shared content (e.g., on GitHub)</li>
+<li>Keeping the data, analysis, and writing all in the same place</li>
 </ol>
 <p>This next section will run through the very basics of creating a Quarto document, some of the options for formatting, and how to generate shared content. You’ll follow along in this module.</p>
 <ol class="example" type="1">
@@ -665,7 +685,7 @@ Tip
 </section>
 <section id="output-options" class="level3" data-number="3.2.3">
 <h3 data-number="3.2.3" class="anchored" data-anchor-id="output-options"><span class="header-section-number">3.2.3</span> Output options</h3>
-<p>Rendering a Quarto file to an HTML, PDF, or Word document is as simple as adding the appropriate option to the YAML. You can select the format when you create a new Quarto file just by selecting the appropriate option:</p>
+<p>Rendering a Quarto file to an HTML, PDF, or Word document is as simple as adding the appropriate option to the YAML. This is done by choosing the format when you create a new Quarto file:</p>
 <p><img src="img/tempquarto.PNG" class="img-fluid"></p>
 <p>The output format can also be added in the YAML of the document.</p>
 <div class="sourceCode" id="cb16"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
@@ -710,9 +730,9 @@ Tip
 <span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">docx</span><span class="kw">:</span><span class="at"> default</span></span>
 <span id="cb19-8"><a href="#cb19-8" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">pdf</span><span class="kw">:</span><span class="at"> default</span></span>
 <span id="cb19-9"><a href="#cb19-9" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>You can use the dropdown menu to render each file format one at a time.</p>
+<p>You can use the dropdown menu to render each file format one at a time. The dropdown menu will show the options that are included in the YAML.</p>
 <p><img src="img/renderoption.PNG" class="img-fluid"></p>
-<p>You can also render all formats at once using the <code>quarto</code> package or from the terminal tab. The path to your file will differ depending on where it is in your working directory.</p>
+<p>You can also render all formats at once using the <code>quarto</code> package or from the terminal tab. The path to your file you want to render will differ depending on where it is in your working directory.</p>
 <div class="sourceCode" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>quarto<span class="sc">::</span><span class="fu">quarto_render</span>(<span class="st">'data/quartoex.qmd'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>In the terminal (bottom left pane of RStudio), execute the following to render all formats. This requires the separate installation of Quarto described in the <a href="https://tbep-tech.github.io/flafs-os-workshop/setup.html#install-quarto">setup</a>.</p>
 <div class="code-with-filename">
@@ -728,7 +748,7 @@ Tip
 </div>
 <div class="sourceCode" id="cb22"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> install tool tinytex</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>There are also several options you can include in the YAML to control the formatting of the output. Some of the options can apply to all format types, whereas others are specific to each. Here’s an example building out these options further.</p>
+<p>There are also several options you can include in the YAML to control the formatting of the output. Some of the options apply to all format types, whereas others are specific to each. Here’s an example building out these options further.</p>
 <div class="sourceCode" id="cb23"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
 <span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Quarto practice"</span></span>
 <span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a><span class="fu">author</span><span class="kw">:</span><span class="at"> </span><span class="st">"Marcus Beck"</span></span>
@@ -744,21 +764,87 @@ Tip
 <span id="cb23-13"><a href="#cb23-13" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> top=30mm</span></span>
 <span id="cb23-14"><a href="#cb23-14" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> left=0mm</span></span>
 <span id="cb23-15"><a href="#cb23-15" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>In the above example, there are two new options that apply globally to the HTML, Word, and PDF outputs. Specifically, we’ve indicated that we’d like a table of contents (<code>toc: true</code>) and that the sections should be numbered (<code>number-sections: true</code>).</p>
-<p>We’ave also added some specific options to the HTML and PDF output. For the HTML output, we’ve indicated that we want the code chunks to be folded (i.e., toggle between seen and not seen). For the PDFoutput, we’ve slightly changed the geometry of the margins.</p>
+<p>In the above example, there are two new options that apply globally to the HTML, Word, and PDF outputs. Specifically, we’ve indicated that we’d like a table of contents (<code>toc: true</code>) and that the sections should be numbered (<code>number-sections: true</code>) in the rendered document.</p>
+<p>We’ave also added some specific options to the HTML and PDF output. For the HTML output, we’ve indicated that we want the code chunks to be folded (i.e., toggle between seen and not seen, <code>code-fold: true</code>). For the PDF output, we’ve changed the geometry of the margins using the <code>geometry</code> options.</p>
 <p>Here’s what the HTML output would look like:</p>
 <p><img src="img/formatoptions.PNG" class="border img-fluid"></p>
-<p>There are many other options aviable, as well as other format types. View the full list here: <a href="https://quarto.org/docs/output-formats/all-formats.html" target="_blank">https://quarto.org/docs/output-formats/all-formats.html</a></p>
+<p>There are many other options available for each output format, as well as other format types. View the full list here: <a href="https://quarto.org/docs/output-formats/all-formats.html" target="_blank">https://quarto.org/docs/output-formats/all-formats.html</a></p>
 </section>
-<section id="authoring" class="level3" data-number="3.2.4">
-<h3 data-number="3.2.4" class="anchored" data-anchor-id="authoring"><span class="header-section-number">3.2.4</span> Authoring</h3>
-<p>It’s entirely possible to create reports and manuscripts with Quarto, not to mention much easier since your analysis, data, and writing can all be done in the same place.<br>
-cross-references, citations</p>
+<section id="citations-and-references" class="level3" data-number="3.2.4">
+<h3 data-number="3.2.4" class="anchored" data-anchor-id="citations-and-references"><span class="header-section-number">3.2.4</span> Citations and References</h3>
+<p>It’s entirely possible to create reports and manuscripts with Quarto, not to mention much easier since your analysis, data, and writing can all be done in the same place. All of the above examples apply to “authoring”, e.g., adding figures and tables. Here, we’ll discuss a few other useful features of Quarto for authoring documents.</p>
+<p>One of the more valuable aspects of Quarto is the ability to easily add and reference other works in your document. This includes finding papers and reports, citing them in your document, and formatting references - all with relative ease in Quarto.</p>
+<p>You can of course do this using the source editor, but it’s slightly easier using the visual editor. If we switch to visual mode, you can type a forward-slash to view a menu of items to insert in the document. Just start typing text to search items to insert.</p>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The <a href="https://quarto.org/docs/visual-editor/options.html#insert-anything" target="_blank">Insert Anything</a> tool in the visual editor mode is useful to… insert anything! Just execute <code>/</code> at the beginning of a line or <code>Ctrl/Cmd + /</code> after some test.</p>
+</div>
+</div>
+<p><img src="img/insertanything.PNG" class="img-fluid"></p>
+<p>You can also insert a citation from the menu at the top of the .qmd file.</p>
+<p><img src="img/insertcitation.PNG" class="img-fluid"></p>
+<p>Either option will open the citation menu where you can add citations from a variety of sources (ie., <a href="https://quarto.org/docs/visual-editor/technical.html#citations-from-zotero" target="_blank">Zotero</a>, <a href="https://quarto.org/docs/visual-editor/technical.html#citations-from-dois" target="_blank">DOI</a>, <a href="https://www.crossref.org/">CrossRef</a>{target=“_blank}, <a href="https://pubmed.ncbi.nlm.nih.gov/">PubMed</a>{target=“_blank}, or <a href="https://datacite.org/" target="&quot;_blank">DataCite</a>).</p>
+<p>For example, we can copy/paste a DOI to find a reference of interest.</p>
+<p><img src="img/doisearch.PNG" class="img-fluid"></p>
+<p>Once the paper is found, you can click the Insert button to add it to your document. This adds a reference file, information in the YAML, and the in-text citation. The reference file will be called <code>references.bib</code> by default and includes a .Bibtex formatted reference that looks like this:</p>
+<div class="sourceCode" id="cb24"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>@article{shafland1982,</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>    title = {Lower lethal temperatures for fourteen non-native fishes in Florida},</span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>    author = {Shafland, Paul L. and Pestrak, James M.},</span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>    year = {1982},</span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>    month = {03},</span>
+<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a>    date = {1982-03},</span>
+<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a>    journal = {Environmental Biology of Fishes},</span>
+<span id="cb24-8"><a href="#cb24-8" aria-hidden="true" tabindex="-1"></a>    pages = {149--156},</span>
+<span id="cb24-9"><a href="#cb24-9" aria-hidden="true" tabindex="-1"></a>    volume = {7},</span>
+<span id="cb24-10"><a href="#cb24-10" aria-hidden="true" tabindex="-1"></a>    number = {2},</span>
+<span id="cb24-11"><a href="#cb24-11" aria-hidden="true" tabindex="-1"></a>    doi = {10.1007/bf00001785},</span>
+<span id="cb24-12"><a href="#cb24-12" aria-hidden="true" tabindex="-1"></a>    url = {http://dx.doi.org/10.1007/BF00001785},</span>
+<span id="cb24-13"><a href="#cb24-13" aria-hidden="true" tabindex="-1"></a>    langid = {en}</span>
+<span id="cb24-14"><a href="#cb24-14" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>The YAML file will now indicate the reference file to use that includes the references.</p>
+<div class="sourceCode" id="cb25"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Quarto practice"</span></span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a><span class="fu">author</span><span class="kw">:</span><span class="at"> </span><span class="st">"Marcus Beck"</span></span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a><span class="fu">editor</span><span class="kw">:</span><span class="at"> visual</span></span>
+<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a><span class="fu">bibliography</span><span class="kw">:</span><span class="at"> references.bib</span></span>
+<span id="cb25-6"><a href="#cb25-6" aria-hidden="true" tabindex="-1"></a><span class="fu">toc</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span><span class="at"> </span></span>
+<span id="cb25-7"><a href="#cb25-7" aria-hidden="true" tabindex="-1"></a><span class="fu">number-sections</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb25-8"><a href="#cb25-8" aria-hidden="true" tabindex="-1"></a><span class="fu">format</span><span class="kw">:</span><span class="at"> </span></span>
+<span id="cb25-9"><a href="#cb25-9" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">html</span><span class="kw">:</span><span class="at"> </span></span>
+<span id="cb25-10"><a href="#cb25-10" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">code-fold</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb25-11"><a href="#cb25-11" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">docx</span><span class="kw">:</span><span class="at"> default</span></span>
+<span id="cb25-12"><a href="#cb25-12" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">pdf</span><span class="kw">:</span><span class="at"> </span></span>
+<span id="cb25-13"><a href="#cb25-13" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">geometry</span><span class="kw">:</span><span class="at"> </span></span>
+<span id="cb25-14"><a href="#cb25-14" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> top=30mm</span></span>
+<span id="cb25-15"><a href="#cb25-15" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> left=0mm</span></span>
+<span id="cb25-16"><a href="#cb25-16" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>The text citation will look like this, where <code>@</code> is the tag used to reference the citation.</p>
+<div class="sourceCode" id="cb26"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>Many non-native species in Florida have lower lethal temperatures <span class="co">[</span><span class="ot">@shafland1982</span><span class="co">]</span>.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>When the Quarto file is rendered, the citation will be formatted and you’ll see it added to the references section at the end of the document.</p>
+<p>Many non-native species in Florida have lower lethal temperatures <span class="citation" data-cites="shafland1982">(<a href="references.html#ref-shafland1982" role="doc-biblioref">Shafland and Pestrak 1982</a>)</span>.</p>
+<p><img src="img/refex.PNG" class="img-fluid"></p>
+<p>The <code>@</code> citation syntax also allows different options for how the citation is displayed in the text (full explanation <a href="https://quarto.org/docs/authoring/footnotes-and-citations.html" target="_blank">here</a>. For example, omitting the brackets does the following:</p>
+<div class="sourceCode" id="cb27"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>@shafland1982 state that many non-native species in Florida have lower lethal temperatures.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><span class="citation" data-cites="shafland1982">Shafland and Pestrak (<a href="references.html#ref-shafland1982" role="doc-biblioref">1982</a>)</span> state that many non-native species in Florida have lower lethal temperatures.</p>
+<p>Additional information about citations in Quarto can be found <a href="https://quarto.org/docs/get-started/authoring/rstudio.html#citations" target="_blank">here</a>.</p>
 </section>
 <section id="publishing" class="level3" data-number="3.2.5">
 <h3 data-number="3.2.5" class="anchored" data-anchor-id="publishing"><span class="header-section-number">3.2.5</span> Publishing</h3>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
+<div id="ref-shafland1982" class="csl-entry" role="doc-biblioentry">
+Shafland, Paul L., and James M. Pestrak. 1982. <span>“Lower Lethal Temperatures for Fourteen Non-Native Fishes in Florida.”</span> <em>Environmental Biology of Fishes</em> 7 (2): 149–56. <a href="https://doi.org/10.1007/bf00001785">https://doi.org/10.1007/bf00001785</a>.
+</div>
+</div>
 </section>
 </section>
 

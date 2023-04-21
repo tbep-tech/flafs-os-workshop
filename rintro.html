@@ -349,7 +349,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <section id="r-language-fundamentals" class="level2" data-number="8.2">
 <h2 data-number="8.2" class="anchored" data-anchor-id="r-language-fundamentals"><span class="header-section-number">8.2</span> R language fundamentals</h2>
 <p>R is built around functions. The basic syntax of a function follows the form: <code>function_name(arg1, arg2, ...)</code>.</p>
-<p>With the base install, you will gain access to many functions (2321, to be exact). Some examples:</p>
+<p>With the base install, you will gain access to many functions (2344, to be exact). Some examples:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># print</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="st">"hello world!"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -364,31 +364,31 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># random numbers</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">rnorm</span>(<span class="dv">100</span>, <span class="at">mean =</span> <span class="dv">10</span>, <span class="at">sd =</span> <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>  [1]  9.105630  6.645229  8.550130  8.707328 12.260720  8.382186  9.521523
-  [8] 11.795866  7.141023  7.880166  7.177368  4.689898 10.974390 13.164993
- [15] 11.044529 12.579387  9.282949 11.706241  9.076344  9.615231 10.193053
- [22]  5.631906 12.303078 10.245623 10.706281  9.740118  8.652104 11.676506
- [29] 12.904759 10.585696 12.032819  9.497437 11.781213 12.828736 13.829250
- [36] 11.905747  9.062223 13.064832  9.788199  8.029513 14.361387 13.159159
- [43]  7.768642 10.014167  7.979088  5.734729  7.884428 11.289601 10.756391
- [50]  7.384181  9.755742  8.886673  7.527576 10.272047 10.410969 10.048549
- [57]  8.755064  8.810797  9.715794 10.688438  9.994125 10.440435 11.900409
- [64]  7.705636 13.177537 10.889113  8.688499  7.934900 11.555285  5.628361
- [71] 10.125663  8.957701 11.611956 11.912500  8.267363 12.231090 11.762717
- [78] 13.449796 12.546911 13.100418  8.413491 13.878095 10.531096  7.563463
- [85] 10.506647 10.094109  8.904514  8.781007  7.181317  8.780916 11.181298
- [92]  9.049635  9.180249  9.838817 10.710667 11.397707 11.881142  7.285978
- [99] 12.758851 12.767959</code></pre>
+<pre><code>  [1] 11.892739  8.288858  8.508338  7.549432  8.769584  8.183662 12.948363
+  [8]  8.266564  8.739406  6.510344  9.740469 12.275885 11.495728  6.433886
+ [15] 12.125391  9.014272 11.557431  8.450268  8.369008 11.594308  9.046002
+ [22] 10.087970 11.921300  9.598956 11.186923 11.992429  9.169422  9.382656
+ [29] 12.452495  8.127182 12.717614  9.023192  8.667313  7.125387  8.901348
+ [36]  9.321360 12.788742 11.535527  7.209894  9.773054 14.258882  9.910923
+ [43]  9.033770 11.586661 11.339333  7.222810  8.500354  8.817668 12.321870
+ [50] 14.174552  7.951526 14.053077 11.684114 11.398128  9.178096 11.999787
+ [57]  9.652826  7.070439 11.376712 10.113860 10.734766  9.180215  9.366627
+ [64]  9.554519  7.182745  9.740135 11.351502 10.315175 10.129289  9.703242
+ [71] 14.005913 14.330368 10.887198  9.158563 11.351598  9.282343 11.975494
+ [78]  8.424722  8.130140  9.158938 12.417180 10.680755  9.133840 10.059114
+ [85]  6.589577  9.735685  8.819347 11.391285  8.450058  6.619188  9.364866
+ [92] 12.003726 10.205339  8.519657  9.321085  8.545302  5.603429 12.494574
+ [99] 10.392397  9.476993</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># average </span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(<span class="fu">rnorm</span>(<span class="dv">100</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 0.06891028</code></pre>
+<pre><code>[1] -0.008577077</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># sum</span></span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(<span class="fu">rnorm</span>(<span class="dv">100</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] -3.547321</code></pre>
+<pre><code>[1] -2.594415</code></pre>
 </div>
 </div>
 <p>Very often you will see functions used like this:</p>
@@ -399,7 +399,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="cell">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>my_random_sum</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] -4.077291</code></pre>
+<pre><code>[1] -5.18984</code></pre>
 </div>
 </div>
 <section id="what-is-the-environment" class="level3" data-number="8.2.1">
@@ -412,7 +412,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>The base installation of R is quite powerful. Packages allow you to include new methods for use in R.</p>
 <section id="cran" class="level3" data-number="8.3.1">
 <h3 data-number="8.3.1" class="anchored" data-anchor-id="cran"><span class="header-section-number">8.3.1</span> CRAN</h3>
-<p>Many packages are available on CRAN, <a href="http://cran.r-project.org/" target="_blank">The Comprehensive R Archive Network</a>. This is where you download R and also where most will gain access to packages. As of 2023-04-20, there are 19378 packages on CRAN!</p>
+<p>Many packages are available on CRAN, <a href="http://cran.r-project.org/" target="_blank">The Comprehensive R Archive Network</a>. This is where you download R and also where most will gain access to packages. As of 2023-04-21, there are 19384 packages on CRAN!</p>
 </section>
 <section id="installing-packages" class="level3" data-number="8.3.2">
 <h3 data-number="8.3.2" class="anchored" data-anchor-id="installing-packages"><span class="header-section-number">8.3.2</span> Installing packages</h3>
@@ -740,7 +740,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-right">This book was built with <a href="https://quarto.org/" target="_blank">Quarto</a></div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"loop":true,"descPosition":"bottom","selector":".lightbox","openEffect":"zoom","closeEffect":"zoom"});</script>
+<script>var lightboxQuarto = GLightbox({"descPosition":"bottom","closeEffect":"zoom","loop":true,"openEffect":"zoom","selector":".lightbox"});</script>
 
 
 
