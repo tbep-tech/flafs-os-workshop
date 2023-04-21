@@ -193,6 +193,16 @@ Here's a short list of other useful execution options:
 | `message` | Include messages in rendered output
 +-----------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
+It's also worth noting that R code can be executed "inline" outside of code chunks.  This can be useful if you want to include statements that reference particular values or information that is linked directly to data.  Inline R code is entered using the ``r`` syntax. 
+
+``` markdown
+I can enter inline text like `r 1 + 1`.
+```
+
+Text with inline R code will look like this when the document is rendered.
+
+I can enter inline text like `r 1 + 1`.
+
 ### Figures and tables
 
 Figures and tables are easily added in Quarto, using either R code or importing from an external source. 
