@@ -2,6 +2,7 @@
 title: "Quarto practice"
 author: "Marcus Beck"
 editor: visual
+bibliography: references.bib
 toc: true 
 number-sections: true
 format: 
@@ -24,9 +25,9 @@ I can write anything I want right here. Here's some **bold text**.
 
 I can also make lists.
 
-1. Item 1
+1.  Item 1
 
-1. Item 2
+2.  Item 2
 
 # This is the second section
 
@@ -41,3 +42,4 @@ There's a histogram in @fig-hist.
 hist(rnorm(100))
 ```
 
+Many non-native species in Florida have lower lethal temperatures [@shafland1982].
