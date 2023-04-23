@@ -21,7 +21,7 @@ This is the third module in our workshop on open science. Now we focus on how Qu
 
 Quarto is a relatively new document preparation system that lets you create reproducible and dynamic content that is easily shared with others.  Quarto is integrated with RStudio and allows you to combine plain text language with analysis code in the same document.  
 
-Quarto belongs to a class of reporting tools called dynamic documents or literate programming.  It is not the first of its kind, but it builds substantially on its predecessors by bridging multiple programming langues. 
+Quarto belongs to a class of reporting tools called dynamic documents or literate programming [@knuth84].  It is not the first of its kind, but it builds substantially on its predecessors by bridging multiple programming langues. 
 
 Advantages of creating analyses using Quarto include:
 
@@ -117,12 +117,14 @@ This next section will run through the very basics of creating a Quarto document
     
     When the file is rendered, the markdown text will be formatted.  The text will be formatted already using the visual editor: 
     
+    ::: border
     I  can write anything I want right here. Here's some **bold text**.
     
     I can also make lists
     
     1. Item 1
     1. Item 2
+    :::
 
 (@) Render the .qmd file to the output format. 
 
@@ -195,13 +197,21 @@ Here's a short list of other useful execution options:
 
 It's also worth noting that R code can be executed "inline" outside of code chunks.  This can be useful if you want to include statements that reference particular values or information that is linked directly to data.  Inline R code is entered using the ``r`` syntax. 
 
-``` markdown
-I can enter inline text like `r 1 + 1`.
+```{=html}
+<div class="sourceCode">
+<pre class="sourceCode markdown">
+<code class="sourceCode markdown">
+I can enter inline text like &#96r 1 + 1&#96.
+</code>
+</pre>
+</div>
 ```
 
 Text with inline R code will look like this when the document is rendered.
 
+::: border
 I can enter inline text like `r 1 + 1`.
+::: 
 
 ### Figures and tables
 
@@ -236,7 +246,9 @@ Here's a cross-reference to @fig-myhist.
 
 When the file is rendered, the appropriate figure number will be displayed with a link to the figure:
 
+::: border
 Here's a cross-reference to @fig-myhist.
+:::
 
 Similarly, tabular output can be created inside code chunks. 
 
@@ -264,8 +276,9 @@ And a cross-reference:
 ```markdown
 Here's a cross-reference to @tbl-mytable.
 ```
-
+::: border
 Here's a cross-reference to @tbl-mytable.
+:::
 
 ::: {.callout-tip}
 Label tags for tables and figures should include the `tbl-` or `fig-` prefix for proper cross-referencing.
@@ -296,7 +309,9 @@ The cross-reference is done the same.
 ```r
 Here's a cross-reference to @fig-crappie
 ```
+::: border
 Here's a cross-reference to @fig-crappie.
+:::
 
 Likewise, tables can be imported from an external source (e.g., Excel). You'll want to do this in a code chunk and add the appropriate options (e.g., to cross-reference @tbl-habitats). 
 
@@ -336,7 +351,7 @@ format: html
 The default output format is HTML and it does not need to be added explicitly to the YAML.
 :::
 
-Alternative formats are specified the same way. 
+Alternative formats are specified the same way (i.e., Word and PDF). 
 
 ```yaml
 ---
@@ -374,25 +389,25 @@ You can use the dropdown menu to render each file format one at a time.  The dro
 
 ![](img/renderoption.PNG)
 
-You can also render all formats at once using the `quarto` package or from the terminal tab.  The path to your file you want to render will differ depending on where it is in your working directory. 
+You can also render all formats at once using the `quarto` package in the console.  The path to your file you want to render will differ depending on where it is in your working directory. 
 
 ```r
 quarto::quarto_render('data/quartoex.qmd')
 ```
 
-In the terminal (bottom left pane of RStudio), execute the following to render all formats.  This requires the separate installation of Quarto described in the [setup](https://tbep-tech.github.io/flafs-os-workshop/setup.html#install-quarto).
+Or you can render all format at once using the `render` command in the terminal (terminal tab, bottom left pane of RStudio).  This requires the separate installation of Quarto described in the [setup](https://tbep-tech.github.io/flafs-os-workshop/setup.html#install-quarto).
 
 ```{.bash filename="Terminal"}
 quarto render data/quartoex.qmd
 ```
 
-Rendering a file to PDF uses LaTeX and you'll need to install tinytex before you can use this option.  
+Rendering a file to PDF uses LaTeX and you'll need to install tinytex before you can use this option. This can also be done in the terminal. 
 
 ```{.bash filename="Terminal"}
 quarto install tool tinytex
 ```
 
-There are also several options you can include in the YAML to control the formatting of the output.  Some of the options apply to all format types, whereas others are specific to each.  Here's an example building out these options further.  
+There are several options you can include in the YAML to control the formatting of the output.  Some of the options apply to all format types, whereas others are specific to each.  Here's an example building out these options.  
 
 ```yaml
 ---
@@ -420,18 +435,16 @@ Here's what the HTML output would look like:
 
 ![](img/formatoptions.PNG){.border}
 
-There are many other options available for each output format, as well as other format types.  View the full list here: [https://quarto.org/docs/output-formats/all-formats.html](https://quarto.org/docs/output-formats/all-formats.html){target="_blank"}
+There are many other options available for each output format, as well as other format types.  View the full list [here](https://quarto.org/docs/output-formats/all-formats.html){target="_blank"}.
 
 ### Citations and References
 
-It's entirely possible to create reports and manuscripts with Quarto, not to mention much easier since your analysis, data, and writing can all be done in the same place. All of the above examples apply to "authoring", e.g., adding figures and tables.  Here, we'll discuss a few other useful features of Quarto for authoring documents. 
-
 One of the more valuable aspects of Quarto is the ability to easily add and reference other works in your document. This includes finding papers and reports, citing them in your document, and formatting references - all with relative ease in Quarto. 
 
-You can of course do this using the source editor, but it's slightly easier using the visual editor.  If we switch to visual mode, you can type a forward-slash to view a menu of items to insert in the document. Just start typing text to search items to insert.
+You can of course do this using the source editor, but it's slightly easier using the visual editor.  If we switch to visual mode (top-left button of the .qmd file), you can type a forward-slash to view a menu of items to insert in the document. Just start typing text to search items to insert.
 
 ::: {.callout-tip}
-The [Insert Anything](https://quarto.org/docs/visual-editor/options.html#insert-anything){target="_blank"} tool in the visual editor mode is useful to... insert anything! Just execute `/` at the beginning of a line or `Ctrl/Cmd + /` after some test.
+The [Insert Anything](https://quarto.org/docs/visual-editor/options.html#insert-anything){target="_blank"} tool in the visual editor mode is useful to... insert anything! Just execute `/` at the beginning of a line or `Ctrl/Cmd + /` after some text.
 :::
 
 ![](img/insertanything.PNG)
@@ -440,13 +453,17 @@ You can also insert a citation from the menu at the top of the .qmd file.
 
 ![](img/insertcitation.PNG)
 
-Either option will open the citation menu where you can add citations from a variety of sources (ie., [Zotero](https://quarto.org/docs/visual-editor/technical.html#citations-from-zotero){target="_blank"}, [DOI](https://quarto.org/docs/visual-editor/technical.html#citations-from-dois){target="_blank"}, [CrossRef](https://www.crossref.org/){target="_blank}, [PubMed](https://pubmed.ncbi.nlm.nih.gov/){target="_blank}, or [DataCite](https://datacite.org/){target="_blank}).
+Either option will open the citation menu where you can add citations from a variety of sources (ie., [Zotero](https://quarto.org/docs/visual-editor/technical.html#citations-from-zotero){target="_blank"}, [DOI](https://quarto.org/docs/visual-editor/technical.html#citations-from-dois){target="_blank"}, [CrossRef](https://www.crossref.org/){target="_blank"}, [PubMed](https://pubmed.ncbi.nlm.nih.gov/){target="_blank"}, or [DataCite](https://datacite.org/){target="_blank"}).
 
 For example, we can copy/paste a DOI to find a reference of interest. 
 
 ![](img/doisearch.PNG)
 
-Once the paper is found, you can click the Insert button to add it to your document. This adds a reference file, information in the YAML, and the in-text citation.  The reference file will be called `references.bib` by default and includes a .Bibtex formatted reference that looks like this: 
+Or we can search by title.
+
+![](img/crossrefsearch.png)
+
+Once the paper is found, you can click the Insert button to add it to your document. This adds a reference file, information in the YAML, and the in-text citation.  The reference file will be called `references.bib` by default and includes a [BibTeX](http://www.bibtex.org/){target="_blank"} formatted reference that looks like this: 
 ``` markdown
 @article{shafland1982,
 	title = {Lower lethal temperatures for fourteen non-native fishes in Florida},
@@ -485,7 +502,7 @@ format:
 ---
 ```
 
-The text citation will look like this, where `@` is the tag used to reference the citation.
+The text citation will look like this, where `@` is the tag used to reference the citation using the identifier from the references file.
 
 ``` markdown
 Many non-native species in Florida have lower lethal temperatures [@shafland1982].
@@ -493,16 +510,21 @@ Many non-native species in Florida have lower lethal temperatures [@shafland1982
 
 When the Quarto file is rendered, the citation will be formatted and you'll see it added to the references section at the end of the document. 
 
+::: border
 Many non-native species in Florida have lower lethal temperatures [@shafland1982].
+:::
 
 ![](img/refex.PNG)
 
-The `@` citation syntax also allows different options for how the citation is displayed in the text (full explanation [here](https://quarto.org/docs/authoring/footnotes-and-citations.html){target="_blank"}.  For example, omitting the brackets does the following:
+The `@` citation syntax also has different options for displaying the citation in the text (full explanation [here](https://quarto.org/docs/authoring/footnotes-and-citations.html){target="_blank"}.  For example, omitting the brackets does the following:
 
 ``` markdown
 @shafland1982 state that many non-native species in Florida have lower lethal temperatures.
 ```
+
+::: border
 @shafland1982 state that many non-native species in Florida have lower lethal temperatures.
+:::
 
 Additional information about citations in Quarto can be found [here](https://quarto.org/docs/get-started/authoring/rstudio.html#citations){target="_blank"}.
 
