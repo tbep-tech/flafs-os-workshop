@@ -177,23 +177,23 @@ plot(1:10)
 
 Here's a short list of other useful execution options:
 
-+-----------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Option    | Description                                                                                                                                                                                       |
-+===========+===================================================================================================================================================================================================+
-| `eval`    | Evaluate the code chunk (if `false`, just echos the code into the output).                                                                                                                        |
-+-----------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| `echo`    | Include the source code in output                                                                                                                                                                 |
-+-----------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| `output`  | Include the results of executing the code in the output (`true`, `false`, or `asis` to indicate that the output is raw markdown and should not have any of Quarto's standard enclosing markdown). |
-+-----------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| `warning` | Include warnings in the output.                                                                                                                                                                   |
-+-----------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| `error`   | Include errors in the output (note that this implies that errors executing code will not halt processing of the document).                                                                        |
-+-----------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| `include` | Catch all for preventing any output (code or results) from being included (e.g. `include: false` suppresses all output from the code block).                                                      |
-+-----------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| `message` | Include messages in rendered output
-+-----------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Option      | Description                                                                                                                                                                                       |
++=============+===================================================================================================================================================================================================+
+| `eval`      | Evaluate the code chunk (if `false`, just echos the code into the output).                                                                                                                        |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `echo`      | Include the source code in output                                                                                                                                                                 |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `output`    | Include the results of executing the code in the output (`true`, `false`, or `asis` to indicate that the output is raw markdown and should not have any of Quarto's standard enclosing markdown). |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `warning`   | Include warnings in the output.                                                                                                                                                                   |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `error`     | Include errors in the output (note that this implies that errors executing code will not halt processing of the document).                                                                        |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `include`   | Catch all for preventing any output (code or results) from being included (e.g. `include: false` suppresses all output from the code block).                                                      |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `message`   | Include messages in rendered output
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 It's also worth noting that R code can be executed "inline" outside of code chunks.  This can be useful if you want to include statements that reference particular values or information that is linked directly to data.  Inline R code is entered using the ``r`` syntax. 
 
@@ -530,3 +530,31 @@ Additional information about citations in Quarto can be found [here](https://qua
 
 ### Publishing
 
+A rendered Quarto file can be shared with anyone as a standalone document.  They can also be hosted online and shared by URL.  This latter approach is useful to make the document available to anyone with the web address.
+
+The easiest way to do this is to publish your document to [RPubs](https://rpubs.com/){target="_blank"}, a free service from Posit for sharing web documents. Click the <kbd>![](img/rstudio-publish-button.png){width="25" height="23"}</kbd> publish button on the top-right of the editor toolbar.  You will be prompted to create an account if you don't have one already.
+
+This can also be done using the `quarto` R package in the console.
+
+```r
+quarto::quarto_publish_doc(
+  "data/quartoex.qmd", 
+  server = "rpubs.com"
+  )
+```
+
+You can also use the Quarto CLI in the terminal.  Here we are publishing the document to [Quarto Pub](https://quartopub.com/){taret="_blank"}.
+
+```{.bash filename="Terminal"}
+quarto publish quarto-pub data/quartoex.qmd
+```
+
+If your Quarto document is in an RStudio project on GitHub, you can also publish to [GitHub Pages](https://pages.github.com/){target="_blank"}.
+
+```{.bash filename="Terminal"}
+quarto publish gh-pages data/quartoex.qmd
+```
+
+## Summary
+
+In this module we learned about the basics of creating Quarto documents that combine markdown text with R code.  There's much, much more Quarto can do for you.  Please visit [https://quarto.org/](https://quarto.org/){target="_blank"} for more information on how you can use these documents to fully leverage their potential for open science.
