@@ -20,7 +20,7 @@ book:
         - basics.qmd
         - collaborate.qmd
         - impact.qmd
-    - part: "Additional content"
+    - part: "Extra modules"
       chapters:
         - tidy.qmd
         - implement.qmd
