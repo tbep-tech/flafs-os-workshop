@@ -283,6 +283,7 @@ div.csl-indent {
   <li><a href="#citations-and-references" id="toc-citations-and-references" class="nav-link" data-scroll-target="#citations-and-references"><span class="toc-section-number">3.2.4</span>  Citations and References</a></li>
   <li><a href="#publishing" id="toc-publishing" class="nav-link" data-scroll-target="#publishing"><span class="toc-section-number">3.2.5</span>  Publishing</a></li>
   </ul></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><span class="toc-section-number">3.3</span>  Summary</a></li>
   </ul>
 </nav>
     </div>
@@ -474,8 +475,8 @@ Tip
 <p>Here’s a short list of other useful execution options:</p>
 <table class="table">
 <colgroup>
-<col style="width: 5%">
-<col style="width: 94%">
+<col style="width: 6%">
+<col style="width: 93%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -862,6 +863,32 @@ Tip
 </section>
 <section id="publishing" class="level3" data-number="3.2.5">
 <h3 data-number="3.2.5" class="anchored" data-anchor-id="publishing"><span class="header-section-number">3.2.5</span> Publishing</h3>
+<p>A rendered Quarto file can be shared with anyone as a standalone document. They can also be hosted online and shared by URL. This latter approach is useful to make the document available to anyone with the web address.</p>
+<p>The easiest way to do this is to publish your document to <a href="https://rpubs.com/" target="_blank">RPubs</a>, a free service from Posit for sharing web documents. Click the <kbd><img src="img/rstudio-publish-button.png" width="25" height="23"></kbd> publish button on the top-right of the editor toolbar. You will be prompted to create an account if you don’t have one already.</p>
+<p>This can also be done using the <code>quarto</code> R package in the console.</p>
+<div class="sourceCode" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>quarto<span class="sc">::</span><span class="fu">quarto_publish_doc</span>(</span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">"data/quartoex.qmd"</span>, </span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">server =</span> <span class="st">"rpubs.com"</span></span>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>You can also use the Quarto CLI in the terminal. Here we are publishing the document to <a href="https://quartopub.com/" data-taret="_blank">Quarto Pub</a>.</p>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>Terminal</strong></pre>
+</div>
+<div class="sourceCode" id="cb29"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> publish quarto-pub data/quartoex.qmd</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>If your Quarto document is in an RStudio project on GitHub, you can also publish to <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.</p>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>Terminal</strong></pre>
+</div>
+<div class="sourceCode" id="cb30"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> publish gh-pages data/quartoex.qmd</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+</section>
+<section id="summary" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="summary"><span class="header-section-number">3.3</span> Summary</h2>
+<p>In this module we learned about the basics of creating Quarto documents that combine markdown text with R code. There’s much, much more Quarto can do for you. Please visit <a href="https://quarto.org/" target="_blank">https://quarto.org/</a> for more information on how you can use these documents to fully leverage their potential for open science.</p>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
@@ -872,7 +899,6 @@ Knuth, Donald Ervin. 1984. <span>“Literate Programming.”</span> <em>The Comp
 Shafland, Paul L., and James M. Pestrak. 1982. <span>“Lower Lethal Temperatures for Fourteen Non-Native Fishes in Florida.”</span> <em>Environmental Biology of Fishes</em> 7 (2): 149–56. <a href="https://doi.org/10.1007/bf00001785">https://doi.org/10.1007/bf00001785</a>.
 </div>
 </div>
-</section>
 </section>
 
 </main> <!-- /main -->
