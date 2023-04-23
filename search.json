@@ -100,35 +100,35 @@
   {
     "objectID": "implement.html#goals-and-motivation",
     "href": "implement.html#goals-and-motivation",
-    "title": "5  Lowering barriers to inclusion and addressing key critiques",
+    "title": "5  Addressing implementation barriers",
     "section": "5.1 Goals and motivation",
     "text": "5.1 Goals and motivation\nWhat does it mean to use open science in the real world? It’s great to talk about the value of open science and the tools you can use, but it’s a completely different ball game when it comes to putting these ideas into practice. Our goal is that you leave this workshop an advocate and early adopter for the ideas we discussed today - spread these ideas to your peers and colleagues! To realistically achieve this goal, we will talk about some of the challenges you will face so you can develop a realistic expectation of what’s to come.\n\nGoal: Understand common hurdles in adopting open science and how to overcome them\n\nMotivation: Become the “open science” expert at your institution!"
   },
   {
     "objectID": "implement.html#learning-curves",
     "href": "implement.html#learning-curves",
-    "title": "5  Lowering barriers to inclusion and addressing key critiques",
+    "title": "5  Addressing implementation barriers",
     "section": "5.2 Learning curves",
     "text": "5.2 Learning curves\n\n\n\n\n\n\n\n\n\n\n Challenge\n\nIt’s hard to learn new tools!\n\n Solution\n\nIt’s an investment, look to the community!\nYou’ve probably seen a graphic like this if you’ve ever taken a course in R or Python. The hope is that you’re able to quickly reach the land of sunshine and bunnies, but the path is treacherous and even insurmountable for some.\nA huge obstacle in using open science is that the toolsets can have steep learning curves. More popular platforms, such as Excel, are used by many because they’re simple and intuitive. However, as noted earlier, FAIR workflows and tools are sacrificed for ease of use.\nAlthough it’s true that adopting new tools will slow forward progress, this is only temporary. Consider your path towards learning new platforms an investment in your future. The immediate benefit may not be apparent, but you’ll soon wonder how you ever got by before.\nIt’s also helpful to think about the broader community that can support you along this journey. Learning alone can be discouraging and we strongly recommend that you tap into the diverse community of educators, mentors, bloggers, and friends that can help. Even you can create a community of practice!\n\n\n\n\n\n\n\n\n\n\n Exercise and discussion\n\nHow can you engage your peers to develop a shared workspace to learn new tools? What tools will you learn?"
   },
   {
     "objectID": "implement.html#fear-of-exposure",
     "href": "implement.html#fear-of-exposure",
-    "title": "5  Lowering barriers to inclusion and addressing key critiques",
+    "title": "5  Addressing implementation barriers",
     "section": "5.3 Fear of exposure",
     "text": "5.3 Fear of exposure\n\n\n\n\n\n\n\n\n\n\n Challenge\n\nBeing open makes me nervous!\n\n Solution\n\nBeing open helps you collaborate, increases competitiveness, and creates a better scientific product!\nPracticing open science can feel like science in a fish bowl. Although this is kind of the goal, many view this transparency as a liability. Many fear having their ideas “scooped” or losing credibility because of greater exposure of mistakes. These are real concerns that require consideration when working towards more open workflows.\nIn conventional academic settings, competition for resources (e.g., via grant funding) is a real issue and being open can be seen as a risk to the competitive edge. We cannot dismiss this fact, but rather we can think about a lack of openness as a hindrance to forward progress and stifled creativity.\nThink about being open as a means to finding your next collaborator. Creating FAIR data opens the door for others to engage with your science. In fact, being open can increase the competitiveness of research proposals by building a stronger team that collaborates and shares data through better workflows.\nFirst time practitioners of open science also worry about the risk of “airing their dirty laundry”. By exposing the process and potential mistakes, many worry that their integrity as scientists may be questioned.\nThese fears are unfounded as the scientific process by definition is iterative. Hypotheses are supported or refuted through trial and error - if you’re getting your answer after one pass, you’re probably not doing it right. Making the process more transparent can help build trust as your collaborators can better appreciate how decisions and conclusions were made.\nMistakes in research are also very common, much more so than many people realize. By being open, it is true that mistakes are more visible, but this also provides a mechanism for fixing. Being open can lead to a better product by simply having more eyes on the process. It also helps normalize mistakes as part of the process - perfection is an unrealistic expectation.\n\n Exercise and discussion\n\nWhat are your personal concerns about adopting open science?"
   },
   {
     "objectID": "implement.html#what-does-it-mean-to-be-open",
     "href": "implement.html#what-does-it-mean-to-be-open",
-    "title": "5  Lowering barriers to inclusion and addressing key critiques",
+    "title": "5  Addressing implementation barriers",
     "section": "5.4 What does it mean to be open?",
     "text": "5.4 What does it mean to be open?\n\n Challenge\n\nPeople and institutions define open differently!\n\n Solution\n\nUnderstand the context and demonstrate the value!\nAlso realize that open science can mean different things to different people. By extension, this also applies to institutions. We presented the five schools of open science to help conceptualize ideas and tools when we discuss what it means to different groups.\nThink about your employer and what they might care about if you advocate for adoption of open science. Do you need to convince them that there is value in being open? What is their value proposition? What are the hurdles to achieving openness at your institution?\nFor many institutions, being open may come with IT hurdles as you push for alternative software platforms. Working with IT staff to develop trust and comfort for new software may be your burden, but as always, it’s an investment in the future.\nMaybe there are legal contexts to being open. For example, Florida has the “Sunshine” law that makes all government communications public record. What does this mean for using new workflows in open science? Is this is an improvement or a liability (see previous section)?\nIf you’re an administrator or manager, maybe you’re the one that makes the call about being open. It’s important for you to create a culture that promotes and supports open science. Allow space and time for your staff to learn new skills. Realize that investing time in open science is an investment in the future.\n\n Exercise and discussion\n\nWhat does being open mean to you? What do you think being open means to your employer?"
   },
   {
     "objectID": "implement.html#something-is-better-than-nothing",
     "href": "implement.html#something-is-better-than-nothing",
-    "title": "5  Lowering barriers to inclusion and addressing key critiques",
+    "title": "5  Addressing implementation barriers",
     "section": "5.5 Something is better than nothing",
     "text": "5.5 Something is better than nothing\n\n Challenge\n\nDoing all the things is impossible!\n\n Solution\n\nStart small, incremental progress is the name of the game!\nFirst time open science enthusiasts can be overwhelmed by the apparent need to check all the boxes on the open science list. There’s often a prevailing sentiment that you’re not doing open science unless you do all the things. This is simply not true. Just remember that doing something is a huge improvement over doing nothing.\nOpenness in science exists on a spectrum. Your goal should be incremental movement away from the completely closed end of the spectrum. Perhaps you set a goal of only accomplishing one open science task for a particular project. Maybe you start by developing a simple metadata text file or developing a data dictionary. Or maybe you make a commitment to try a new communication platform for collaborative engagement.\nChanneling this concept, Wilson et al. (2017) discuss “good enough practices” in scientific computing, acknowledging that very few of us are professionally trained in these disciplines and sometimes “good enough” is all we can ask for. Lowenberg et al. (2021) also advocate for simple adoption, rather than perfection, when it comes to data citation practices.\nAlso, be mindful of complacency (and apathy, at its very worst). Just because you think you’ve mastered a task doesn’t mean you can’t continue to learn. Always strive to improve yourself and the tools you use to be open. The fact that the toolbox is constantly evolving makes this a necessity.\nSo, be kind to yourself when learning new skills and realize that the first step will likely be frustration, but through frustration comes experience. The more comfortable you become with a task, the more likely you’ll attempt new tasks in the future. I promise you will see a return on your investment.\n\n Exercise and discussion\n\nWhat are some simple things you can do to begin adopting open science?\n\n\n\n\nLowenberg, Daniella, Rachael Lammey, Matthew B Jones, John Chodacki, and Martin Fenner. 2021. “Data Citation: Let’s Choose Adoption over Perfection.” Zenodo. https://doi.org/10.5281/zenodo.4701079.\n\n\nWilson, G., J. Bryan, K. Cranston, J. Kitzes, L. Nederbragt, and T. K. Teal. 2017. “Good Enough Practices in Scientific Computing.” PLoS Computational Biology 13 (6): e1005510. https://doi.org/10.1371/journal.pcbi.1005510."
   },
@@ -170,121 +170,170 @@
   {
     "objectID": "setup.html#install-r-and-rstudio",
     "href": "setup.html#install-r-and-rstudio",
-    "title": "7  Setup for the workshop",
-    "section": "7.1 Install R and RStudio",
-    "text": "7.1 Install R and RStudio\nR and RStudio are separate downloads and installations. R is the underlying statistical computing software. RStudio is a graphical integrated development environment (IDE) that makes using R much easier and more interactive. You need to install R before you install RStudio.\nThanks to the USGS-R Training group and Data Carpentry for making their installation materials available. The following instructions come directly from their materials, with a few minor edits to help you get set up.\n\n7.1.1 Windows: Download and install R\nGo to CRAN and download the R installer for Windows. Make sure to choose the latest stable version (v4.2.3 as of April 2023).\nOnce the installer downloads, Right-click on it and select “Run as administrator”.\nType in your credentials and click yes (or if you don’t have administrator access have your IT rep install with Admin privileges).\n\nYou can click next through the standard dialogs and accept most defaults. But at the destination screen, please verify that it is installing it to C:\\Program Files\\R\n\nAt the “Select Components” screen, you can accept the default and install both 32-bit and 64-bit versions.\n\nAt this screen, uncheck ‘Create a desktop icon’ because non-admin users in Windows will be unable to delete it.\n\n\n\n7.1.2 Windows: Download and install RStudio\nDownload RStudio from here.\nAfter download, double-click the installer. It will ask for your administrator credentials to install (you might need to have your IT rep install again).\nAccept all the default options for the RStudio install.\n\n\n\n7.1.3 macOS: Download and install R\n\nDownload and install R from the CRAN website for Mac here.\nSelect the .pkg file for the latest R version\nDouble click on the downloaded file to install R\nIt is also a good idea to install XQuartz (needed by some packages)\n\n\n\n7.1.4 macOS: Download and install RStudio\n\nGo to the RStudio download page\nUnder Installers select the appropriate RStudio download file for macOS\nDouble click the file to install RStudio\n\n\n\n7.1.5 Check Install\nOnce installed, RStudio should be accessible from the start menu. Start up RStudio. Once running it should look something like this:"
+    "title": "Appendix A — Setup for the workshop",
+    "section": "A.1 Install R and RStudio",
+    "text": "A.1 Install R and RStudio\nR and RStudio are separate downloads and installations. R is the underlying statistical computing software. RStudio is a graphical integrated development environment (IDE) that makes using R much easier and more interactive. You need to install R before you install RStudio.\nThanks to the USGS-R Training group and Data Carpentry for making their installation materials available. The following instructions come directly from their materials, with a few minor edits to help you get set up.\n\nA.1.1 Windows: Download and install R\nGo to CRAN and download the R installer for Windows. Make sure to choose the latest stable version (v4.2.3 as of April 2023).\nOnce the installer downloads, Right-click on it and select “Run as administrator”.\nType in your credentials and click yes (or if you don’t have administrator access have your IT rep install with Admin privileges).\n\nYou can click next through the standard dialogs and accept most defaults. But at the destination screen, please verify that it is installing it to C:\\Program Files\\R\n\nAt the “Select Components” screen, you can accept the default and install both 32-bit and 64-bit versions.\n\nAt this screen, uncheck ‘Create a desktop icon’ because non-admin users in Windows will be unable to delete it.\n\n\n\nA.1.2 Windows: Download and install RStudio\nDownload RStudio from here.\nAfter download, double-click the installer. It will ask for your administrator credentials to install (you might need to have your IT rep install again).\nAccept all the default options for the RStudio install.\n\n\n\nA.1.3 macOS: Download and install R\n\nDownload and install R from the CRAN website for Mac here.\nSelect the .pkg file for the latest R version\nDouble click on the downloaded file to install R\nIt is also a good idea to install XQuartz (needed by some packages)\n\n\n\nA.1.4 macOS: Download and install RStudio\n\nGo to the RStudio download page\nUnder Installers select the appropriate RStudio download file for macOS\nDouble click the file to install RStudio\n\n\n\nA.1.5 Check Install\nOnce installed, RStudio should be accessible from the start menu. Start up RStudio. Once running it should look something like this:"
   },
   {
     "objectID": "setup.html#install-quarto",
     "href": "setup.html#install-quarto",
-    "title": "7  Setup for the workshop",
-    "section": "7.2 Install Quarto",
-    "text": "7.2 Install Quarto\nA visual editor for Quarto is installed with RStudio. However, you’ll need to install Quarto CLI to make full use of its features.\nNavigate to https://quarto.org/docs/get-started/. You’ll see a screen that looks like this:\n\nSelect the download appropriate for your operating system (Windows is the big blue button). After the file is downloaded, navigate to the folder containing the file, double-click to install, and accept the default settings at the prompts.\nAfter installation is done, open RStudio (or close and open again) and select the Terminal tab. This tab is located on the bottom-left pane, next to the Console tab. Type quarto check at the prompt and press enter. You should see something like this if installation was successful."
+    "title": "Appendix A — Setup for the workshop",
+    "section": "A.2 Install Quarto",
+    "text": "A.2 Install Quarto\nA visual editor for Quarto is installed with RStudio. However, you’ll need to install Quarto CLI to make full use of its features.\nNavigate to https://quarto.org/docs/get-started/. You’ll see a screen that looks like this:\n\nSelect the download appropriate for your operating system (Windows is the big blue button). After the file is downloaded, navigate to the folder containing the file, double-click to install, and accept the default settings at the prompts.\nAfter installation is done, open RStudio (or close and open again) and select the Terminal tab. This tab is located on the bottom-left pane, next to the Console tab. Type quarto check at the prompt and press enter. You should see something like this if installation was successful."
   },
   {
     "objectID": "setup.html#create-github-account",
     "href": "setup.html#create-github-account",
-    "title": "7  Setup for the workshop",
-    "section": "7.3 Create GitHub account",
-    "text": "7.3 Create GitHub account\nOpen a web browser and enter the url https://github.com. On the top-right, you should see a button to sign up. Click the button and register an account by choosing an email, username, and password."
+    "title": "Appendix A — Setup for the workshop",
+    "section": "A.3 Create GitHub account",
+    "text": "A.3 Create GitHub account\nOpen a web browser and enter the url https://github.com. On the top-right, you should see a button to sign up. Click the button and register an account by choosing an email, username, and password."
   },
   {
     "objectID": "setup.html#install-git-optional",
     "href": "setup.html#install-git-optional",
-    "title": "7  Setup for the workshop",
-    "section": "7.4 Install Git (optional)",
-    "text": "7.4 Install Git (optional)\nAfter you’ve registered a new GitHub account, you can install the Git software on your computer. Git is version control software used by RStudio that allows you to access GitHub. Open the url https://git-scm.com/book/en/v2/Getting-Started-Installing-Git and follow the instructions for your operating system.\nAfter Git is installed, open RStudio (or close and open again) to verify the installation. You should see a new “Git” tab located in the top-right pane of RStudio.\n\n\n7.4.1 Make sure RStudio can talk to GitHub via Git\nThe next step can be a bit tricky, but is essential if you want to access your GitHub using RStudio and Git. First, install the usethis R package in RStudio.\n\ninstall.packages(\"usethis\")\n\nYou must let Git know who you are and that you have permission to write to a GitHub repository. First, let Git know who you are, where you enter your user name and email associated with the account from the previous step.\n\nusethis::use_git_config(user.name=\"Jane Doe\", user.email=\"jane@example.org\")\n\nNext, you need to setup a personal access token (PAT) that defines the permissions to write to a repository. This can be done as follows:\n\nusethis::create_github_token()\n\nThen follow the remaining prompts to complete the PAT creation. A more thorough explanation can be found here."
+    "title": "Appendix A — Setup for the workshop",
+    "section": "A.4 Install Git (optional)",
+    "text": "A.4 Install Git (optional)\nAfter you’ve registered a new GitHub account, you can install the Git software on your computer. Git is version control software used by RStudio that allows you to access GitHub. Open the url https://git-scm.com/book/en/v2/Getting-Started-Installing-Git and follow the instructions for your operating system.\nAfter Git is installed, open RStudio (or close and open again) to verify the installation. You should see a new “Git” tab located in the top-right pane of RStudio.\n\n\nA.4.1 Make sure RStudio can talk to GitHub via Git\nThe next step can be a bit tricky, but is essential if you want to access your GitHub using RStudio and Git. First, install the usethis R package in RStudio.\n\ninstall.packages(\"usethis\")\n\nYou must let Git know who you are and that you have permission to write to a GitHub repository. First, let Git know who you are, where you enter your user name and email associated with the account from the previous step.\n\nusethis::use_git_config(user.name=\"Jane Doe\", user.email=\"jane@example.org\")\n\nNext, you need to setup a personal access token (PAT) that defines the permissions to write to a repository. This can be done as follows:\n\nusethis::create_github_token()\n\nThen follow the remaining prompts to complete the PAT creation. A more thorough explanation can be found here."
   },
   {
     "objectID": "setup.html#this-is-hard",
     "href": "setup.html#this-is-hard",
-    "title": "7  Setup for the workshop",
-    "section": "7.5 This is hard!",
-    "text": "7.5 This is hard!\nIf you have trouble installing any of the software prior to the workshop, you can use use RStudio in the cloud on the Posit website. This is only a backup option and we strongly encourage you to troubleshoot the installation when able.\nTo use RStudio in the cloud, copy this link and paste it in a web browser: https://posit.cloud/content/5775087\nIf you do not have a Posit Cloud account, you will see this screen when you first visit the URL:\n\n\nYou can setup an account for free using a login you create or through a third-party (Google or GitHub).\nAfter your account is setup, you should a screen that looks like this:\n\n\nYou’ll see that this is a TEMPORARY COPY under your account. Make it permanent by clicking the button on top. This will save any changes you make to this project under your account."
+    "title": "Appendix A — Setup for the workshop",
+    "section": "A.5 This is hard!",
+    "text": "A.5 This is hard!\nIf you have trouble installing any of the software prior to the workshop, you can use use RStudio in the cloud on the Posit website. This is only a backup option and we strongly encourage you to troubleshoot the installation when able.\nTo use RStudio in the cloud, copy this link and paste it in a web browser: https://posit.cloud/content/5775087\nIf you do not have a Posit Cloud account, you will see this screen when you first visit the URL:\n\n\nYou can setup an account for free using a login you create or through a third-party (Google or GitHub).\nAfter your account is setup, you should a screen that looks like this:\n\n\nYou’ll see that this is a TEMPORARY COPY under your account. Make it permanent by clicking the button on top. This will save any changes you make to this project under your account."
   },
   {
     "objectID": "rintro.html#rstudio",
     "href": "rintro.html#rstudio",
-    "title": "8  Introduction to R",
-    "section": "8.1 RStudio",
-    "text": "8.1 RStudio\nRStudio is the go-to Interactive Development Environment (IDE) for R. Rstudio includes many features to improve the user’s experience.\nLet’s get familiar with RStudio.\n\n8.1.1 Open R and RStudio\nFind the RStudio shortcut on your computer and fire it up. You should see something like this:\n\n\n\n\n\nThere are four panes in RStudio:\n\nSource: Your primary window for writing code to send to the console, this is where you write and save R “scripts”\nConsole: This is where code is executed in R\nEnvironment, History, etc.: A tabbed window showing your working environment, code execution history, and other useful things\nFiles, plots, etc.: A tabbed window showing a file explorer, a plot window, list of installed packages, help files, and viewer\n\n\n\n8.1.2 Scripting\nIn most cases, you will not enter and execute code directly in the console. Code can be written in a script and then sent directly to the console.\nOpen a new script from the File menu…\n\n\n\n\n\n\n\n8.1.3 Executing code in RStudio\nAfter you write code in an R script, it can be sent to the Console to run the code. There are two ways to do this. First, you can hit the Run button at the top right of the scripting window. Second, you can use ctrl+enter (cmd+enter on a Mac). Either option will run the line(s) of script that are selected."
+    "title": "Appendix B — Introduction to R",
+    "section": "B.1 RStudio",
+    "text": "B.1 RStudio\nRStudio is the go-to Interactive Development Environment (IDE) for R. Rstudio includes many features to improve the user’s experience.\nLet’s get familiar with RStudio.\n\nB.1.1 Open R and RStudio\nFind the RStudio shortcut on your computer and fire it up. You should see something like this:\n\n\n\n\n\nThere are four panes in RStudio:\n\nSource: Your primary window for writing code to send to the console, this is where you write and save R “scripts”\nConsole: This is where code is executed in R\nEnvironment, History, etc.: A tabbed window showing your working environment, code execution history, and other useful things\nFiles, plots, etc.: A tabbed window showing a file explorer, a plot window, list of installed packages, help files, and viewer\n\n\n\nB.1.2 Scripting\nIn most cases, you will not enter and execute code directly in the console. Code can be written in a script and then sent directly to the console.\nOpen a new script from the File menu…\n\n\n\n\n\n\n\nB.1.3 Executing code in RStudio\nAfter you write code in an R script, it can be sent to the Console to run the code. There are two ways to do this. First, you can hit the Run button at the top right of the scripting window. Second, you can use ctrl+enter (cmd+enter on a Mac). Either option will run the line(s) of script that are selected."
   },
   {
     "objectID": "rintro.html#r-language-fundamentals",
     "href": "rintro.html#r-language-fundamentals",
-    "title": "8  Introduction to R",
-    "section": "8.2 R language fundamentals",
-    "text": "8.2 R language fundamentals\nR is built around functions. The basic syntax of a function follows the form: function_name(arg1, arg2, ...).\nWith the base install, you will gain access to many functions (2344, to be exact). Some examples:\n\n# print\nprint(\"hello world!\")\n\n[1] \"hello world!\"\n\n# sequence\nseq(1, 10)\n\n [1]  1  2  3  4  5  6  7  8  9 10\n\n# random numbers\nrnorm(100, mean = 10, sd = 2)\n\n  [1] 10.716194  5.882674  9.698480 12.687001  9.967923 10.433477 11.791503\n  [8]  9.245192  9.659524 10.413702 10.777620  9.667686 12.352259 10.822258\n [15] 13.549482 10.911684 11.534105 10.142344  8.002480  9.809688  7.642728\n [22]  9.407847 12.651348  9.356644 12.813047 11.244681 10.654461  9.834823\n [29]  7.802536 10.779495 11.130685  9.893016 10.038365 11.732842 11.193376\n [36] 11.753697 11.432700  9.442072  9.060179  9.531897  9.531450 12.001401\n [43]  8.712087 10.208355  9.249549  6.843042  9.831428  6.816783 12.802562\n [50] 10.851997 10.437063  8.270612 11.036677  8.699518 12.356516  9.908995\n [57] 10.587169  7.644228 11.888273 11.965903  8.731892 11.988267  7.060856\n [64] 11.605736 11.661117  7.828657 10.231011 15.211790 10.611742  9.381095\n [71]  9.297296  9.302940 10.418916  7.762191  8.056704  9.593727  5.820163\n [78] 10.598697 12.066912 12.183644  9.859525  9.774059  6.613588  8.974988\n [85] 12.762119  9.444672 10.241054  8.815014 11.460611  8.082235 10.231768\n [92] 12.299775 11.544760  7.752804  9.801122 10.029879  7.813402  6.620776\n [99]  9.237201  9.687181\n\n# average \nmean(rnorm(100))\n\n[1] 0.1527262\n\n# sum\nsum(rnorm(100))\n\n[1] -4.62862\n\n\nVery often you will see functions used like this:\n\nmy_random_sum <- sum(rnorm(100))\n\nThe first part of the line is the name of an object that you make up. The second bit, <-, is the assignment operator. This tells R to take the result of sum(rnorm(100)) and store it in an object named, my_random_sum. It is stored in the environment and can be used by just executing it’s name in the console.\n\nmy_random_sum\n\n[1] 5.34881\n\n\n\n8.2.1 What is the environment?\nThere are two outcomes when you run code. First, the code will simply print output directly in the console. Second, there is no output because you have stored it as a variable using <-. Output that is stored is saved in the environment. The environment is the collection of named objects that are stored in memory for your current R session."
+    "title": "Appendix B — Introduction to R",
+    "section": "B.2 R language fundamentals",
+    "text": "B.2 R language fundamentals\nR is built around functions. The basic syntax of a function follows the form: function_name(arg1, arg2, ...).\nWith the base install, you will gain access to many functions (2344, to be exact). Some examples:\n\n# print\nprint(\"hello world!\")\n\n[1] \"hello world!\"\n\n# sequence\nseq(1, 10)\n\n [1]  1  2  3  4  5  6  7  8  9 10\n\n# random numbers\nrnorm(100, mean = 10, sd = 2)\n\n  [1]  8.701250 10.188078 11.558911 10.432077 10.952629  6.733820 11.536135\n  [8] 12.266247 10.009425  9.541966  9.711779 10.592717 10.541023 10.419887\n [15]  9.765750 10.843669  7.435019  8.729293 11.961664 10.482410  9.948270\n [22] 13.059202  5.043446 10.611367 10.911550  9.231166 11.648047 10.005844\n [29] 10.555445 10.166228  9.887854 11.581954 10.318627 12.277992  8.690290\n [36] 15.098616  8.249137 11.641841 10.676446 10.796567 10.324075  8.465579\n [43]  9.950136 13.652136  8.816605  7.401103  7.230826 10.749704  7.191084\n [50] 10.713345  8.499504  9.754113  7.435403 14.157064 13.890614 11.524672\n [57]  7.935399 11.905651  6.547559  8.271052  7.670649 11.387107  9.004998\n [64]  9.132781  8.983663 10.511439 12.061429 12.986644  7.417977 10.356976\n [71] 12.203763 11.092731  9.044164 10.314946  8.253691  8.969762 12.042370\n [78] 13.038969  8.330129 10.970688 11.322471  8.965775  9.567961  9.735648\n [85] 11.175104 10.493850  9.450421 12.181002  9.157148 11.010559  9.721510\n [92]  9.080670  7.183698 10.183987  9.018152 12.410358  8.731269  7.795456\n [99] 11.803479 13.437324\n\n# average \nmean(rnorm(100))\n\n[1] -0.09390011\n\n# sum\nsum(rnorm(100))\n\n[1] 9.439894\n\n\nVery often you will see functions used like this:\n\nmy_random_sum <- sum(rnorm(100))\n\nThe first part of the line is the name of an object that you make up. The second bit, <-, is the assignment operator. This tells R to take the result of sum(rnorm(100)) and store it in an object named, my_random_sum. It is stored in the environment and can be used by just executing it’s name in the console.\n\nmy_random_sum\n\n[1] -0.5964433\n\n\n\nB.2.1 What is the environment?\nThere are two outcomes when you run code. First, the code will simply print output directly in the console. Second, there is no output because you have stored it as a variable using <-. Output that is stored is saved in the environment. The environment is the collection of named objects that are stored in memory for your current R session."
   },
   {
     "objectID": "rintro.html#packages",
     "href": "rintro.html#packages",
-    "title": "8  Introduction to R",
-    "section": "8.3 Packages",
-    "text": "8.3 Packages\nThe base installation of R is quite powerful. Packages allow you to include new methods for use in R.\n\n8.3.1 CRAN\nMany packages are available on CRAN, The Comprehensive R Archive Network. This is where you download R and also where most will gain access to packages. As of 2023-04-23, there are 19388 packages on CRAN!\n\n\n8.3.2 Installing packages\nWhen a package gets installed, that means the source code is downloaded and put into your library. A default library location is set for you.\nWe use the install.packages() function to download and install a package. Here, we install the readxl package, used below, which is used to upload data from and Excel file.\n\ninstall.packages(\"readxl\")\n\nYou should see some text in the R console showing progress of the installation and a prompt after installation is done.\nAfter installation, you can load a package using the library() function. This makes all functions in a package available for you to use.\n\nlibrary(readxl)\n\nAn important aspect of packages is that you only need to download them once, but every time you start RStudio you need to load them with the library() function."
+    "title": "Appendix B — Introduction to R",
+    "section": "B.3 Packages",
+    "text": "B.3 Packages\nThe base installation of R is quite powerful. Packages allow you to include new methods for use in R.\n\nB.3.1 CRAN\nMany packages are available on CRAN, The Comprehensive R Archive Network. This is where you download R and also where most will gain access to packages. As of 2023-04-23, there are 19388 packages on CRAN!\n\n\nB.3.2 Installing packages\nWhen a package gets installed, that means the source code is downloaded and put into your library. A default library location is set for you.\nWe use the install.packages() function to download and install a package. Here, we install the readxl package, used below, which is used to upload data from and Excel file.\n\ninstall.packages(\"readxl\")\n\nYou should see some text in the R console showing progress of the installation and a prompt after installation is done.\nAfter installation, you can load a package using the library() function. This makes all functions in a package available for you to use.\n\nlibrary(readxl)\n\nAn important aspect of packages is that you only need to download them once, but every time you start RStudio you need to load them with the library() function."
   },
   {
     "objectID": "rintro.html#data-structures-in-r",
     "href": "rintro.html#data-structures-in-r",
-    "title": "8  Introduction to R",
-    "section": "8.4 Data structures in R",
-    "text": "8.4 Data structures in R\nNow we can talk about R data structures. Simply put, a data structure is a way for programming languages to handle information storage.\n\n8.4.1 Vectors (one-dimensional data)\nThe basic data format in R is a vector - a one-dimensional grouping of elements that have the same type. These are all vectors and they are created with the c (concatenate) function:\n\ndbl_var <- c(1, 2.5, 4.5)\nint_var <- c(1L, 6L, 10L)\nlog_var <- c(TRUE, FALSE, T, F)\nchr_var <- c(\"a\", \"b\", \"c\")\n\nThe four types of vectors are double (or numeric), integer, logical, and character. The following functions can return useful information about the vectors:\n\nclass(dbl_var)\n\n[1] \"numeric\"\n\nlength(log_var)\n\n[1] 4\n\n\n\n\n8.4.2 Data frames (two-dimensional data)\nA collection of vectors represented as one data object are often described as two-dimensional data, like a spreadsheet, or in R speak, a data frame. Here’s a simple example:\n\nltrs <- c(\"a\", \"b\", \"c\")\nnums <- c(1, 2, 3)\nlogs <- c(T, F, T)\nmydf <- data.frame(ltrs, nums, logs)\nmydf\n\n  ltrs nums  logs\n1    a    1  TRUE\n2    b    2 FALSE\n3    c    3  TRUE\n\n\nThe only constraints required to make a data frame are:\n\nEach column (vector) contains the same type of data\nThe number of observations in each column is equal."
+    "title": "Appendix B — Introduction to R",
+    "section": "B.4 Data structures in R",
+    "text": "B.4 Data structures in R\nNow we can talk about R data structures. Simply put, a data structure is a way for programming languages to handle information storage.\n\nB.4.1 Vectors (one-dimensional data)\nThe basic data format in R is a vector - a one-dimensional grouping of elements that have the same type. These are all vectors and they are created with the c (concatenate) function:\n\ndbl_var <- c(1, 2.5, 4.5)\nint_var <- c(1L, 6L, 10L)\nlog_var <- c(TRUE, FALSE, T, F)\nchr_var <- c(\"a\", \"b\", \"c\")\n\nThe four types of vectors are double (or numeric), integer, logical, and character. The following functions can return useful information about the vectors:\n\nclass(dbl_var)\n\n[1] \"numeric\"\n\nlength(log_var)\n\n[1] 4\n\n\n\n\nB.4.2 Data frames (two-dimensional data)\nA collection of vectors represented as one data object are often described as two-dimensional data, like a spreadsheet, or in R speak, a data frame. Here’s a simple example:\n\nltrs <- c(\"a\", \"b\", \"c\")\nnums <- c(1, 2, 3)\nlogs <- c(T, F, T)\nmydf <- data.frame(ltrs, nums, logs)\nmydf\n\n  ltrs nums  logs\n1    a    1  TRUE\n2    b    2 FALSE\n3    c    3  TRUE\n\n\nThe only constraints required to make a data frame are:\n\nEach column (vector) contains the same type of data\nThe number of observations in each column is equal."
   },
   {
     "objectID": "rintro.html#getting-your-data-into-r",
     "href": "rintro.html#getting-your-data-into-r",
-    "title": "8  Introduction to R",
-    "section": "8.5 Getting your data into R",
-    "text": "8.5 Getting your data into R\nIt is the rare case when you manually enter your data in R. Most data analysis workflows typically begin with importing a dataset from an external source. We’ll be using read_excel() function from the readxl package.\nWe can import the ExampleSites.xlsx dataset as follows. Note the use of a relative file path. You can see what R is using as your “working directory” using the getwd() function.\n\nsitdat <- read_excel(\"data/ExampleSites.xlsx\")\n\nLet’s explore the dataset a bit.\n\n# get the dimensions\ndim(sitdat)\n\n[1] 11  5\n\n# get the column names\nnames(sitdat)\n\n[1] \"Monitoring Location ID\"        \"Monitoring Location Name\"     \n[3] \"Monitoring Location Latitude\"  \"Monitoring Location Longitude\"\n[5] \"Location Group\"               \n\n# see the first six rows\nhead(sitdat)\n\n# A tibble: 6 × 5\n  `Monitoring Location ID` `Monitoring Location Name` Monitoring Location Lati…¹\n  <chr>                    <chr>                                           <dbl>\n1 ABT-026                  Rte 2, Concord                                   42.5\n2 ABT-062                  Rte 62, Acton                                    42.4\n3 ABT-077                  Rte 27/USGS, Maynard                             42.4\n4 ABT-144                  Rte 62, Stow                                     42.4\n5 ABT-237                  Robin Hill Rd, Marlboro                          42.3\n6 ABT-301                  Rte 9, Westboro                                  42.3\n# ℹ abbreviated name: ¹​`Monitoring Location Latitude`\n# ℹ 2 more variables: `Monitoring Location Longitude` <dbl>,\n#   `Location Group` <chr>\n\n# get the overall structure\nstr(sitdat)\n\ntibble [11 × 5] (S3: tbl_df/tbl/data.frame)\n $ Monitoring Location ID       : chr [1:11] \"ABT-026\" \"ABT-062\" \"ABT-077\" \"ABT-144\" ...\n $ Monitoring Location Name     : chr [1:11] \"Rte 2, Concord\" \"Rte 62, Acton\" \"Rte 27/USGS, Maynard\" \"Rte 62, Stow\" ...\n $ Monitoring Location Latitude : num [1:11] 42.5 42.4 42.4 42.4 42.3 ...\n $ Monitoring Location Longitude: num [1:11] -71.4 -71.4 -71.4 -71.5 -71.6 ...\n $ Location Group               : chr [1:11] \"Assabet\" \"Assabet\" \"Assabet\" \"Assabet\" ...\n\n\nYou can also view a dataset in a spreadsheet style using the View() function:\n\nView(sitdat)"
+    "title": "Appendix B — Introduction to R",
+    "section": "B.5 Getting your data into R",
+    "text": "B.5 Getting your data into R\nIt is the rare case when you manually enter your data in R. Most data analysis workflows typically begin with importing a dataset from an external source. We’ll be using read_excel() function from the readxl package.\nWe can import the ExampleSites.xlsx dataset as follows. Note the use of a relative file path. You can see what R is using as your “working directory” using the getwd() function.\n\nsitdat <- read_excel(\"data/ExampleSites.xlsx\")\n\nLet’s explore the dataset a bit.\n\n# get the dimensions\ndim(sitdat)\n\n[1] 11  5\n\n# get the column names\nnames(sitdat)\n\n[1] \"Monitoring Location ID\"        \"Monitoring Location Name\"     \n[3] \"Monitoring Location Latitude\"  \"Monitoring Location Longitude\"\n[5] \"Location Group\"               \n\n# see the first six rows\nhead(sitdat)\n\n# A tibble: 6 × 5\n  `Monitoring Location ID` `Monitoring Location Name` Monitoring Location Lati…¹\n  <chr>                    <chr>                                           <dbl>\n1 ABT-026                  Rte 2, Concord                                   42.5\n2 ABT-062                  Rte 62, Acton                                    42.4\n3 ABT-077                  Rte 27/USGS, Maynard                             42.4\n4 ABT-144                  Rte 62, Stow                                     42.4\n5 ABT-237                  Robin Hill Rd, Marlboro                          42.3\n6 ABT-301                  Rte 9, Westboro                                  42.3\n# ℹ abbreviated name: ¹​`Monitoring Location Latitude`\n# ℹ 2 more variables: `Monitoring Location Longitude` <dbl>,\n#   `Location Group` <chr>\n\n# get the overall structure\nstr(sitdat)\n\ntibble [11 × 5] (S3: tbl_df/tbl/data.frame)\n $ Monitoring Location ID       : chr [1:11] \"ABT-026\" \"ABT-062\" \"ABT-077\" \"ABT-144\" ...\n $ Monitoring Location Name     : chr [1:11] \"Rte 2, Concord\" \"Rte 62, Acton\" \"Rte 27/USGS, Maynard\" \"Rte 62, Stow\" ...\n $ Monitoring Location Latitude : num [1:11] 42.5 42.4 42.4 42.4 42.3 ...\n $ Monitoring Location Longitude: num [1:11] -71.4 -71.4 -71.4 -71.5 -71.6 ...\n $ Location Group               : chr [1:11] \"Assabet\" \"Assabet\" \"Assabet\" \"Assabet\" ...\n\n\nYou can also view a dataset in a spreadsheet style using the View() function:\n\nView(sitdat)"
   },
   {
     "objectID": "rintro.html#summary",
     "href": "rintro.html#summary",
-    "title": "8  Introduction to R",
-    "section": "8.6 Summary",
-    "text": "8.6 Summary\nIn this intro we learned about R and Rstudio, some of the basic syntax and data structures in R, and how to import files. You’ll be able to follow the rest of the workshop with this knowledge. View the Resources page for additional training materials."
+    "title": "Appendix B — Introduction to R",
+    "section": "B.6 Summary",
+    "text": "B.6 Summary\nIn this intro we learned about R and Rstudio, some of the basic syntax and data structures in R, and how to import files. You’ll be able to follow the rest of the workshop with this knowledge. View the Resources page for additional training materials."
   },
   {
     "objectID": "resources.html#open-science-websites",
     "href": "resources.html#open-science-websites",
-    "title": "9  Resources for continued learning",
-    "section": "9.1 Open Science Websites",
-    "text": "9.1 Open Science Websites\n\nNCEAS Open Science for Synthesis workshop\nNCEAS Reproducible Research Techniques\nOpen Science Foundation open science workshop\nOpenscapes\nOpenscapes Champions Lesson Series\nSupercharge your research: A 10 week plan for open data science\nROpenSci guidance on creating a Code of Conduct\nNOAA Reproducible Reporting with R\nPeerJ collection on practical data science"
+    "title": "Appendix C — Resources",
+    "section": "C.1 Open Science Websites",
+    "text": "C.1 Open Science Websites\n\nNCEAS Open Science for Synthesis workshop\nNCEAS Reproducible Research Techniques\nOpen Science Foundation open science workshop\nOpenscapes\nOpenscapes Champions Lesson Series\nSupercharge your research: A 10 week plan for open data science\nROpenSci guidance on creating a Code of Conduct\nNOAA Reproducible Reporting with R\nPeerJ collection on practical data science"
   },
   {
     "objectID": "resources.html#data-management-tools",
     "href": "resources.html#data-management-tools",
-    "title": "9  Resources for continued learning",
-    "section": "9.2 Data Management Tools",
-    "text": "9.2 Data Management Tools\n\nEnvironmental Data Initiative Data Management Resources\nUniversity of California DMPTool\nUS Geological Survey resources for Metadata Creation\nELIXIR and others Data Stewardship Wizard\nTBEP Data Management SOP"
+    "title": "Appendix C — Resources",
+    "section": "C.2 Data Management Tools",
+    "text": "C.2 Data Management Tools\n\nEnvironmental Data Initiative Data Management Resources\nUniversity of California DMPTool\nUS Geological Survey resources for Metadata Creation\nELIXIR and others Data Stewardship Wizard\nTBEP Data Management SOP"
   },
   {
     "objectID": "resources.html#tbep-r-trainings",
     "href": "resources.html#tbep-r-trainings",
-    "title": "9  Resources for continued learning",
-    "section": "9.3 TBEP R Trainings",
-    "text": "9.3 TBEP R Trainings\n\nPeconic Estuary Program R training, recording\nTBEP June 2020 R training, recordings\nWriting functions in R\nR package development workflow\nA soft introduction to Shiny"
+    "title": "Appendix C — Resources",
+    "section": "C.3 TBEP R Trainings",
+    "text": "C.3 TBEP R Trainings\n\nPeconic Estuary Program R training, recording\nTBEP June 2020 R training, recordings\nWriting functions in R\nR package development workflow\nA soft introduction to Shiny"
   },
   {
     "objectID": "resources.html#r-lessons-tutorials",
     "href": "resources.html#r-lessons-tutorials",
-    "title": "9  Resources for continued learning",
-    "section": "9.4 R Lessons & Tutorials",
-    "text": "9.4 R Lessons & Tutorials\n\nSoftware Carpentry: R for Reproducible Scientific Analysis\nData Carpentry: Geospatial Workshop\nData Carpentry: R for Data Analysis and Visualization of Ecological Data\nData Carpentry: Data Organization in Spreadsheets\nR for Water Resources Data Science\nRStudio Webinars, many topics\nR For Cats: Basic introduction site, with cats!\nTopical cheatsheets from RStudio, also viewed from the help menu\nCheatsheet from CRAN of base R functions\nTotally awesome R-related artwork by Allison Horst\nColor reference PDF with text names, Color cheatsheet PDF from NCEAS"
+    "title": "Appendix C — Resources",
+    "section": "C.4 R Lessons & Tutorials",
+    "text": "C.4 R Lessons & Tutorials\n\nSoftware Carpentry: R for Reproducible Scientific Analysis\nData Carpentry: Geospatial Workshop\nData Carpentry: R for Data Analysis and Visualization of Ecological Data\nData Carpentry: Data Organization in Spreadsheets\nR for Water Resources Data Science\nRStudio Webinars, many topics\nR For Cats: Basic introduction site, with cats!\nTopical cheatsheets from RStudio, also viewed from the help menu\nCheatsheet from CRAN of base R functions\nTotally awesome R-related artwork by Allison Horst\nColor reference PDF with text names, Color cheatsheet PDF from NCEAS"
   },
   {
     "objectID": "resources.html#r-ebookscourses",
     "href": "resources.html#r-ebookscourses",
-    "title": "9  Resources for continued learning",
-    "section": "9.5 R eBooks/Courses",
-    "text": "9.5 R eBooks/Courses\n\nJenny Bryan’s Stat545.com\nGarrett Grolemund and Hadley Wickham’s R For Data Science\nChester Ismay and Albert Y. Kim’s Modern DiveR\nJulia Silge and David Robinson Text Mining with R\nHadley Wickham’s Advanced R\nHadley Wickham’s R for Data Science\nYihui Xie R Markdown: The Definitive Guide\nWinston Chang R Graphics Cookbook\nWegman et al. Remote Sensing and GIS for Ecologists: Using Open Source Software\nLovelace et al. Geocomputation with R\nEdszer Pebesma and Roger Bivand Spatial Data Science"
+    "title": "Appendix C — Resources",
+    "section": "C.5 R eBooks/Courses",
+    "text": "C.5 R eBooks/Courses\n\nJenny Bryan’s Stat545.com\nGarrett Grolemund and Hadley Wickham’s R For Data Science\nChester Ismay and Albert Y. Kim’s Modern DiveR\nJulia Silge and David Robinson Text Mining with R\nHadley Wickham’s Advanced R\nHadley Wickham’s R for Data Science\nYihui Xie R Markdown: The Definitive Guide\nWinston Chang R Graphics Cookbook\nWegman et al. Remote Sensing and GIS for Ecologists: Using Open Source Software\nLovelace et al. Geocomputation with R\nEdszer Pebesma and Roger Bivand Spatial Data Science"
   },
   {
     "objectID": "resources.html#gitgithub",
     "href": "resources.html#gitgithub",
-    "title": "9  Resources for continued learning",
-    "section": "9.6 Git/Github",
-    "text": "9.6 Git/Github\n\nJenny Bryan’s Happy Git and Github for the useR\nGit and GitHub for the Casual User\nCoding Club Intro to Github"
+    "title": "Appendix C — Resources",
+    "section": "C.6 Git/Github",
+    "text": "C.6 Git/Github\n\nJenny Bryan’s Happy Git and Github for the useR\nGit and GitHub for the Casual User\nCoding Club Intro to Github"
+  },
+  {
+    "objectID": "codeofconduct.html#our-pledge",
+    "href": "codeofconduct.html#our-pledge",
+    "title": "Appendix D — Contributor Covenant Code of Conduct",
+    "section": "D.1 Our Pledge",
+    "text": "D.1 Our Pledge\nWe as members, contributors, and leaders pledge to make participation in our community a harassment-free experience for everyone, regardless of age, body size, visible or invisible disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education, socio-economic status, nationality, personal appearance, race, religion, or sexual identity and orientation.\nWe pledge to act and interact in ways that contribute to an open, welcoming, diverse, inclusive, and healthy community."
+  },
+  {
+    "objectID": "codeofconduct.html#our-standards",
+    "href": "codeofconduct.html#our-standards",
+    "title": "Appendix D — Contributor Covenant Code of Conduct",
+    "section": "D.2 Our Standards",
+    "text": "D.2 Our Standards\nExamples of behavior that contributes to a positive environment for our community include:\n\nDemonstrating empathy and kindness toward other people\nBeing respectful of differing opinions, viewpoints, and experiences\nGiving and gracefully accepting constructive feedback\nAccepting responsibility and apologizing to those affected by our mistakes, and learning from the experience\nFocusing on what is best not just for us as individuals, but for the overall community\n\nExamples of unacceptable behavior include:\n\nThe use of sexualized language or imagery, and sexual attention or advances of any kind\nTrolling, insulting or derogatory comments, and personal or political attacks\nPublic or private harassment\nPublishing others’ private information, such as a physical or email address, without their explicit permission\nOther conduct which could reasonably be considered inappropriate in a professional setting"
+  },
+  {
+    "objectID": "codeofconduct.html#enforcement-responsibilities",
+    "href": "codeofconduct.html#enforcement-responsibilities",
+    "title": "Appendix D — Contributor Covenant Code of Conduct",
+    "section": "D.3 Enforcement Responsibilities",
+    "text": "D.3 Enforcement Responsibilities\nCommunity leaders are responsible for clarifying and enforcing our standards of acceptable behavior and will take appropriate and fair corrective action in response to any behavior that they deem inappropriate, threatening, offensive, or harmful.\nCommunity leaders have the right and responsibility to remove, edit, or reject comments, commits, code, wiki edits, issues, and other contributions that are not aligned to this Code of Conduct, and will communicate reasons for moderation decisions when appropriate."
+  },
+  {
+    "objectID": "codeofconduct.html#scope",
+    "href": "codeofconduct.html#scope",
+    "title": "Appendix D — Contributor Covenant Code of Conduct",
+    "section": "D.4 Scope",
+    "text": "D.4 Scope\nThis Code of Conduct applies within all community spaces, and also applies when an individual is officially representing the community in public spaces. Examples of representing our community include using an official e-mail address, posting via an official social media account, or acting as an appointed representative at an online or offline event."
+  },
+  {
+    "objectID": "codeofconduct.html#enforcement",
+    "href": "codeofconduct.html#enforcement",
+    "title": "Appendix D — Contributor Covenant Code of Conduct",
+    "section": "D.5 Enforcement",
+    "text": "D.5 Enforcement\nInstances of abusive, harassing, or otherwise unacceptable behavior may be reported to the community leaders responsible for enforcement at mbeck@tbep.org. All complaints will be reviewed and investigated promptly and fairly.\nAll community leaders are obligated to respect the privacy and security of the reporter of any incident."
+  },
+  {
+    "objectID": "codeofconduct.html#enforcement-guidelines",
+    "href": "codeofconduct.html#enforcement-guidelines",
+    "title": "Appendix D — Contributor Covenant Code of Conduct",
+    "section": "D.6 Enforcement Guidelines",
+    "text": "D.6 Enforcement Guidelines\nCommunity leaders will follow these Community Impact Guidelines in determining the consequences for any action they deem in violation of this Code of Conduct:\n\nD.6.1 1. Correction\nCommunity Impact: Use of inappropriate language or other behavior deemed unprofessional or unwelcome in the community.\nConsequence: A private, written warning from community leaders, providing clarity around the nature of the violation and an explanation of why the behavior was inappropriate. A public apology may be requested.\n\n\nD.6.2 2. Warning\nCommunity Impact: A violation through a single incident or series of actions.\nConsequence: A warning with consequences for continued behavior. No interaction with the people involved, including unsolicited interaction with those enforcing the Code of Conduct, for a specified period of time. This includes avoiding interactions in community spaces as well as external channels like social media. Violating these terms may lead to a temporary or permanent ban.\n\n\nD.6.3 3. Temporary Ban\nCommunity Impact: A serious violation of community standards, including sustained inappropriate behavior.\nConsequence: A temporary ban from any sort of interaction or public communication with the community for a specified period of time. No public or private interaction with the people involved, including unsolicited interaction with those enforcing the Code of Conduct, is allowed during this period. Violating these terms may lead to a permanent ban.\n\n\nD.6.4 4. Permanent Ban\nCommunity Impact: Demonstrating a pattern of violation of community standards, including sustained inappropriate behavior, harassment of an individual, or aggression toward or disparagement of classes of individuals.\nConsequence: A permanent ban from any sort of public interaction within the community."
+  },
+  {
+    "objectID": "codeofconduct.html#attribution",
+    "href": "codeofconduct.html#attribution",
+    "title": "Appendix D — Contributor Covenant Code of Conduct",
+    "section": "D.7 Attribution",
+    "text": "D.7 Attribution\nThis Code of Conduct is adapted from the Contributor Covenant, version 2.0, available at https://www.contributor-covenant.org/version/2/0/code_of_conduct.html.\nCommunity Impact Guidelines were inspired by Mozilla’s code of conduct enforcement ladder.\nFor answers to common questions about this code of conduct, see the FAQ at https://www.contributor-covenant.org/faq. Translations are available at https://www.contributor-covenant.org/translations."
   },
   {
     "objectID": "references.html",
@@ -292,54 +341,5 @@
     "title": "References",
     "section": "",
     "text": "Broman, K. W., and K. H. Woo. 2018. “Data Organization in\nSpreadsheets.” The American Statistician 72 (1): 2–10.\nhttps://doi.org/10.1080/00031305.2017.1375989.\n\n\nFecher, B., and S. Friesike. 2014. “Open Science: One Term, Five\nSchools of Thought.” In Opening Science, 17–47.\nSpringer, Cham.\n\n\nKnuth, Donald Ervin. 1984. “Literate Programming.” The\nComputer Journal 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.\n\n\nLowenberg, Daniella, Rachael Lammey, Matthew B Jones, John Chodacki, and\nMartin Fenner. 2021. “Data Citation: Let’s Choose Adoption over\nPerfection.” Zenodo. https://doi.org/10.5281/zenodo.4701079.\n\n\nMichener, W. K., J. W. Brunt, J. J. Helly, T. B. Kirchner, and S. G.\nStafford. 1997. “Nongeospatial Metadata for the Ecological\nSciences.” Ecological Applications 7 (1): 330–42.\nhttps://doi.org/https://doi.org/10.1890/1051-0761(1997)007[0330:NMFTES]2.0.CO;2.\n\n\nShafland, Paul L., and James M. Pestrak. 1982. “Lower Lethal\nTemperatures for Fourteen Non-Native Fishes in Florida.”\nEnvironmental Biology of Fishes 7 (2): 149–56. https://doi.org/10.1007/bf00001785.\n\n\nWickham, H. 2014. “Tidy Data.” Journal of Statistical\nSoftware 59 (10): 1–23. https://doi.org/10.18637/jss.v059.i10.\n\n\nWickham, H., M. Averick, J. Bryan, W. Chang, L. D’Agostino McGowan, R.\nFrançois, G. Grolemund, et al. 2019. “Welcome to the tidyverse.” Journal of Open Source\nSoftware 4 (43): 1686. https://doi.org/10.21105/joss.01686.\n\n\nWickham, H., and G. Grolemund. 2017. R for Data Science.\nSebastopol, California: O’Reilly.\n\n\nWilkinson, M. D., M. Dumontier, I. J. Aalbersberg, G. Appleton, M.\nAxton, A. Baak, N. Blomberg, et al. 2016. “The FAIR Guiding\nPrinciples for Scientific Data Management and Stewardship.”\nScientific Data 3 (160018). https://doi.org/10.1038/sdata.2016.18.\n\n\nWilson, G., J. Bryan, K. Cranston, J. Kitzes, L. Nederbragt, and T. K.\nTeal. 2017. “Good Enough Practices in Scientific\nComputing.” PLoS Computational Biology 13 (6): e1005510.\nhttps://doi.org/10.1371/journal.pcbi.1005510.\n\n\nZiemann, M., Y. Eren, and A. El-Osta. 2016. “Gene Name Errors Are\nWidespread in the Scientific Literature.” Genome Biology\n17 (1): 1–3. https://doi.org/10.1186/s13059-016-1044-7."
-  },
-  {
-    "objectID": "codeofconduct.html#our-pledge",
-    "href": "codeofconduct.html#our-pledge",
-    "title": "Contributor Covenant Code of Conduct",
-    "section": "Our Pledge",
-    "text": "Our Pledge\nWe as members, contributors, and leaders pledge to make participation in our community a harassment-free experience for everyone, regardless of age, body size, visible or invisible disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education, socio-economic status, nationality, personal appearance, race, religion, or sexual identity and orientation.\nWe pledge to act and interact in ways that contribute to an open, welcoming, diverse, inclusive, and healthy community."
-  },
-  {
-    "objectID": "codeofconduct.html#our-standards",
-    "href": "codeofconduct.html#our-standards",
-    "title": "Contributor Covenant Code of Conduct",
-    "section": "Our Standards",
-    "text": "Our Standards\nExamples of behavior that contributes to a positive environment for our community include:\n\nDemonstrating empathy and kindness toward other people\nBeing respectful of differing opinions, viewpoints, and experiences\nGiving and gracefully accepting constructive feedback\nAccepting responsibility and apologizing to those affected by our mistakes, and learning from the experience\nFocusing on what is best not just for us as individuals, but for the overall community\n\nExamples of unacceptable behavior include:\n\nThe use of sexualized language or imagery, and sexual attention or advances of any kind\nTrolling, insulting or derogatory comments, and personal or political attacks\nPublic or private harassment\nPublishing others’ private information, such as a physical or email address, without their explicit permission\nOther conduct which could reasonably be considered inappropriate in a professional setting"
-  },
-  {
-    "objectID": "codeofconduct.html#enforcement-responsibilities",
-    "href": "codeofconduct.html#enforcement-responsibilities",
-    "title": "Contributor Covenant Code of Conduct",
-    "section": "Enforcement Responsibilities",
-    "text": "Enforcement Responsibilities\nCommunity leaders are responsible for clarifying and enforcing our standards of acceptable behavior and will take appropriate and fair corrective action in response to any behavior that they deem inappropriate, threatening, offensive, or harmful.\nCommunity leaders have the right and responsibility to remove, edit, or reject comments, commits, code, wiki edits, issues, and other contributions that are not aligned to this Code of Conduct, and will communicate reasons for moderation decisions when appropriate."
-  },
-  {
-    "objectID": "codeofconduct.html#scope",
-    "href": "codeofconduct.html#scope",
-    "title": "Contributor Covenant Code of Conduct",
-    "section": "Scope",
-    "text": "Scope\nThis Code of Conduct applies within all community spaces, and also applies when an individual is officially representing the community in public spaces. Examples of representing our community include using an official e-mail address, posting via an official social media account, or acting as an appointed representative at an online or offline event."
-  },
-  {
-    "objectID": "codeofconduct.html#enforcement",
-    "href": "codeofconduct.html#enforcement",
-    "title": "Contributor Covenant Code of Conduct",
-    "section": "Enforcement",
-    "text": "Enforcement\nInstances of abusive, harassing, or otherwise unacceptable behavior may be reported to the community leaders responsible for enforcement at mbeck@tbep.org. All complaints will be reviewed and investigated promptly and fairly.\nAll community leaders are obligated to respect the privacy and security of the reporter of any incident."
-  },
-  {
-    "objectID": "codeofconduct.html#enforcement-guidelines",
-    "href": "codeofconduct.html#enforcement-guidelines",
-    "title": "Contributor Covenant Code of Conduct",
-    "section": "Enforcement Guidelines",
-    "text": "Enforcement Guidelines\nCommunity leaders will follow these Community Impact Guidelines in determining the consequences for any action they deem in violation of this Code of Conduct:\n\n1. Correction\nCommunity Impact: Use of inappropriate language or other behavior deemed unprofessional or unwelcome in the community.\nConsequence: A private, written warning from community leaders, providing clarity around the nature of the violation and an explanation of why the behavior was inappropriate. A public apology may be requested.\n\n\n2. Warning\nCommunity Impact: A violation through a single incident or series of actions.\nConsequence: A warning with consequences for continued behavior. No interaction with the people involved, including unsolicited interaction with those enforcing the Code of Conduct, for a specified period of time. This includes avoiding interactions in community spaces as well as external channels like social media. Violating these terms may lead to a temporary or permanent ban.\n\n\n3. Temporary Ban\nCommunity Impact: A serious violation of community standards, including sustained inappropriate behavior.\nConsequence: A temporary ban from any sort of interaction or public communication with the community for a specified period of time. No public or private interaction with the people involved, including unsolicited interaction with those enforcing the Code of Conduct, is allowed during this period. Violating these terms may lead to a permanent ban.\n\n\n4. Permanent Ban\nCommunity Impact: Demonstrating a pattern of violation of community standards, including sustained inappropriate behavior, harassment of an individual, or aggression toward or disparagement of classes of individuals.\nConsequence: A permanent ban from any sort of public interaction within the community."
-  },
-  {
-    "objectID": "codeofconduct.html#attribution",
-    "href": "codeofconduct.html#attribution",
-    "title": "Contributor Covenant Code of Conduct",
-    "section": "Attribution",
-    "text": "Attribution\nThis Code of Conduct is adapted from the Contributor Covenant, version 2.0, available at https://www.contributor-covenant.org/version/2/0/code_of_conduct.html.\nCommunity Impact Guidelines were inspired by Mozilla’s code of conduct enforcement ladder.\nFor answers to common questions about this code of conduct, see the FAQ at https://www.contributor-covenant.org/faq. Translations are available at https://www.contributor-covenant.org/translations."
   }
 ]
