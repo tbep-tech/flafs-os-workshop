@@ -25,11 +25,12 @@ book:
         - tidy.qmd
         - implement.qmd
         - tools.qmd
-        - setup.qmd
-        - rintro.qmd
-        - resources.qmd
-        - references.qmd
-        - codeofconduct.qmd
+  appendices:
+      - setup.qmd
+      - rintro.qmd
+      - resources.qmd
+      - codeofconduct.qmd
+      - references.qmd
 
 bibliography: refs.bib
 
