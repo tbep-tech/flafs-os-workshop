@@ -23,13 +23,13 @@ This is the second module in our workshop on open science. This module will expl
 
 ## Essential elements of collaboration
 
-We start our deep dive into open science by focusing on collaboration as a fundamental activity that can be enhanced through transparent, efficient, and reproducible tools. Having effective tools to work together is a critical theme of many open science practices. There are many tools in the toolbox and we need to introduce some core concepts before we demonstrate how to implement them in practice.
+We start our deep dive into open science by focusing on collaboration as a fundamental activity that can be enhanced through transparent, efficient, and reproducible tools. Having effective tools to work together is a critical theme of many open science practices.
 
 ### Workflow management
 
 How do you organize your work each day? How do you make sure projects are on schedule and pressing deadlines are met? How do you plan for short-term and long-term goals? Do you have a five-year, ten-year, or longer career plan?
 
-Work to achieve goals cannot be accomplished without a systematic approach to organizing tasks. Chances are, we each have our own system that works for us and was probably developed through trial and error. Although everyone has familiar workflows, they are often idiosyncratic and deeply entrenched by habit. That can be in direct conflict with collaboration when we try to mesh internal workflows with those of others.
+Work to achieve goals cannot be accomplished without a systematic approach to organizing tasks. Chances are, we each have our own system that works for us and was probably developed through trial and error. Although everyone has familiar workflows, they are often idiosyncratic and deeply entrenched by habit. These comfortable workflows can be in direct conflict with collaboration when we try to mesh them with the habits of others.
 
 Does this look familiar?
 
@@ -59,11 +59,11 @@ Version control is a way to track the development history of a project. It serve
 
 1.  Formally documenting the changes that have been made to code or software
 2.  Making sure that the development history is permanent
-3.  Providing a system for collaborating across platforms ([with friends!](https://docs.google.com/presentation/d/1M6EfHmZZ6nQvkvZzPHOkSOwj3PpNcd0u291LMMFFOiE/edit#slide=id.gf166433ec7_0_68))
+3.  Providing a system for collaborating across platforms ([with friends!](https://docs.google.com/presentation/d/1M6EfHmZZ6nQvkvZzPHOkSOwj3PpNcd0u291LMMFFOiE/edit?usp=sharing){target="_blank"})
 
 It's more than saving files. Documenting changes with a set of commands that follow strict rules provides a transparent record for yourself and others, and establishing permanency ensures that any of the changes that are made can be vetted and accessed as needed. Think of it as an insurance plan for your project.
 
-If you've ever used Google Docs, you might have noticed a feature that looks a lot like version control. The Google Drive platform is a great way to start working together and a great way to familiarize yourself with the basics of version control.
+If you've ever used Google Docs, you might have noticed a feature that looks a lot like version control. The Google Drive platform is a great way to start working together and to familiarize yourself with the basics of version control.
 
 ```{r}
 #| out.width: "100%"
@@ -85,7 +85,7 @@ These are the building blocks of version control as demonstrated with Google Doc
 1. History of changes assigned to each editor
 1. Ability to restore a previous version
 
-Perhaps more importantly, these tools are in the cloud and openly accessible (unlike other cloud-based services). File links (via a URL) also do not change if a file is moved to a different location in the drive.  Overall, the Google platform is an accessible means of improving collaboration (but not without it's [cons](https://tbep-tech.github.io/tbep-os-workshop/collaborate.html#cons-2)).
+Perhaps more importantly, these tools are in the cloud and openly accessible (unlike other cloud-based services). File links (via a URL) also do not change if a file is moved to a different location in the drive.  Overall, the Google platform is an accessible means of improving collaboration (but not without [cons](https://tbep-tech.github.io/tbep-os-workshop/collaborate.html#cons-2)).
 
 ### Git and GitHub
 
@@ -126,7 +126,7 @@ Now we'll demonstrate how to setup a version control project with RStudio, Git, 
 
 <h3>`r fa('hat-wizard')` Exercise and discussion</h3>
 
-In small groups, setup a shared workspace using GitHub and create a project management board.  Some real world examples of why you might do this were presented in the earlier [watch and learn](https://tbep-tech.github.io/tbep-os-workshop/collaborate.html#watch-and-learn).
+In small groups, setup a shared workspace using GitHub and create a project management board.  Some real world examples of why you might do this were presented in the earlier [watch and learn](https://tbep-tech.github.io/flafs-os-workshop/collaborate.html#watch-and-learn).
 
 1. Open [GitHub](https://www.github.com){target="_blank"} in a web browser and have one person create a new repository (the big, green "New" button in Repositories). Add each member to the repository after it's created (hint: Settings -> Collaborators)
 1. Have that same person create a project board for the repository (Hint: Projects -> New project -> board format)
