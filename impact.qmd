@@ -199,7 +199,7 @@ Here's a short list of other useful execution options:
 | `message`   | Include messages in rendered output
 +-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-R code can also be executed "inline" outside of code chunks.  This can be useful if you want to include statements that reference particular values or information that is linked directly to data.  Inline R code is entered using the ``r mycode`` syntax. 
+R code can also be executed "inline" outside of code chunks.  This can be useful if you want to include statements that reference particular values or information that is linked directly to data.  Inline R code is entered using the ``r`` syntax. 
 
 ```{=html}
 <div class="sourceCode">
