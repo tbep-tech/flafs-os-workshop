@@ -7,6 +7,8 @@ book:
   repo-url: https://github.com/tbep-tech/flafs-os-workshop
   date: last-modified
   reader-mode: true
+  repo-actions: [edit]
+  search: true
   downloads: pdf
   page-footer:
     left: |
@@ -36,11 +38,13 @@ bibliography: refs.bib
 
 format:
   html:
+    toc-depth: 4
     theme: cosmo
     css: styles.css
     code-tools: 
       source: repo
   pdf:
+    toc-depth: 4
     documentclass: scrreprt
 
 execute: 
