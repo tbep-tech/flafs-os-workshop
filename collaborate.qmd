@@ -1,4 +1,8 @@
 ---
+filters:
+   - lightbox
+lightbox: auto
+
 execute: 
   echo: false
   warning: false
