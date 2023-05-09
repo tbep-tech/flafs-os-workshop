@@ -25,7 +25,7 @@ This is the third module in our workshop on open science. Now we focus on how Qu
 
 Quarto is a relatively new document preparation system that lets you create reproducible and dynamic content that is easily shared with others.  Quarto is integrated with RStudio and allows you to combine plain text language with analysis code in the same document.  
 
-Quarto belongs to a class of reporting tools called dynamic documents or literate programming [@knuth84].  It is not the first of its kind, but it builds substantially on its predecessors by bridging multiple programming langues. 
+Quarto belongs to a class of literate programming tools called dynamic documents [@knuth84].  It is not the first of its kind, but it builds substantially on its predecessors by bridging multiple programming langues. 
 
 Advantages of creating analyses using Quarto include:
 
@@ -64,7 +64,7 @@ This next section will run through the very basics of creating a Quarto document
     * Plain or Markdown text
     :::
     
-    The new file is completely empty except for the title, name, and editor type at the top.  The content at the top is called [YAML](https://quarto.org/docs/get-started/hello/rstudio.html#yaml-header){target="_blank"}, which defines global options for the document.
+    The new file includes some template material showing the main components of a Quarto document.  The content at the top is called [YAML](https://quarto.org/docs/get-started/hello/rstudio.html#yaml-header){target="_blank"}, which defines global options for the document.
     
     ```yaml
     ---
