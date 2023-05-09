@@ -29,7 +29,7 @@ We start our deep dive into open science by focusing on collaboration as a funda
 
 How do you organize your work each day? How do you make sure projects are on schedule and pressing deadlines are met? How do you plan for short-term and long-term goals? Do you have a five-year, ten-year, or longer career plan?
 
-Work to achieve goals cannot be accomplished without a systematic approach to organizing tasks. Chances are, we each have our own system that works for us and was probably developed through trial and error. Although everyone has familiar workflows, they are often idiosyncratic and deeply entrenched by habit. These comfortable workflows can be in direct conflict with collaboration when we try to mesh them with the habits of others.
+Work to achieve goals cannot be accomplished without a systematic approach to organizing tasks. Chances are, we each have our own system that works for us that was probably developed through trial and error. Although everyone has familiar workflows, they are often idiosyncratic and deeply entrenched by habit. These comfortable workflows can be in direct conflict with collaboration when we try to mesh them with the habits of others.
 
 Does this look familiar?
 
@@ -57,7 +57,7 @@ knitr::include_graphics('img/filehell.png')
 
 Version control is a way to track the development history of a project. It serves the joint purposes of:
 
-1.  Formally documenting the changes that have been made to code or software
+1.  Formally documenting the changes that have been made to code, software, or text
 2.  Making sure that the development history is permanent
 3.  Providing a system for collaborating across platforms ([with friends!](https://docs.google.com/presentation/d/1M6EfHmZZ6nQvkvZzPHOkSOwj3PpNcd0u291LMMFFOiE/edit?usp=sharing){target="_blank"})
 
@@ -79,7 +79,7 @@ For any Google Doc, clicking on the link shown by the arrow will open the Versio
 knitr::include_graphics('img/docshistory.PNG')
 ```
 
-These are the building blocks of version control as demonstrated with Google Docs:
+These are the building blocks of version control:
 
 1. No iterative and ambiguous file naming
 1. History of changes assigned to each editor
@@ -108,6 +108,15 @@ knitr::include_graphics('img/Octocat.png')
 #| fig-align: "center"
 #| fig-cap: "Octocat, the strange and loveable mascot of GitHub."
 knitr::include_graphics('img/whatisocto.png')
+```
+
+A common workflow for using Git and GitHub is shown below.  One developer creates the core content on their own computer and uses GitHub to host the repository online.  From there, collaborators can contribute to the repository through their web browser.  A web page hosted on GitHub can create a public-friendly format for others to view important content.
+
+```{r}
+#| out.width: "100%"
+#| fig-align: "center"
+#| fig-cap: "A GitHub workflow engaging collaborators."
+knitr::include_graphics('img/gitworkflow.PNG')
 ```
 
 <h3>`r fa('chalkboard-user')` Watch and learn</h3>

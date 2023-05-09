@@ -51,7 +51,7 @@ These barriers can occur at any stage of the research process. This compelling g
 
 ![](img/michener.png)
 
-The last part is especially morbid. Sometimes, this is called the "bus factor". What would happen to your important work and life achievements if you were hit by a bus? Would others be able to pick it up? Research products with a high bus factor are at risk of being lost if critical team members are no longer available. This is a very real problem for continuity of science.
+The last part is especially morbid. Sometimes, this is called the [bus factor](https://en.wikipedia.org/wiki/Bus_factor){tarrget="_blank"}. What would happen to your important work and life achievements if you were hit by a bus? Would others be able to pick it up? Research products with a high bus factor are at risk of being lost if critical team members are no longer available. This is a very real problem for continuity of science.
 
 ![](img/overlyhonest.png)
 
@@ -97,10 +97,10 @@ Advocates of open science also use the FAIR principles [@Wilkinson16] as guideli
 
 ## Schools of thought {#schools}
 
-Finally, it's useful to make a distinction of how different people may talk about open science. This can help you better navigate conversations and become an advocate for open science in your own right.
+Finally, it's useful to make a distinction of how different people may talk about open science. This can help you better navigate conversations to become an advocate for open science.
 
 A useful paradigm is provided by @Fecher14 that describes open science as five distinct schools of thought:
 
 ![](img/fiveschools.PNG)
 
-These are of course only conceptual boxes and there's considerable overlap across all schools when open science is used in practice. For our purposes, we'll mostly be talking about ideas and tools from the pragmatic, infrastructure, and democratic schools of thought. The end goal is to provide you with the means to create more efficient and impactful science that can more readily be used by others in a collaborative setting.
+These are of course only conceptual boxes and there's considerable overlap when open science is used in practice. For our purposes, we'll mostly be talking about ideas and tools from the pragmatic, infrastructure, and democratic schools of thought. The end goal is to provide you with the means to create more efficient and impactful science that can more readily be used by others in a collaborative setting.
