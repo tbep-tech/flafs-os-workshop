@@ -323,7 +323,7 @@ div.csl-indent {
 <section id="quarto" class="level2" data-number="3.2">
 <h2 data-number="3.2" class="anchored" data-anchor-id="quarto"><span class="header-section-number">3.2</span> Quarto</h2>
 <p>Quarto is a relatively new document preparation system that lets you create reproducible and dynamic content that is easily shared with others. Quarto is integrated with RStudio and allows you to combine plain text language with analysis code in the same document.</p>
-<p>Quarto belongs to a class of reporting tools called dynamic documents or literate programming <span class="citation" data-cites="knuth84">(<a href="references.html#ref-knuth84" role="doc-biblioref">Knuth 1984</a>)</span>. It is not the first of its kind, but it builds substantially on its predecessors by bridging multiple programming langues.</p>
+<p>Quarto belongs to a class of literate programming tools called dynamic documents <span class="citation" data-cites="knuth84">(<a href="references.html#ref-knuth84" role="doc-biblioref">Knuth 1984</a>)</span>. It is not the first of its kind, but it builds substantially on its predecessors by bridging multiple programming langues.</p>
 <p>Advantages of creating analyses using Quarto include:</p>
 <ol type="1">
 <li>Clear demonstration of a workflow using plain text and code</li>
@@ -377,7 +377,7 @@ Tip
 </ul>
 </div>
 </div>
-<p>The new file is completely empty except for the title, name, and editor type at the top. The content at the top is called <a href="https://quarto.org/docs/get-started/hello/rstudio.html#yaml-header" target="_blank">YAML</a>, which defines global options for the document.</p>
+<p>The new file includes some template material showing the main components of a Quarto document. The content at the top is called <a href="https://quarto.org/docs/get-started/hello/rstudio.html#yaml-header" target="_blank">YAML</a>, which defines global options for the document.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Quarto practice"</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">author</span><span class="kw">:</span><span class="at"> </span><span class="st">"Marcus Beck"</span></span>
@@ -578,7 +578,7 @@ I can enter inline text like `r 1 + 1`.
 <div class="cell-output-display">
 <div id="fig-myhist" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><a href="impact_files/figure-html/fig-myhist-1.png" class="lightbox" title="Here’s my awesome histogram." data-gallery="quarto-lightbox-gallery-9"><img src="impact_files/figure-html/fig-myhist-1.png" class="img-fluid figure-img" width="576"></a></p>
+<p><a href="impact_files/figure-html/fig-myhist-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9" title="Here’s my awesome histogram."><img src="impact_files/figure-html/fig-myhist-1.png" class="img-fluid figure-img" width="576"></a></p>
 <figcaption class="figure-caption">Figure&nbsp;3.1: Here’s my awesome histogram.</figcaption>
 </figure>
 </div>
@@ -665,7 +665,7 @@ Tip
 <div class="sourceCode" id="cb13"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="al">![Here's a beautiful crappie](img/blackcrappie.jpg)</span>{#fig-crappie}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div id="fig-crappie" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><a href="img/blackcrappie.jpg" class="lightbox" title="Here’s a beautiful crappie" data-gallery="quarto-lightbox-gallery-12"><img src="img/blackcrappie.jpg" class="img-fluid figure-img"></a></p>
+<p><a href="img/blackcrappie.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-12" title="Here’s a beautiful crappie"><img src="img/blackcrappie.jpg" class="img-fluid figure-img"></a></p>
 <figcaption class="figure-caption">Figure&nbsp;3.2: Here’s a beautiful crappie</figcaption>
 </figure>
 </div>
@@ -1282,7 +1282,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-right">This book was built with <a href="https://quarto.org/" target="_blank">Quarto</a></div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"selector":".lightbox","descPosition":"bottom","closeEffect":"zoom","loop":true,"openEffect":"zoom"});</script>
+<script>var lightboxQuarto = GLightbox({"descPosition":"bottom","loop":true,"closeEffect":"zoom","openEffect":"zoom","selector":".lightbox"});</script>
 
 
 
