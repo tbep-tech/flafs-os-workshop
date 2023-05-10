@@ -95,7 +95,7 @@ The most widely used software for version control is [Git](https://git-scm.com/)
 
 Many people often confuse Git with [GitHub](https://www.github.com){target="_blank"}. GitHub is an online platform for working collaboratively through Git AND it allows you to be open with your work. We'll provide some examples below of how this can be done. Importantly, you do not need to be an expert in Git to be able to use GitHub. This speaks volumes for how team efficiency can be improved with GitHub through better collaboration.
 
-This recent blog provides a helpful introduction to [Git/GitHub for the casual user](https://masalmon.eu/2023/01/12/git-github-casual/){target="_blank"}. 
+This blog provides a helpful introduction to [Git/GitHub for the casual user](https://masalmon.eu/2023/01/12/git-github-casual/){target="_blank"}. 
 
 ```{r}
 #| out.width: "25%"
